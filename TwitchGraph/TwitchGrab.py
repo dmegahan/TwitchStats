@@ -6,6 +6,7 @@ import datetime
 import os
 import logging
 from TwitchGraph import Graph
+import TwitchIRCBot
 
 import constants
 
@@ -13,7 +14,7 @@ class ParentThread(threading.Thread):
     def __init__(self):
         threading.Thread.__init__(self)
         #keeps track of streams that are offline, and checks on them periodically
-        self.inactiveStreams = constants.STREAMERS
+        self.inactiveStreams = constants.STREAMERS[:]
         self.threadsAlive = []
 
     def isOnline(self, stream):
@@ -137,5 +138,6 @@ def main():
     parent = ParentThread()
     parent.setDaemon(False)
     parent.start()
+    TwitchIRCBot.main()
 
 main()

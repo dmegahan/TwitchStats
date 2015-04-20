@@ -10,7 +10,7 @@ class ParentThread(threading.Thread):
     def __init__(self):
         threading.Thread.__init__(self)
         #keeps track of streams that are offline, and checks on them periodically
-        self.inactiveBots = constants.STREAMERS
+        self.inactiveBots = constants.STREAMERS[:]
         self.threadsAlive = []
 
     def run(self):
@@ -109,5 +109,3 @@ def main():
     botParent = ParentThread()
     botParent.setDaemon(False)
     botParent.start()
-
-main()
