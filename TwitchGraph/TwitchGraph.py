@@ -1,19 +1,33 @@
 import csv
+import json
+import os
+import datetime
+import logging
 import plotly.plotly as py
 from plotly.graph_objs import *
 import time
+import constants
+
 
 class Graph:
-    def __init__(self, csvPath):
-        splitPath = csvPath.split('/')[2:]
-        self.streamer = splitPath[0]
-        self.raw_date = splitPath[1].split('.',1)[0]
-        self.date = splitPath[1].split('.',1)[0].replace('_','/')
-        self.csvPath = csvPath
-        self.createGraphFromCSV()
 
-    def createGraphFromCSV(self):
-        with open(self.csvPath, 'rb') as csvfile:
+    def __init__(self):
+        date = datetime.datetime.utcnow().strftime("%d_%m_%Y")
+        directory = constants.LOGS_FOLDER + date + ".log"
+        if not os.path.exists(os.path.dirname(directory)):
+            os.makedirs(os.path.dirname(directory))
+        logging.basicConfig(filename=directory,
+                            format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                            datefmt='%m/%d/%Y %H:%M:%S',
+                            level=logging.DEBUG)
+
+    """Creates a line graph from a CSV populated with viewer data from a stream"""
+    def createGraphFromCSV(self, csvPath):
+        splitPath = csvPath.split('/')[2:]
+        streamer = splitPath[0]
+        raw_date = splitPath[1].split('.',1)[0]
+        date = splitPath[1].split('.',1)[0].replace('_','/')
+        with open(csvPath, 'rb') as csvfile:
             reader = csv.reader(csvfile)
             x_points = []
             y_points = []
@@ -45,10 +59,33 @@ class Graph:
                     x_points.append(row[2])
                     y_points.append(row[0])
 
-            title = self.streamer + "/" + self.raw_date
-            layout = Layout(title=title)
+            title = streamer + "/" + raw_date
+            layout = Layout(title=title,xaxis=XAxis(title='Time'),
+                            yaxis=YAxis(title='Viewers'),
+                            showlegend=True)
 
             data = Data(games_graph[1:])
             fig = Figure(data=data,layout=layout)
             print title + "created!"
+            logging.info(title + " viewer graph created!")
             plot_url = py.plot(fig,filename=title, auto_open=False)
+
+    def createGraphFromJson(self, jsonPath):
+        splitPath = jsonPath.split('/')[2:]
+        streamer = splitPath[0]
+        raw_date = splitPath[1].split('.',1)[0]
+        date = splitPath[1].split('.',1)[0].replace('_','/')
+        with open(jsonPath) as f:
+            data = json.load(f)
+            emotes = data['emotes']
+            x = []
+            y = []
+            for key, value in emotes.iteritems():
+                x.append(key)
+                y.append(value)
+            data = ([Bar(x=x, y=y)])
+            title = streamer + "/J" + raw_date
+            logging.info(title + " emote graph created!")
+            plot_url = py.plot(data, filename=title, auto_open=False)
+
+#Graph().createGraphFromJson("C:/Users/Danny/PycharmProjects/TwitchScrapper/TwitchGraph/data/summit1g/logs/D24_M04_Y2015_H03_m47_s35.json")
