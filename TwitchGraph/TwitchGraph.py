@@ -10,7 +10,6 @@ import constants
 
 
 class Graph:
-
     def __init__(self):
         date = datetime.datetime.utcnow().strftime("%d_%m_%Y")
         directory = constants.LOGS_FOLDER + date + ".log"

@@ -86,20 +86,18 @@ class TwitchThread(threading.Thread):
         threading.Thread.__init__(self)
         #stream name
         self.stream = stream
-        date = datetime.datetime.utcnow().strftime("D%d_M%m_Y%Y_H%H_m%M_s%S")
-        self.CSVfp = date + ".csv"
+        self.CSVfp = datetime.datetime.utcnow().strftime(constants.GRAPH_FILE_FORMAT)
         self._stopevent = threading.Event( )
         self.directory = './data/' + stream + '/' + self.CSVfp
 
     def toCSV(self, streamer_name, num_viewers, game):
         #get current time, format: Year-Month-Day Hour:Minute:Second
-        exact_time = datetime.datetime.utcnow().strftime("%H:%M:%S")
-        directory = './data/' + streamer_name + '/' + self.CSVfp
+        exact_time = datetime.datetime.utcnow().strftime(constants.TIME_FORMAT)
         #check if directory exists
-        if not os.path.exists(os.path.dirname(directory)):
-            os.makedirs(os.path.dirname(directory))
+        if not os.path.exists(os.path.dirname(self.directory)):
+            os.makedirs(os.path.dirname(self.directory))
 
-        with open(directory, 'a') as fp:
+        with open(self.directory, 'a') as fp:
             f_write = csv.writer(fp)
             f_write.writerow([num_viewers, game, exact_time])
 
@@ -170,6 +168,11 @@ class TwitchThread(threading.Thread):
                 timeout_checks = 0
                 self.toCSV(self.stream, viewerNum, game)
             time.sleep(0.5)
+
+        #Calculate the daily stats
+        #swap the file paths
+
+        json_file_path = constants.LOGS_FOLDER +
         return
 
     def join(self, timeout=None):

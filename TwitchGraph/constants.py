@@ -16,7 +16,9 @@ STREAMERS = ["lirik", "itmejp", "summit1g", "destiny", "nl_kripp", "reckful", "s
 
 LOGS_FOLDER = "./logs/"
 
-GRAPH_FILE_FORMAT = "D%d_M%m_Y%Y_H%H_m%M_s%S"
+TIME_FORMAT = "%H:%M:%S"
+GRAPH_FILE_FORMAT = "D%d_M%m_Y%Y_H%H_m%M_s%S.csv"
+JSON_FILE_FORMAT  = "D%d_M%m_Y%Y_H%H_m%M_s%S.json"
+CHAT_LOG_FILE_FORMAT  = "D%d_M%m_Y%Y_H%H_m%M_s%S.log"
 
-JSON_ATTRIBUTES = ["peak viewers", "session start time", "session end time", "average viewers",
-                    "average viewers/game"]
+JSON_ATTRIBUTES = ["Peak Viewers", "Start Time", "End Time", "Average Viewers", "Time Streamed"]

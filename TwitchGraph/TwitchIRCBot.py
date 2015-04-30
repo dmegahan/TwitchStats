@@ -105,13 +105,14 @@ class TwitchIRCBot(threading.Thread):
         self.timeout = 0
         self._stopevent = threading.Event( )
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        date = datetime.datetime.utcnow().strftime("D%d_M%m_Y%Y_H%H_m%M_s%S")
-        self.directory = './data/' + stream + '/logs/' + date + '.log'
+        log = datetime.datetime.utcnow().strftime(constants.CHAT_LOG_FILE_FORMAT)
+        self.directory = './data/' + stream + '/logs/' + log
 
         if not os.path.exists(os.path.dirname(self.directory)):
             os.makedirs(os.path.dirname(self.directory))
 
-        self.jdirectory = './data/' + stream + '/logs/' + date + '.json'
+        json = datetime.datetime.utcnow().strftime(constants.JSON_FILE_FORMAT)
+        self.jdirectory = './data/' + stream + '/logs/' + json
         self.subEmotes = self.getEmotes()
         self.jEditor = JsonEditor(self.jdirectory, self.subEmotes)
 
@@ -223,7 +224,7 @@ class TwitchIRCBot(threading.Thread):
             logging.debug(self.stream + " received socket error: " + e)
 
     def toLog(self, user, message):
-        exact_time = datetime.datetime.utcnow().strftime("%H:%M:%S")
+        exact_time = datetime.datetime.utcnow().strftime(constants.TIME_FORMAT)
 
         logThis = exact_time + " " + user + ": " + message
         with open(self.directory, 'a') as fp:
