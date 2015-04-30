@@ -74,7 +74,7 @@ class Graph:
         splitPath = jsonPath.split('/')[2:]
         streamer = splitPath[0]
         raw_date = splitPath[1].split('.',1)[0]
-        date = splitPath[1].split('.',1)[0].replace('_','/')
+        date = splitPath[2].split('.',1)[0].replace('_','/')
         with open(jsonPath) as f:
             data = json.load(f)
             emotes = data['emotes']
@@ -88,4 +88,4 @@ class Graph:
             logging.info(title + " emote graph created!")
             plot_url = py.plot(data, filename=title, auto_open=False)
 
-#Graph().createGraphFromJson("C:/Users/Danny/PycharmProjects/TwitchScrapper/TwitchGraph/data/summit1g/logs/D24_M04_Y2015_H03_m47_s35.json")
+#Graph().createGraphFromJson('./data/Destiny/logs/D25_M04_Y2015_H20_m09_s42.json')
