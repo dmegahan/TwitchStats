@@ -11,8 +11,10 @@ DEAD_THREAD_IDENTIFIER = -1
 
 STR_STREAM_OFFLINE = "Stream Offline!"
 
-STREAMERS = ["lirik", "itmejp", "summit1g", "destiny", "nl_kripp", "reckful", "sodapoppin",
-             "dansgaming", "kaceytron", "watchmeblink1", "trick2g", "trumpsc"]
+#STREAMERS = ["lirik", "itmejp", "summit1g", "destiny", "nl_kripp", "reckful", "sodapoppin",
+          #   "dansgaming", "kaceytron", "watchmeblink1", "trick2g", "trumpsc"]
+
+STREAMERS = ["lirik"]
 
 LOGS_FOLDER = "./logs/"
 

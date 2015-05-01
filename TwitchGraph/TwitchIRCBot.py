@@ -94,7 +94,7 @@ class ParentThread(threading.Thread):
             time.sleep(constants.PARENT_THREAD_SLEEP_TIME)
 
 class TwitchIRCBot(threading.Thread):
-    def __init__(self, stream):
+    def __init__(self, stream, jsonName, logName):
         threading.Thread.__init__(self)
 
         self.user = "Kinetick42"
@@ -105,14 +105,12 @@ class TwitchIRCBot(threading.Thread):
         self.timeout = 0
         self._stopevent = threading.Event( )
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        log = datetime.datetime.utcnow().strftime(constants.CHAT_LOG_FILE_FORMAT)
-        self.directory = './data/' + stream + '/logs/' + log
+        self.directory = './data/' + stream + '/logs/' + logName
 
         if not os.path.exists(os.path.dirname(self.directory)):
             os.makedirs(os.path.dirname(self.directory))
 
-        json = datetime.datetime.utcnow().strftime(constants.JSON_FILE_FORMAT)
-        self.jdirectory = './data/' + stream + '/logs/' + json
+        self.jdirectory = './data/' + stream + '/logs/' + jsonName
         self.subEmotes = self.getEmotes()
         self.jEditor = JsonEditor(self.jdirectory, self.subEmotes)
 
@@ -231,15 +229,14 @@ class TwitchIRCBot(threading.Thread):
             #print self.stream + "|||||| " + message + " to " + str(self.directory)
             fp.write(logThis + "\r\n")
 
-    def toGraph(self):
-        Graph().createGraphFromJson(self.jdirectory)
-
     def join(self, timeout=None):
         """ Stop the thread and wait for it to end. """
         self._stopevent.set( )
         threading.Thread.join(self, timeout)
 
+"""
 def main():
     botParent = ParentThread()
     botParent.setDaemon(False)
     botParent.start()
+"""

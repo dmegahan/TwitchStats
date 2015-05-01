@@ -82,11 +82,11 @@ class ParentThread(threading.Thread):
 
 
 class TwitchThread(threading.Thread):
-    def __init__(self, stream):
+    def __init__(self, stream, csvPath):
         threading.Thread.__init__(self)
         #stream name
         self.stream = stream
-        self.CSVfp = datetime.datetime.utcnow().strftime(constants.GRAPH_FILE_FORMAT)
+        self.CSVfp = csvPath
         self._stopevent = threading.Event( )
         self.directory = './data/' + stream + '/' + self.CSVfp
 
@@ -150,7 +150,9 @@ class TwitchThread(threading.Thread):
             [viewerNum, game] = self.getStreamInfo(self.stream)
             #stream is likely offline, end thread
             if game is constants.STR_STREAM_OFFLINE:
-                if(timeout_checks > constants.TIMEOUT):
+                #error occured, wait some time and try again
+                time.sleep(5)
+                """if(timeout_checks > constants.TIMEOUT):
                     timeout_checks = 0
                     print self.stream + " Offline"
                     logging.info(self.stream + " Offline!")
@@ -161,18 +163,13 @@ class TwitchThread(threading.Thread):
                     print self.stream + " timeout checks: " + str(timeout_checks)
                     logging.info(self.stream + " timeout checks: " + str(timeout_checks))
                     timeout_checks = timeout_checks + 1
-                    time.sleep(60)
+                    time.sleep(60)"""
             elif viewerNum is not None and game is not None:
                 #everything went OK, add data to CSV
                 #if a None is recieved, something broke so dont do anything
                 timeout_checks = 0
                 self.toCSV(self.stream, viewerNum, game)
             time.sleep(0.5)
-
-        #Calculate the daily stats
-        #swap the file paths
-
-        json_file_path = constants.LOGS_FOLDER +
         return
 
     def join(self, timeout=None):
@@ -180,10 +177,11 @@ class TwitchThread(threading.Thread):
         self._stopevent.set( )
         threading.Thread.join(self, timeout)
 
+"""
 def main():
     parent = ParentThread()
     parent.setDaemon(False)
     parent.start()
     TwitchIRCBot.main()
 
-main()
+main()"""
