@@ -27,9 +27,11 @@ class Stream(threading.Thread):
         self.activeThreads = []
 
     def initFileNames(self):
-        self.CSVfp = datetime.datetime.utcnow().strftime(constants.GRAPH_FILE_FORMAT)
-        self.JSONfp = datetime.datetime.utcnow().strftime(constants.JSON_FILE_FORMAT)
-        self.LOGfp = datetime.datetime.utcnow().strftime(constants.CHAT_LOG_FILE_FORMAT)
+        print self.stream + " initialized filepaths"
+        date = datetime.datetime.utcnow()
+        self.CSVfp = date.strftime(constants.GRAPH_FILE_FORMAT)
+        self.JSONfp = date.strftime(constants.JSON_FILE_FORMAT)
+        self.LOGfp = date.strftime(constants.CHAT_LOG_FILE_FORMAT)
 
         directory = constants.LOGS_FOLDER + self.LOGfp
         if not os.path.exists(os.path.dirname(directory)):
@@ -54,8 +56,8 @@ class Stream(threading.Thread):
             streamObj = streamResponse.json()
             if streamObj['stream'] is None:
                 return False
-            print stream + " is online!"
-            logging.info(stream + " is online!")
+            #print stream + " is online!"
+            #logging.info(stream + " is online!")
             return True
         except (TypeError, ValueError, KeyError):
             #Error occured, check to see if stream is offline or if temp disconnect
@@ -69,7 +71,7 @@ class Stream(threading.Thread):
         while 1:
             if self.isOnline(self.stream):
                 #start the bots up
-                if self.GrabBot is None or self.IRCBot is None:
+                if self.GrabBot is None and self.IRCBot is None:
                     #initialize the dates and filepaths
                     self.initFileNames()
 
@@ -81,18 +83,22 @@ class Stream(threading.Thread):
                     self.IRCBot.setDaemon(False)
                     self.IRCBot.start()
             else:
-                if self.GrabBot.is_alive or self.IRCBOt.is_alive:
-                    #start timing out
-                    if self.timeout > constants.TIMEOUT:
-                        print "stream is offline. Ending threads."
-                        #do end of stream
-                        self.GrabBot.toCSV(self.stream, constants.DEAD_THREAD_IDENTIFIER, constants.STR_STREAM_OFFLINE)
-                        Graph().createGraphFromCSV(self.CSVfp)
-                        Graph().createGraphFromJson(self.JSONfp)
-                        self.GrabBot.join()
-                        self.IRCBot.join()
-                    else:
-                        ++self.timeout
+                if self.GrabBot is not None and self.IRCBot is not None:
+                    if self.GrabBot.is_alive and self.IRCBOt.is_alive:
+                        #start timing out
+                        if self.timeout > constants.TIMEOUT:
+                            print "stream is offline. Ending threads."
+                            #do end of stream
+                            self.GrabBot.toCSV(self.stream, constants.DEAD_THREAD_IDENTIFIER, constants.STR_STREAM_OFFLINE)
+                            Graph().createGraphFromCSV(self.CSVfp)
+                            Graph().createGraphFromJson(self.JSONfp)
+                            self.GrabBot.join()
+                            self.IRCBot.join()
+
+                            self.GrabBot = None
+                            self.IRCBot = None
+                        else:
+                            ++self.timeout
 
             time.sleep(constants.PARENT_THREAD_SLEEP_TIME)
 
