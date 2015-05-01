@@ -60,3 +60,6 @@ target/
 *.csv
 *.log
 *.json
+
+#intellij
+.idea/
