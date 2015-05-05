@@ -14,12 +14,14 @@ STR_STREAM_OFFLINE = "Stream Offline!"
 STREAMERS = ["lirik", "itmejp", "summit1g", "destiny", "nl_kripp", "reckful", "sodapoppin",
              "dansgaming", "kaceytron", "watchmeblink1", "trick2g", "trumpsc"]
 
+LOGS_FOLDER = "/logs/"
+STATS_FOLDER = "/stats/"
+CSV_FOLDER = "/CSV/"
 
-LOGS_FOLDER = "./logs/"
-
-TIME_FORMAT = "%H:%M:%S"
+TIME_FORMAT = "%B %d %Y %Z %H:%M:%S"
 GRAPH_FILE_FORMAT = "D%d_M%m_Y%Y_H%H_m%M_s%S.csv"
 JSON_FILE_FORMAT  = "D%d_M%m_Y%Y_H%H_m%M_s%S.json"
 CHAT_LOG_FILE_FORMAT  = "D%d_M%m_Y%Y_H%H_m%M_s%S.log"
+LOG_FILE_FORMAT = "%d_%m_%Y"
 
 JSON_ATTRIBUTES = ["Peak Viewers", "Start Time", "End Time", "Average Viewers", "Time Streamed"]

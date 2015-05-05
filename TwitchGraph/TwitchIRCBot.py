@@ -15,7 +15,7 @@ import json
 logging.getLogger("requests").setLevel(logging.WARNING)
 
 class TwitchIRCBot(threading.Thread):
-    def __init__(self, stream, jsonName, logName):
+    def __init__(self, stream, jsonPath, logPath):
         threading.Thread.__init__(self)
 
         self.user = "Kinetick42"
@@ -26,12 +26,12 @@ class TwitchIRCBot(threading.Thread):
         self.timeout = 0
         self._stopevent = threading.Event( )
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.directory = './data/' + stream + '/logs/' + logName
+        self.directory = logPath
 
         if not os.path.exists(os.path.dirname(self.directory)):
             os.makedirs(os.path.dirname(self.directory))
 
-        self.jdirectory = './data/' + stream + '/logs/' + jsonName
+        self.jdirectory = jsonPath
         self.subEmotes = self.getEmotes()
         self.jEditor = JsonEditor(self.jdirectory, self.subEmotes)
 

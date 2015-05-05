@@ -4,6 +4,8 @@ import threading
 import logging
 import requests
 import time
+from JsonEditor import JsonEditor
+from Statistics import Statistics
 from TwitchGrab import TwitchThread
 from TwitchGraph import Graph
 from TwitchIRCBot import TwitchIRCBot
@@ -21,6 +23,7 @@ class Stream(threading.Thread):
         self.CSVfp = ""
         self.JSONfp = ""
         self.LOGfp = ""
+        self.globalPath = ""
 
         self.timeout = 0
 
@@ -29,11 +32,21 @@ class Stream(threading.Thread):
     def initFileNames(self):
         print self.stream + " initialized filepaths"
         date = datetime.datetime.utcnow()
-        self.CSVfp = date.strftime(constants.GRAPH_FILE_FORMAT)
-        self.JSONfp = date.strftime(constants.JSON_FILE_FORMAT)
-        self.LOGfp = date.strftime(constants.CHAT_LOG_FILE_FORMAT)
+        parent_dir = './data/' + self.stream
+        self.CSVfp = date.strftime(parent_dir + constants.CSV_FOLDER + constants.GRAPH_FILE_FORMAT)
+        if not os.path.exists(os.path.dirname(self.CSVfp)):
+            os.makedirs(os.path.dirname(self.CSVfp))
+        self.JSONfp = date.strftime(parent_dir + constants.STATS_FOLDER + constants.JSON_FILE_FORMAT)
+        if not os.path.exists(os.path.dirname(self.JSONfp)):
+            os.makedirs(os.path.dirname(self.JSONfp))
+        self.LOGfp = date.strftime(parent_dir + constants.LOGS_FOLDER + constants.CHAT_LOG_FILE_FORMAT)
+        if not os.path.exists(os.path.dirname(self.LOGfp)):
+            os.makedirs(os.path.dirname(self.LOGfp))
+        self.globalPath = parent_dir + constants.STATS_FOLDER + self.stream + ".json"
+        if not os.path.exists(os.path.dirname(self.globalPath)):
+            os.makedirs(os.path.dirname(self.globalPath))
 
-        directory = constants.LOGS_FOLDER + self.LOGfp
+        directory = './logs/' + date.strftime(constants.LOG_FILE_FORMAT)
         if not os.path.exists(os.path.dirname(directory)):
             os.makedirs(os.path.dirname(directory))
         logging.basicConfig(filename=directory,
@@ -67,6 +80,12 @@ class Stream(threading.Thread):
             logging.debug(streamResponse)
         return False
 
+    def recordStats(self):
+        jsonFile = JsonEditor(self.JSONfp, "")
+        stats = Statistics(self.CSVfp, self.JSONfp, self.LOGfp, self.globalPath)
+        dailyStats = stats.doAll()
+        jsonFile.toJSON(dailyStats)
+
     def run(self):
         while 1:
             if self.isOnline(self.stream):
@@ -84,7 +103,7 @@ class Stream(threading.Thread):
                     self.IRCBot.start()
             else:
                 if self.GrabBot is not None and self.IRCBot is not None:
-                    if self.GrabBot.is_alive and self.IRCBOt.is_alive:
+                    if self.GrabBot.is_alive and self.IRCBot.is_alive:
                         #start timing out
                         if self.timeout > constants.TIMEOUT:
                             print "stream is offline. Ending threads."
@@ -92,13 +111,16 @@ class Stream(threading.Thread):
                             self.GrabBot.toCSV(self.stream, constants.DEAD_THREAD_IDENTIFIER, constants.STR_STREAM_OFFLINE)
                             Graph().createGraphFromCSV(self.CSVfp)
                             Graph().createGraphFromJson(self.JSONfp)
+
+                            self.recordStats()
+
                             self.GrabBot.join()
                             self.IRCBot.join()
-
                             self.GrabBot = None
                             self.IRCBot = None
                         else:
-                            ++self.timeout
+                            print self.stream + " timing out: " + self.timeout
+                            self.timeout += 1
 
             time.sleep(constants.PARENT_THREAD_SLEEP_TIME)
 

@@ -15,6 +15,11 @@ class JsonEditor:
         self.initializeStats(file)
         self.initializeEmotes(file)
 
+    def toJSON(self, stats):
+        #takes in a dictionary of keys and values, to be put into the json file
+        for key in stats:
+            self.setValueForStat(key, stats[key])
+
     def initializeJson(self, file):
         with open(file, 'w') as f:
             data = {}
@@ -49,7 +54,7 @@ class JsonEditor:
             f.seek(0)
             json.dump(data, f, indent=4)
 
-    def setValueForStat(self, value, stat):
+    def setValueForStat(self, stat, value):
         with open(self.directory, 'r+') as f:
             data = json.load(f)
             data['stats'][stat] = value

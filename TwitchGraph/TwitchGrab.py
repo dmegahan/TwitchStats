@@ -19,7 +19,7 @@ class TwitchThread(threading.Thread):
         self.stream = stream
         self.CSVfp = csvPath
         self._stopevent = threading.Event( )
-        self.directory = './data/' + stream + '/' + self.CSVfp
+        self.directory = csvPath
 
     def toCSV(self, streamer_name, num_viewers, game):
         #get current time, format: Year-Month-Day Hour:Minute:Second
@@ -86,7 +86,7 @@ class TwitchThread(threading.Thread):
                 #if a None is recieved, something broke so dont do anything
                 timeout_checks = 0
                 self.toCSV(self.stream, viewerNum, game)
-            time.sleep(0.5)
+            self._stopevent.wait(0.5)
         return
 
     def join(self, timeout=None):
