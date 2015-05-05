@@ -2,15 +2,17 @@ import csv
 import os
 import time
 import datetime
+import constants
 
 __author__ = 'Danny'
 
 class Statistics:
-    def __init__(self, csvPath, jsonPath, logPath, globalPath):
+    def __init__(self, csvPath, jsonPath, logPath, globalPath, config):
         self.jsonPath = jsonPath
         self.csvPath= csvPath
         self.logPath = logPath
         self.globalPath = globalPath
+        self.config = config
 
     def doDaily(self):
         #return a dict of json keys and values, to be added at the end of the stream
@@ -29,8 +31,6 @@ class Statistics:
     def getMostPlayedGame(self):
         print 1
     def getAverageTimeStreamed(self):
-        print 1
-    def mostPlayedGame(self):
         print 1
     def getMostPopularGame(self):
         print 1
@@ -86,13 +86,8 @@ class Statistics:
         stop_time = self.getStopTime()[1]
 
         #convert times to a datetime object
-        start = datetime.datetime.strptime(start_time, "%H:%M:%S")
-        end = datetime.datetime.strptime(stop_time, "%H:%M:%S")
-
-        if end < start:
-            #stream ran overnight, like 8pm - 2am, so we "make up" dates to easily compare the times
-            start = datetime.datetime.strptime("1/1/2015 " + start_time, "%m/%d/%Y %H:%M:%S")
-            end = datetime.datetime.strptime("1/2/2015 " + stop_time, "%m/%d/%Y %H:%M:%S")
+        start = datetime.datetime.strptime(start_time, self.config["TIME_FORMAT"])
+        end = datetime.datetime.strptime(stop_time, self.config["TIME_FORMAT"])
 
         diff = end - start
         days, seconds = diff.days, diff.seconds
@@ -102,8 +97,10 @@ class Statistics:
 
         return key, (str(hours) + ":" + str(minutes) + ":" + str(seconds))
 
+"""
 stats = Statistics("./data/summit1g/D02_M05_Y2015_H01_m02_s56.csv",
                    "./data/summit1g/logs/D02_M05_Y2015_H01_m02_s56.json",
                    "./data/summit1g/logs/D02_M05_Y2015_H01_m02_s56.log",
                    "./data/summit1g/logs/summit1g.json")
 stats.doDaily()
+"""

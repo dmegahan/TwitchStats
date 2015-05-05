@@ -7,23 +7,25 @@ import os
 import logging
 from TwitchGraph import Graph
 import TwitchIRCBot
+import config
 
 import constants
 
 logging.getLogger("requests").setLevel(logging.WARNING)
 
 class TwitchThread(threading.Thread):
-    def __init__(self, stream, csvPath):
+    def __init__(self, stream, csvPath, config):
         threading.Thread.__init__(self)
         #stream name
         self.stream = stream
         self.CSVfp = csvPath
         self._stopevent = threading.Event( )
         self.directory = csvPath
+        self.config = config
 
     def toCSV(self, streamer_name, num_viewers, game):
         #get current time, format: Year-Month-Day Hour:Minute:Second
-        exact_time = datetime.datetime.utcnow().strftime(constants.TIME_FORMAT)
+        exact_time = datetime.datetime.utcnow().strftime(self.config["TIME_FORMAT"])
         #check if directory exists
         if not os.path.exists(os.path.dirname(self.directory)):
             os.makedirs(os.path.dirname(self.directory))
@@ -56,7 +58,7 @@ class TwitchThread(threading.Thread):
             if streamObj['stream'] is None:
                 #return nulls so that the thread will be exited
                 #stream is offline, or we didn't receive anything from twitch
-                return [constants.DEAD_THREAD_IDENTIFIER, constants.STR_STREAM_OFFLINE]
+                return [config.DEAD_THREAD_IDENTIFIER, config.STR_STREAM_OFFLINE]
             viewerNum = streamObj['stream']['viewers']
             game = streamObj['stream']['game']
         except (TypeError, ValueError, KeyError):
@@ -78,7 +80,7 @@ class TwitchThread(threading.Thread):
         while not self._stopevent.isSet():
             [viewerNum, game] = self.getStreamInfo(self.stream)
             #stream is likely offline, end thread
-            if game is constants.STR_STREAM_OFFLINE:
+            if game is config.STR_STREAM_OFFLINE:
                 #error occured, wait some time and try again
                 time.sleep(5)
             elif viewerNum is not None and game is not None:

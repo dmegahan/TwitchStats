@@ -42,15 +42,18 @@ class JsonEditor:
         with open(file, 'r+') as f:
             data = json.load(f)
             for emote in self.emotesList:
-                data['emotes'][emote] = 0
+                data['sub emotes'][emote] = 0
             f.seek(0)
             json.dump(data, f, indent=4)
 
     def incrementSubEmote(self, emote):
         with open(self.directory, 'r+') as f:
-            data = json.load(f)
             try:
-                old_val = data['emotes'][emote]
+                data = json.load(f)
+            except ValueError:
+                print self.directory + " encountered ValueError incrementing emote"
+            try:
+                old_val = data['sub emotes'][emote]
             except KeyError:
                 old_val = 0
                 data['sub emotes'][emote] = old_val
@@ -63,7 +66,7 @@ class JsonEditor:
         with open(self.directory, 'r+') as f:
             data = json.load(f)
             try:
-                old_val = data['emotes'][emote]
+                old_val = data['twitch emotes'][emote]
             except KeyError:
                 old_val = 0
                 data['twitch emotes'][emote] = old_val

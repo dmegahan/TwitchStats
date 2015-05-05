@@ -15,13 +15,14 @@ import json
 logging.getLogger("requests").setLevel(logging.WARNING)
 
 class TwitchIRCBot(threading.Thread):
-    def __init__(self, stream, jsonPath, logPath):
+    def __init__(self, stream, jsonPath, logPath, config):
         threading.Thread.__init__(self)
 
         self.user = "Kinetick42"
         self.token = "oauth:4eekng63twhsyg9fhlgtnu2ttghf4s"
         self.stream = stream
         self.chan = "#" + stream
+        self.config = config
         #incremented int value that keeps the thread alive till it reaches a certain number, ParentThread uses it
         self.timeout = 0
         self._stopevent = threading.Event( )
@@ -102,7 +103,7 @@ class TwitchIRCBot(threading.Thread):
         #start constantly looking for recvs on the socket
         while not self._stopevent.isSet():
             self.readChat()
-            self._stopevent.wait(constants.IRC_THREAD_SLEEP_TIME)
+            self._stopevent.wait(self.config["IRC_THREAD_SLEEP_TIME"])
 
         print self.stream + " killed."
 
@@ -176,7 +177,7 @@ class TwitchIRCBot(threading.Thread):
             logging.debug(self.stream + " received socket error: " + e)
 
     def toLog(self, user, message):
-        exact_time = datetime.datetime.utcnow().strftime(constants.TIME_FORMAT)
+        exact_time = datetime.datetime.utcnow().strftime(self.config["TIME_FORMAT"])
 
         logThis = exact_time + " " + user + ": " + message
         with open(self.directory, 'a') as fp:

@@ -10,9 +10,10 @@ import constants
 
 
 class Graph:
-    def __init__(self):
+    def __init__(self, config):
+        self.config = config
         date = datetime.datetime.utcnow().strftime("%d_%m_%Y")
-        directory = constants.LOGS_FOLDER + date + ".log"
+        directory = self.config["LOGS_FOLDER"] + date + ".log"
         if not os.path.exists(os.path.dirname(directory)):
             os.makedirs(os.path.dirname(directory))
         logging.basicConfig(filename=directory,
@@ -24,8 +25,8 @@ class Graph:
     def createGraphFromCSV(self, csvPath):
         splitPath = csvPath.split('/')[2:]
         streamer = splitPath[0]
-        raw_date = splitPath[1].split('.',1)[0]
-        date = splitPath[1].split('.',1)[0].replace('_','/')
+        raw_date = splitPath[2].split('.',1)[0]
+        date = splitPath[2].split('.',1)[0].replace('_','/')
         with open(csvPath, 'rb') as csvfile:
             reader = csv.reader(csvfile)
             x_points = []
@@ -55,6 +56,8 @@ class Graph:
                 #API doesnt constantly update viewer num,
                 if row[0] != last_viewer_count:
                     last_viewer_count = row[0]
+                    date = datetime.datetime.strptime(row[2], self.config["TIME_FORMAT"])
+                    time = date.time()
                     x_points.append(row[2])
                     y_points.append(row[0])
 
@@ -72,11 +75,11 @@ class Graph:
     def createGraphFromJson(self, jsonPath):
         splitPath = jsonPath.split('/')[2:]
         streamer = splitPath[0]
-        raw_date = splitPath[1].split('.',1)[0]
+        raw_date = splitPath[2].split('.',1)[0]
         date = splitPath[2].split('.',1)[0].replace('_','/')
         with open(jsonPath) as f:
             data = json.load(f)
-            emotes = data['emotes']
+            emotes = data['sub emotes']
             x = []
             y = []
             for key, value in emotes.iteritems():
@@ -87,4 +90,5 @@ class Graph:
             logging.info(title + " emote graph created!")
             plot_url = py.plot(data, filename=title, auto_open=False)
 
-#Graph().createGraphFromJson('./data/Destiny/logs/D25_M04_Y2015_H20_m09_s42.json')
+#Graph().createGraphFromJson('./data/Destiny/stats/D05_M05_Y2015_H04_m48_s05.json')
+#Graph().createGraphFromCSV('./data/destiny/CSV/D05_M05_Y2015_H04_m48_s05.csv')
