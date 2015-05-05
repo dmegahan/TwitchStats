@@ -14,6 +14,8 @@ STR_STREAM_OFFLINE = "Stream Offline!"
 STREAMERS = ["lirik", "itmejp", "summit1g", "destiny", "nl_kripp", "reckful", "sodapoppin",
              "dansgaming", "kaceytron", "watchmeblink1", "trick2g", "trumpsc"]
 
+MATCH_PHRASES = ["BabyRage NEVER LUCKY BabyRage",]
+
 LOGS_FOLDER = "/logs/"
 STATS_FOLDER = "/stats/"
 CSV_FOLDER = "/CSV/"

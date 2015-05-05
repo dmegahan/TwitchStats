@@ -32,10 +32,12 @@ class TwitchIRCBot(threading.Thread):
             os.makedirs(os.path.dirname(self.directory))
 
         self.jdirectory = jsonPath
-        self.subEmotes = self.getEmotes()
+        self.subEmotes = self.getSubEmotes()
+        self.twitchEmotes = self.getTwitchEmotes()
+        self.allEmotes = self.subEmotes + self.twitchEmotes
         self.jEditor = JsonEditor(self.jdirectory, self.subEmotes)
 
-    def getEmotes(self):
+    def getSubEmotes(self):
         EMOTE_REQUEST ="https://api.twitch.tv/kraken/chat/" + self.stream + "/emoticons"
         subEmotes = []
         try:
@@ -62,6 +64,35 @@ class TwitchIRCBot(threading.Thread):
             logging.debug(emoteResponse)
             return []
         return subEmotes[:]
+
+    def getTwitchEmotes(self):
+        EMOTE_REQUEST ="https://api.twitch.tv/kraken/chat/" + self.stream + "/emoticons"
+        twitchEmotes = []
+        try:
+            emoteResponse = requests.get(EMOTE_REQUEST)
+        except requests.exceptions.ConnectionError:
+            print "request failure: " + EMOTE_REQUEST
+            logging.debug("request failure: " + EMOTE_REQUEST)
+            #couldn't grab emotes, return empty list
+            return []
+        emoteObj = None
+        try:
+            emoteObj = emoteResponse.json()
+            allEmotes = emoteObj['emoticons']
+            for emote in allEmotes:
+                if emote['subscriber_only'] is False:
+                    twitchEmotes.append(emote['regex'])
+
+        except (TypeError, ValueError, KeyError):
+            print "Error occurred getting stream information on " + self.stream \
+                  + " /// streamObj: " + emoteObj
+            print emoteResponse
+            logging.debug("Error occurred getting stream information on " + self.stream
+                          + " /// streamObj: " + emoteObj)
+            logging.debug(emoteResponse)
+            return []
+        return twitchEmotes[:]
+
 
     def run(self):
         print "IRCBot " + self.stream + " started up!"
@@ -107,13 +138,13 @@ class TwitchIRCBot(threading.Thread):
                     self.toLog(user, message)
                 except IndexError:
                     print "Error on line: " + message + " from " + user
-                    logging.warning("Error on line: " + line + " message " + message + " from " + user)
+                    logging.warning("Error on line: " + line + "||||| message: " + message + "|||||user: " + user)
             elif "PING" in line:
                 #print "PING RECEIVED"
                 self.sock_send("PONG :tmi.twitch.tv\r\n")
 
     def processMessage(self, message):
-        for emote in self.subEmotes:
+        for emote in self.allEmotes:
             try:
                 message = message.rstrip()
                 if re.search(r'\b' + emote + r'\b', message):

@@ -48,7 +48,11 @@ class JsonEditor:
     def incrementEmote(self, emote):
         with open(self.directory, 'r+') as f:
             data = json.load(f)
-            old_val = data['emotes'][emote]
+            try:
+                old_val = data['emotes'][emote]
+            except KeyError:
+                old_val = 0
+                data['emotes'][emote] = old_val
             #print "Incremented emote: " + emote + " to " + str((old_val+1))
             data['emotes'][emote] = (old_val + 1)
             f.seek(0)
