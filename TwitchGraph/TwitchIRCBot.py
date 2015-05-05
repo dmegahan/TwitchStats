@@ -149,8 +149,10 @@ class TwitchIRCBot(threading.Thread):
                 message = message.rstrip()
                 if re.search(r'\b' + emote + r'\b', message):
                     #valid emote found, lets record it
-
-                    self.jEditor.incrementEmote(emote)
+                    if emote in self.subEmotes:
+                        self.jEditor.incrementSubEmote(emote)
+                    elif emote in self.twitchEmotes:
+                        self.jEditor.incrementTwitchEmote(emote)
             except UnicodeDecodeError:
                 print "UnicodeDecodeError on " + message
                 logging.debug("UnicodeDecodeError on " + message)

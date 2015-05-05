@@ -13,7 +13,7 @@ class JsonEditor:
             os.makedirs(os.path.dirname(self.directory))
         self.initializeJson(file)
         self.initializeStats(file)
-        self.initializeEmotes(file)
+        #self.initializeEmotes(file)
 
     def toJSON(self, stats):
         #takes in a dictionary of keys and values, to be put into the json file
@@ -23,7 +23,8 @@ class JsonEditor:
     def initializeJson(self, file):
         with open(file, 'w') as f:
             data = {}
-            data['emotes'] = {}
+            data['sub emotes'] = {}
+            data['twitch emotes'] = {}
             data['stats'] = {}
             json.dump(data, f)
             f.seek(0)
@@ -45,16 +46,29 @@ class JsonEditor:
             f.seek(0)
             json.dump(data, f, indent=4)
 
-    def incrementEmote(self, emote):
+    def incrementSubEmote(self, emote):
         with open(self.directory, 'r+') as f:
             data = json.load(f)
             try:
                 old_val = data['emotes'][emote]
             except KeyError:
                 old_val = 0
-                data['emotes'][emote] = old_val
+                data['sub emotes'][emote] = old_val
             #print "Incremented emote: " + emote + " to " + str((old_val+1))
-            data['emotes'][emote] = (old_val + 1)
+            data['sub emotes'][emote] = (old_val + 1)
+            f.seek(0)
+            json.dump(data, f, indent=4)
+
+    def incrementTwitchEmote(self, emote):
+        with open(self.directory, 'r+') as f:
+            data = json.load(f)
+            try:
+                old_val = data['emotes'][emote]
+            except KeyError:
+                old_val = 0
+                data['twitch emotes'][emote] = old_val
+            #print "Incremented emote: " + emote + " to " + str((old_val+1))
+            data['twitch emotes'][emote] = (old_val + 1)
             f.seek(0)
             json.dump(data, f, indent=4)
 
