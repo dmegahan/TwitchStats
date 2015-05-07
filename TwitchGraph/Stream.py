@@ -31,20 +31,51 @@ class Stream(threading.Thread):
 
         self.activeThreads = []
 
+    def getRecentStream(self):
+        #this function will check to see if there is a recent file, from a stream session that may still be going
+        #this function provides continuation of a stream data grab even if you restart the program
+        #we will check for recent csv files, if it is within a set number of minutes, that is recent and we will
+        #continue adding data to that file
+        max_mtime = 0
+        last_modified_file = ""
+        dir = "./data/" + self.stream + self.config["CSV_FOLDER"]
+        for dirname, subdirs, files in os.walk(dir):
+            for fname in files:
+                full_path = os.path.join(dirname, fname)
+                mtime = os.stat(full_path).st_mtime
+                if mtime > max_mtime:
+                    max_mtime = mtime
+                    last_modified_file = fname
+
+        current_time = time.time()
+        difference = current_time - max_mtime
+        if difference < self.config["RECONNECT_TIME"]:
+            print "We're trying to reconnect!"
+            return last_modified_file.split(".")[0]
+        else:
+            return None
+
     def initFileNames(self):
-        print self.stream + " initialized filepaths"
         date = datetime.datetime.utcnow()
         parent_dir = './data/' + self.stream
-        self.CSVfp = date.strftime(parent_dir + self.config["CSV_FOLDER"] + self.config["GRAPH_FILE_FORMAT"])
+        recent_file_name = self.getRecentStream()
+        if recent_file_name is not None:
+            print self.stream + " is continuing!"
+            self.CSVfp = parent_dir + self.config["CSV_FOLDER"] + recent_file_name + ".csv"
+            self.JSONfp = parent_dir + self.config["STATS_FOLDER"] + recent_file_name + ".json"
+            self.LOGfp = parent_dir + self.config["LOGS_FOLDER"] + recent_file_name + ".log"
+        else:
+            self.CSVfp = date.strftime(parent_dir + self.config["CSV_FOLDER"] + self.config["GRAPH_FILE_FORMAT"])
+            self.JSONfp = date.strftime(parent_dir + self.config["STATS_FOLDER"] + self.config["JSON_FILE_FORMAT"])
+            self.LOGfp = date.strftime(parent_dir + self.config["LOGS_FOLDER"] + self.config["CHAT_LOG_FILE_FORMAT"])
+        self.globalPath = parent_dir + self.config["STATS_FOLDER"] + self.stream + ".json"
+
         if not os.path.exists(os.path.dirname(self.CSVfp)):
             os.makedirs(os.path.dirname(self.CSVfp))
-        self.JSONfp = date.strftime(parent_dir + self.config["STATS_FOLDER"] + self.config["JSON_FILE_FORMAT"])
         if not os.path.exists(os.path.dirname(self.JSONfp)):
             os.makedirs(os.path.dirname(self.JSONfp))
-        self.LOGfp = date.strftime(parent_dir + self.config["LOGS_FOLDER"] + self.config["CHAT_LOG_FILE_FORMAT"])
         if not os.path.exists(os.path.dirname(self.LOGfp)):
             os.makedirs(os.path.dirname(self.LOGfp))
-        self.globalPath = parent_dir + self.config["STATS_FOLDER"] + self.stream + ".json"
         if not os.path.exists(os.path.dirname(self.globalPath)):
             os.makedirs(os.path.dirname(self.globalPath))
 
@@ -84,9 +115,11 @@ class Stream(threading.Thread):
 
     def recordStats(self):
         jsonFile = JsonEditor(self.JSONfp, "")
-        stats = Statistics(self.CSVfp, self.JSONfp, self.LOGfp, self.globalPath)
+        stats = Statistics(self.CSVfp, self.JSONfp, self.LOGfp, self.globalPath, self.config)
         dailyStats = stats.doDaily()
         jsonFile.toJSON(dailyStats)
+
+
 
     def run(self):
         while 1:
@@ -105,24 +138,24 @@ class Stream(threading.Thread):
                     self.IRCBot.start()
             else:
                 if self.GrabBot is not None and self.IRCBot is not None:
-                    if self.GrabBot.is_alive and self.IRCBot.is_alive:
-                        #start timing out
-                        if self.timeout > self.config["TIMEOUT"]:
-                            print "stream is offline. Ending threads."
-                            #do end of stream
-                            self.GrabBot.toCSV(self.stream, config.DEAD_THREAD_IDENTIFIER, config.STR_STREAM_OFFLINE)
-                            Graph().createGraphFromCSV(self.CSVfp)
-                            Graph().createGraphFromJson(self.JSONfp)
+                    #start timing out
+                    if self.timeout > self.config["TIMEOUT"]:
+                        print "stream is offline. Ending threads."
+                        #do end of stream
+                        self.GrabBot.toCSV(self.stream, config.DEAD_THREAD_IDENTIFIER, config.STR_STREAM_OFFLINE)
+                        g = Graph(self.config)
+                        g.createGraphFromCSV(self.CSVfp)
+                        g.createGraphFromJson(self.JSONfp)
 
-                            self.recordStats()
+                        self.recordStats()
 
-                            self.GrabBot.join()
-                            self.IRCBot.join()
-                            self.GrabBot = None
-                            self.IRCBot = None
-                        else:
-                            print self.stream + " timing out: " + str(self.timeout)
-                            self.timeout += 1
+                        self.GrabBot.join()
+                        self.IRCBot.join()
+                        self.GrabBot = None
+                        self.IRCBot = None
+                    else:
+                        print self.stream + " timing out: " + str(self.timeout)
+                        self.timeout += 1
 
             time.sleep(self.config["PARENT_THREAD_SLEEP_TIME"])
 
@@ -130,7 +163,7 @@ def main():
     inactiveStreams = config.STREAMERS[:]
     activeStreams = []
     while 1:
-        for stream in inactiveStreams:
+        for stream in inactiveStreams[:]:
             s = Stream(stream)
             s.setDaemon(False)
             s.start()

@@ -28,40 +28,75 @@ class Statistics:
         a = self.getTimeStreamed()
         jsonDict[a[0]] = a[1]
 
+        return jsonDict
+
+    def doAllTime(self):
+        print 1
+
     def getMostPlayedGame(self):
         print 1
+
     def getAverageTimeStreamed(self):
         print 1
+
     def getMostPopularGame(self):
         print 1
+
     def getPeakAllTimeViewers(self):
         print 1
 
     '''Daily stats'''
-    def getPeakViewers(self):
+    def getGameStatistics(self):
+        with open(self.csvPath, 'rb') as csvfile:
+            reader = csv.reader(csvfile)
+            games = {}
+            last_game = reader.next()
+            reader.seek(0)
+            games[last_game] = {}
+            for row in reader:
+                if last_game != row[1]:
+                    #new game, add to dict
+                    last_game = row[1]
+                    games[last_game] = {}
+
+            #we got all the games, now lets find out their individual stats
+
+    def getPeakViewers(self, game=None):
         key = "Peak Viewers"
         with open(self.csvPath, 'rb') as csvfile:
             reader = csv.reader(csvfile)
             peak = 0
             for row in reader:
-                viewers = row[0]
-                if viewers > peak:
-                    peak = viewers
+                if game is not None:
+                    #we're looking for a specific game here
+                    if row[1] == game:
+                        viewers = row[0]
+                        if viewers > peak:
+                            peak = viewers
+                else:
+                    viewers = row[0]
+                    if viewers > peak:
+                        peak = viewers
         return key, peak
 
-    def getAverageViewers(self):
+    def getAverageViewers(self, game=None):
         key = "Average Viewers"
         with open(self.csvPath, 'rb') as csvfile:
             reader = csv.reader(csvfile)
             total_viewers = 0
             lines_read = 0
             for row in reader:
-                total_viewers = total_viewers + int(row[0])
-                lines_read += 1
+                if game is not None:
+                    if row[1] == game:
+                        total_viewers = total_viewers + int(row[0])
+                        lines_read += 1
+                else:
+                    total_viewers = total_viewers + int(row[0])
+                    lines_read += 1
             average_viewers = total_viewers/lines_read
         return key, average_viewers
 
-    def getStartTime(self):
+    def getStartTime(self, game=None):
         key = "Start Time"
         #read first line and set that as the start time
         with open(self.csvPath, 'rb') as csvfile:
@@ -70,7 +105,7 @@ class Statistics:
             start_time = first_line[2]
         return key, start_time
 
-    def getStopTime(self):
+    def getStopTime(self, game=None):
         key = "Stop Time"
         #read last line and set that as the stream end time
         with open(self.csvPath, 'rb') as csvfile:
@@ -80,7 +115,7 @@ class Statistics:
             stop_time = row[2]
         return key, stop_time
 
-    def getTimeStreamed(self):
+    def getTimeStreamed(self, game=None):
         key = "Time Streamed"
         start_time = self.getStartTime()[1]
         stop_time = self.getStopTime()[1]

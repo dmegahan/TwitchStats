@@ -17,8 +17,11 @@ class JsonEditor:
 
     def toJSON(self, stats):
         #takes in a dictionary of keys and values, to be put into the json file
-        for key in stats:
-            self.setValueForStat(key, stats[key])
+        try:
+            for key in stats:
+                self.setValueForStat(key, stats[key])
+        except TypeError:
+            print "RECEIVED STATS: " + str(stats) + ", CAUSED ERROR in JSONEDITOR"
 
     def initializeJson(self, file):
         with open(file, 'w') as f:
