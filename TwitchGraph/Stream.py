@@ -20,7 +20,19 @@ class Stream(threading.Thread):
         self.stream = stream
         self.IRCBot = None
         self.GrabBot = None
+
         self.config = config.config["default"]
+        #we need to see if the streamer has a custom config
+        for configs in config.config_users:
+            for user in configs:
+                if user == self.stream:
+                    #we use this config!
+                    self.config = config.config[configs]
+                    #break out of both loops, we cant waste time
+                    break
+            else:
+                continue
+            break
 
         self.CSVfp = ""
         self.JSONfp = ""
@@ -129,13 +141,15 @@ class Stream(threading.Thread):
                     #initialize the dates and filepaths
                     self.initFileNames()
 
-                    self.GrabBot = TwitchThread(self.stream, self.CSVfp, self.config)
-                    self.GrabBot.setDaemon(False)
-                    self.GrabBot.start()
+                    if self.config["TWITCH_BOT"] is True:
+                        self.GrabBot = TwitchThread(self.stream, self.CSVfp, self.config)
+                        self.GrabBot.setDaemon(False)
+                        self.GrabBot.start()
 
-                    self.IRCBot = TwitchIRCBot(self.stream, self.JSONfp, self.LOGfp, self.config)
-                    self.IRCBot.setDaemon(False)
-                    self.IRCBot.start()
+                    if self.config["IRC_BOT"] is True:
+                        self.IRCBot = TwitchIRCBot(self.stream, self.JSONfp, self.LOGfp, self.config)
+                        self.IRCBot.setDaemon(False)
+                        self.IRCBot.start()
             else:
                 if self.GrabBot is not None and self.IRCBot is not None:
                     #start timing out
