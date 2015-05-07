@@ -131,8 +131,6 @@ class Stream(threading.Thread):
         dailyStats = stats.doDaily()
         jsonFile.toJSON(dailyStats)
 
-
-
     def run(self):
         while 1:
             if self.isOnline(self.stream):
@@ -151,25 +149,35 @@ class Stream(threading.Thread):
                         self.IRCBot.setDaemon(False)
                         self.IRCBot.start()
             else:
-                if self.GrabBot is not None and self.IRCBot is not None:
+                #if something is active
+                if self.GrabBot is not None or self.IRCBot is not None:
                     #start timing out
                     if self.timeout > self.config["TIMEOUT"]:
                         print "stream is offline. Ending threads."
                         #do end of stream
-                        self.GrabBot.toCSV(self.stream, config.DEAD_THREAD_IDENTIFIER, config.STR_STREAM_OFFLINE)
-                        g = Graph(self.config)
-                        g.createGraphFromCSV(self.CSVfp)
-                        g.createGraphFromJson(self.JSONfp)
+                        if self.GrabBot is not None:
+                            self.GrabBot.toCSV(self.stream, config.DEAD_THREAD_IDENTIFIER, config.STR_STREAM_OFFLINE)
+                            g = Graph(self.config)
+                            g.createGraphFromCSV(self.CSVfp)
+                            self.GrabBot.join()
+                            self.GrabBot = None
+
+                        if self.IRCBot is not None:
+                            g.createGraphFromJson(self.JSONfp)
+                            if self.config["ALWAYS_ONLINE"] is not True:
+                                self.IRCBot.join()
+                                self.IRCBot = None
 
                         self.recordStats()
-
-                        self.GrabBot.join()
-                        self.IRCBot.join()
-                        self.GrabBot = None
-                        self.IRCBot = None
                     else:
                         print self.stream + " timing out: " + str(self.timeout)
                         self.timeout += 1
+                elif self.IRCBot is None and self.config["ALWAYS_ONLINE"] is True:
+                    #we need to start up IRC Bot even if stream is offline
+                    self.IRCBot = TwitchIRCBot(self.stream, self.JSONfp, self.LOGfp, self.config)
+                    if self.config["IRC_BOT"] is True:
+                        self.IRCBot.setDaemon(False)
+                        self.IRCBot.start()
 
             time.sleep(self.config["PARENT_THREAD_SLEEP_TIME"])
 

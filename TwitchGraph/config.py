@@ -36,6 +36,8 @@ config = {
 
         #enable bot that reads stream IRC?
         "IRC_BOT": True,
+        #if true, this will cause the IRC Bot to never stop reading chat, even if the streamer goes offline
+        "ALWAYS_ONLINE": False,
         #enable bot that grabs stream data using Twitch API?
         "TWITCH_BOT": True,
     },
