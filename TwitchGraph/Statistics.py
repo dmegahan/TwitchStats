@@ -21,11 +21,11 @@ class Statistics:
         jsonDict[a[0]] = a[1]
         a = self.getAverageViewers()
         jsonDict[a[0]] = a[1]
-        a = self.getStartTime()
-        jsonDict[a[0]] = a[1]
-        a = self.getStopTime()
-        jsonDict[a[0]] = a[1]
-        a = self.getTimeStreamed()
+        #session is a nested list, and since we're looking for the total session we only expect 1 element returned
+        stream_ses = self.getSessions()[0]
+        jsonDict['Start Time'] = stream_ses[0]
+        jsonDict['End Time'] = stream_ses[1]
+        a = self.getTimeStreamed(stream_ses)
         jsonDict[a[0]] = a[1]
 
         return jsonDict
@@ -58,8 +58,60 @@ class Statistics:
                     #new game, add to dict
                     last_game = row[1]
                     games[last_game] = {}
+                    games[last_game][sessions] = {[]}
 
             #we got all the games, now lets find out their individual stats
+            for game in games:
+                sessions = self.getSessions(game)
+                for session in sessions:
+                    avg_viewers = self.getAverageViewersPerSession(session)
+                    peak_viewers = self.getPeakViewersPerSession(session)
+                    time_streamed = self.getTimeStreamed(session)
+                    start_time = session[0]
+                    end_time = session[1]
+
+                    session_dict = {}
+                    session_dict["Peak Viewers"] = peak_viewers
+                    session_dict["Start Time"] = start_time
+                    session_dict["End Time"] = end_time
+                    session_dict["Average Viewers"] = avg_viewers
+                    session_dict["Time Streamed"] = time_streamed
+
+                    games[game][sessions].append(session_dict)
+
+    def getAverageViewersPerSession(self, session):
+        #session currently is [start_time, end_time]
+        with open(self.csvPath, 'rb') as csvfile:
+            reader = csv.reader(csvfile)
+            start_time = datetime.datetime.strptime(session[0], self.config["TIME_FORMAT"])
+            end_time = datetime.datetime.strptime(session[1], self.config["TIME_FORMAT"])
+            for row in reader:
+                current_time = datetime.datetime.strptime(row[2], self.config["TIME_FORMAT"])
+                total_viewers = 0
+                lines_read = 0
+                if current_time >= start_time and current_time <= end_time:
+                    #we're looking at the session data
+                    total_viewers += row[0]
+                    lines_read += 1
+            #done, lets compute
+            average_viewers = total_viewers / lines_read
+            return average_viewers
+
+    def getPeakViewersPerSession(self, session):
+        #session currently is [start_time, end_time]
+        with open(self.csvPath, 'rb') as csvfile:
+            reader = csv.reader(csvfile)
+            start_time = datetime.datetime.strptime(session[0], self.config["TIME_FORMAT"])
+            end_time = datetime.datetime.strptime(session[1], self.config["TIME_FORMAT"])
+            for row in reader:
+                current_time = datetime.datetime.strptime(row[2], self.config["TIME_FORMAT"])
+                current_peak = -1
+                if current_time >= start_time and current_time <= end_time:
+                    #we're looking at the session data
+                    if current_peak < row[0]:
+                        current_peak = row[0]
+
+            return current_peak
 
     def getPeakViewers(self, game=None):
         key = "Peak Viewers"
@@ -96,6 +148,37 @@ class Statistics:
             average_viewers = total_viewers/lines_read
         return key, average_viewers
 
+    def getSessions(self, game=None):
+        #this will get a list of sessions (each session has a start and end time). If a game is played mulitple
+        #times in a stream, multiple sesions will be returned
+        with open(self.csvPath, 'rb') as csvfile:
+            if game is not None:
+                current_game = ""
+                start_time = 0
+                end_time = 0
+                sessions = []
+                for row in reader:
+                    if row[1] == game:
+                        if current_game != game:
+                            #first line of game found
+                            start_time = row[2]
+                            current_game = game
+                    else:
+                        if current_game == game:
+                            #game session ended, wrap it up
+                            end_time = row[2]
+                            sessions.append(start_time, end_time)
+                            current_game = row[1]
+                return sessions
+            else:
+                #get stream session
+                first_line = reader.next()
+                start_time = first_line[2]
+                for row in reader:
+                    pass
+                stop_time = row[2]
+                return [[start_time, stop_time]]
+
     def getStartTime(self, game=None):
         key = "Start Time"
         #read first line and set that as the start time
@@ -115,10 +198,10 @@ class Statistics:
             stop_time = row[2]
         return key, stop_time
 
-    def getTimeStreamed(self, game=None):
+    def getTimeStreamed(self, session):
         key = "Time Streamed"
-        start_time = self.getStartTime()[1]
-        stop_time = self.getStopTime()[1]
+        start_time = session[0]
+        stop_time = session[1]
 
         #convert times to a datetime object
         start = datetime.datetime.strptime(start_time, self.config["TIME_FORMAT"])
