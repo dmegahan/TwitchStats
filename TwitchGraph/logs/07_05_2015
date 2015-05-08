@@ -1,0 +1,97 @@
+05/07/2015 13:00:34 - root - INFO - itmejp thread started
+05/07/2015 13:00:35 - root - INFO - IRCBot itmejp started up!
+05/07/2015 13:00:36 - root - INFO - itmejp BOT connected to IRC server
+05/07/2015 13:02:36 - root - INFO - summit1g thread started
+05/07/2015 13:02:37 - root - INFO - IRCBot summit1g started up!
+05/07/2015 13:02:37 - root - INFO - summit1g BOT connected to IRC server
+05/07/2015 13:02:52 - root - WARNING - Error on line: @mr_boomz.tmi.twitch.tv PRIVMSG #summit1g :sideSkin||||| message: |||||user: mr_boomz.tmi.twitch.tv PRIVMSG #summit1g :sideSkin
+05/07/2015 13:05:00 - root - WARNING - Error on line:  PRIVMSG #summit1g :@Itsastro_ you thinking of lirik? LOL||||| message: |||||user: PRIVMSG #summit1g :@Itsastro_ you thinking of lirik? LOL
+05/07/2015 13:05:58 - root - WARNING - Error on line: awnepp1102@shawnepp1102.tmi.twitch.tv PRIVMSG #summit1g :10||||| message: |||||user: wnepp1102@shawnepp1102.tmi.twitch.tv PRIVMSG #summit1g :10
+05/07/2015 13:19:02 - root - WARNING - Error on line: tv PRIVMSG #summit1g :sumDesi sumDesi sumDesi sumDesi sumDesi||||| message: |||||user: v PRIVMSG #summit1g :sumDesi sumDesi sumDesi sumDesi sumDesi
+05/07/2015 13:32:27 - root - WARNING - Error on line: v PRIVMSG #itmejp :danBad danHype||||| message: |||||user:  PRIVMSG #itmejp :danBad danHype
+05/07/2015 13:33:46 - root - INFO - sodapoppin thread started
+05/07/2015 13:33:47 - root - INFO - IRCBot sodapoppin started up!
+05/07/2015 13:33:47 - root - INFO - sodapoppin BOT connected to IRC server
+05/07/2015 13:33:52 - root - WARNING - Error on line: akun!thebakun@thebakun.tmi.twitch.tv PRIVMSG #sodapoppin :sodaW sodaW sodaW sodaW||||| message: |||||user: kun
+05/07/2015 13:34:32 - root - WARNING - Error on line: tlmestamp3!tlmestamp3@tlmestamp3.tmi.twitch.tv PRIVMSG #sodapoppin :@Sodapoppin Hello welcome to twitch||||| message: |||||user: lmestamp3
+05/07/2015 13:36:25 - root - WARNING - Error on line: h.tv PRIVMSG #sodapoppin :HeyGuys||||| message: |||||user: .tv PRIVMSG #sodapoppin :HeyGuys
+05/07/2015 13:38:31 - root - WARNING - Error on line: zu!xhizu@xhizu.tmi.twitch.tv PRIVMSG #sodapoppin :ADDICT BibleThump||||| message: |||||user: u
+05/07/2015 13:39:27 - root - WARNING - Error on line: @yasuo_isfine_l2p.tmi.twitch.tv PRIVMSG #sodapoppin :WHY DO PEOPLE GIVE MONEY TO THIS DOUCHBAG ?! WHY DO PEOPLE GIVE MONEY TO THIS DOUCHBAG ?! WHY DO PEOPLE GIVE MONEY TO THIS DOUCHBAG ?! WHY DO PEOPLE GIVE MONEY TO THIS DOUCHBAG ?! WHY DO PEOPLE GIVE MONEY TO THIS DOUCHBAG ?! ||||| message: |||||user: yasuo_isfine_l2p.tmi.twitch.tv PRIVMSG #sodapoppin :WHY DO PEOPLE GIVE MONEY TO THIS DOUCHBAG ?
+05/07/2015 13:43:37 - root - WARNING - Error on line: tmi.twitch.tv PRIVMSG #itmejp :stabbe (つしししし)||||| message: |||||user: mi.twitch.tv PRIVMSG #itmejp :stabbe (つしししし)
+05/07/2015 13:45:47 - root - WARNING - Error on line: erksdownbot!mrtwerksdownbot@mrtwerksdownbot.tmi.twitch.tv PRIVMSG #itmejp :English patch not all is fully translated||||| message: |||||user: rksdownbot
+05/07/2015 14:17:02 - root - INFO - lirik thread started
+05/07/2015 14:17:03 - root - INFO - IRCBot lirik started up!
+05/07/2015 14:17:03 - root - INFO - lirik BOT connected to IRC server
+05/07/2015 14:19:06 - root - WARNING - Error on line: n19.tmi.twitch.tv PRIVMSG #lirik :wtf||||| message: |||||user: 19.tmi.twitch.tv PRIVMSG #lirik :wtf
+05/07/2015 14:22:07 - root - WARNING - Error on line: _shackleford@juanpablo_shackleford.tmi.twitch.tv PRIVMSG #lirik :Hello||||| message: |||||user: shackleford@juanpablo_shackleford.tmi.twitch.tv PRIVMSG #lirik :Hello
+05/07/2015 14:27:48 - root - WARNING - Error on line: eestje@geestje.tmi.twitch.tv PRIVMSG #lirik :lirikW All good||||| message: |||||user: estje@geestje.tmi.twitch.tv PRIVMSG #lirik :lirikW All good
+05/07/2015 15:04:22 - root - INFO - trumpsc thread started
+05/07/2015 15:04:23 - root - INFO - IRCBot trumpsc started up!
+05/07/2015 15:04:23 - root - INFO - trumpsc BOT connected to IRC server
+05/07/2015 15:13:58 - root - WARNING - Error on line: witch.tv PRIVMSG #trumpsc :Where's Trump's bobs?||||| message: |||||user: itch.tv PRIVMSG #trumpsc :Where's Trump's bobs?
+05/07/2015 15:48:56 - root - DEBUG - itmejp - request failure: https://api.twitch.tv/kraken/streams/itmejp
+05/07/2015 16:02:39 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+05/07/2015 16:02:39 - root - DEBUG - <Response [502]>
+05/07/2015 17:55:30 - root - INFO - dansgaming thread started
+05/07/2015 17:55:32 - root - INFO - IRCBot dansgaming started up!
+05/07/2015 17:55:32 - root - INFO - dansgaming BOT connected to IRC server
+05/07/2015 18:38:52 - root - INFO - kaceytron thread started
+05/07/2015 18:38:53 - root - INFO - IRCBot kaceytron started up!
+05/07/2015 18:38:53 - root - INFO - kaceytron BOT connected to IRC server
+05/07/2015 18:44:39 - root - WARNING - Error on line: treme80@drxtreme80.tmi.twitch.tv PRIVMSG #dansgaming :we are here to heal ||||| message: |||||user: reme80@drxtreme80.tmi.twitch.tv PRIVMSG #dansgaming :we are here to heal 
+05/07/2015 18:53:35 - root - DEBUG - dansgaming - request failure: https://api.twitch.tv/kraken/streams/dansgaming
+05/07/2015 18:55:16 - root - WARNING - Error on line: usemoney!mousemoney@mousemoney.tmi.twitch.tv PRIVMSG #kaceytron :@kaceytron I'm conjugating Spanish verbs BibleThump||||| message: |||||user: semoney
+05/07/2015 19:05:35 - root - WARNING - Error on line: kgkendall.tmi.twitch.tv PRIVMSG #kaceytron :Rekt||||| message: |||||user: gkendall.tmi.twitch.tv PRIVMSG #kaceytron :Rekt
+05/07/2015 19:15:39 - root - WARNING - Error on line: .tmi.twitch.tv PRIVMSG #kaceytron :YouWHY kaceyFist||||| message: |||||user: tmi.twitch.tv PRIVMSG #kaceytron :YouWHY kaceyFist
+05/07/2015 19:16:39 - root - WARNING - Error on line: zup800@wazzup800.tmi.twitch.tv PRIVMSG #kaceytron :kaceyFace1 kaceyFace2 -------------------------------------------------------------- kaceyFace3 kaceyFace4||||| message: |||||user: up800@wazzup800.tmi.twitch.tv PRIVMSG #kaceytron :kaceyFace1 kaceyFace2 -------------------------------------------------------------- kaceyFace3 kaceyFace4
+05/07/2015 19:17:41 - root - WARNING - Error on line: PRIVMSG #kaceytron :kaceyface1||||| message: |||||user: RIVMSG #kaceytron :kaceyface1
+05/07/2015 19:18:46 - root - WARNING - Error on line: uc!ekuc@ekuc.tmi.twitch.tv PRIVMSG #kaceytron :kaceyFace1 kaceyFace2 kaceyFace kaceyFace kaceyFace kaceyFace kaceyFace kaceyFace kaceyFace ----- kaceyFace3 kaceyFace4 kaceyFace kaceyFace kaceyFace kaceyFace KaceyFace||||| message: |||||user: c
+05/07/2015 19:24:52 - root - INFO - lirik thread started
+05/07/2015 19:24:52 - root - INFO - sodapoppin thread started
+05/07/2015 19:24:52 - root - INFO - summit1g thread started
+05/07/2015 19:24:52 - root - INFO - trumpsc thread started
+05/07/2015 19:24:52 - root - INFO - dansgaming thread started
+05/07/2015 19:24:52 - root - INFO - kaceytron thread started
+05/07/2015 19:24:53 - root - INFO - IRCBot sodapoppin started up!
+05/07/2015 19:24:53 - root - INFO - IRCBot lirik started up!
+05/07/2015 19:24:53 - root - INFO - IRCBot trumpsc started up!
+05/07/2015 19:24:53 - root - INFO - IRCBot kaceytron started up!
+05/07/2015 19:24:53 - root - INFO - IRCBot summit1g started up!
+05/07/2015 19:24:53 - root - INFO - sodapoppin BOT connected to IRC server
+05/07/2015 19:24:53 - root - INFO - lirik BOT connected to IRC server
+05/07/2015 19:24:53 - root - INFO - trumpsc BOT connected to IRC server
+05/07/2015 19:24:53 - root - INFO - summit1g BOT connected to IRC server
+05/07/2015 19:24:53 - root - INFO - kaceytron BOT connected to IRC server
+05/07/2015 19:24:53 - root - INFO - IRCBot dansgaming started up!
+05/07/2015 19:24:54 - root - INFO - dansgaming BOT connected to IRC server
+05/07/2015 19:24:59 - root - WARNING - Error on line: shingg!joshingg@joshingg.tmi.twitch.tv PRIVMSG #kaceytron :HELP KACEY||||| message: |||||user: hingg
+05/07/2015 19:25:28 - root - INFO - sodapoppin thread started
+05/07/2015 19:25:28 - root - INFO - trumpsc thread started
+05/07/2015 19:25:28 - root - INFO - dansgaming thread started
+05/07/2015 19:25:28 - root - INFO - lirik thread started
+05/07/2015 19:25:28 - root - INFO - summit1g thread started
+05/07/2015 19:25:28 - root - INFO - kaceytron thread started
+05/07/2015 19:25:29 - root - INFO - IRCBot trumpsc started up!
+05/07/2015 19:25:29 - root - INFO - IRCBot kaceytron started up!
+05/07/2015 19:25:29 - root - INFO - IRCBot dansgaming started up!
+05/07/2015 19:25:29 - root - INFO - IRCBot summit1g started up!
+05/07/2015 19:25:29 - root - INFO - trumpsc BOT connected to IRC server
+05/07/2015 19:25:29 - root - INFO - kaceytron BOT connected to IRC server
+05/07/2015 19:25:29 - root - INFO - IRCBot lirik started up!
+05/07/2015 19:25:29 - root - INFO - dansgaming BOT connected to IRC server
+05/07/2015 19:25:29 - root - INFO - summit1g BOT connected to IRC server
+05/07/2015 19:25:29 - root - INFO - lirik BOT connected to IRC server
+05/07/2015 19:25:29 - root - INFO - IRCBot sodapoppin started up!
+05/07/2015 19:25:30 - root - INFO - sodapoppin BOT connected to IRC server
+05/07/2015 19:25:36 - root - WARNING - Error on line: i.twitch.tv PRIVMSG #dansgaming :!raffle||||| message: |||||user: .twitch.tv PRIVMSG #dansgaming :
+05/07/2015 19:25:39 - root - WARNING - Error on line: splayer26.tmi.twitch.tv PRIVMSG #dansgaming :!raffle||||| message: |||||user: player26.tmi.twitch.tv PRIVMSG #dansgaming :
+05/07/2015 19:30:12 - root - WARNING - Error on line: PRIVMSG #kaceytron :pl||||| message: |||||user: RIVMSG #kaceytron :pl
+05/07/2015 19:32:21 - root - WARNING - Error on line: tomyink.tmi.twitch.tv PRIVMSG #kaceytron :how to ban everybody lol||||| message: |||||user: omyink.tmi.twitch.tv PRIVMSG #kaceytron :how to ban everybody lol
+05/07/2015 19:38:37 - root - WARNING - Error on line: otify!twitchnotify@twitchnotify.tmi.twitch.tv PRIVMSG #kaceytron :Hempknight42 just subscribed!||||| message: |||||user: tify
+05/07/2015 19:39:36 - root - WARNING - Error on line: thecubs!thecubs@thecubs.tmi.twitch.tv PRIVMSG #kaceytron :kaceyMask HEY SELDRIC BAN THIS  kaceyFist||||| message: |||||user: hecubs
+05/07/2015 19:42:37 - root - WARNING - Error on line: tch.tv PRIVMSG #kaceytron :THREE SIX NINER SHOW US YOUR BERJINER||||| message: |||||user: ch.tv PRIVMSG #kaceytron :THREE SIX NINER SHOW US YOUR BERJINER
+05/07/2015 19:47:57 - root - WARNING - Error on line: elbusbananawomp@camelbusbananawomp.tmi.twitch.tv PRIVMSG #kaceytron :FrankerZ kaceyThump FrankerZ kaceyThump FrankerZ kaceyThump FrankerZ kaceyThump FrankerZ kaceyThump||||| message: |||||user: lbusbananawomp@camelbusbananawomp.tmi.twitch.tv PRIVMSG #kaceytron :FrankerZ kaceyThump FrankerZ kaceyThump FrankerZ kaceyThump FrankerZ kaceyThump FrankerZ kaceyThump
+05/07/2015 19:50:14 - root - WARNING - Error on line: nel1435@sentinel1435.tmi.twitch.tv PRIVMSG #kaceytron :F||||| message: |||||user: el1435@sentinel1435.tmi.twitch.tv PRIVMSG #kaceytron :F
+05/07/2015 19:54:39 - root - INFO - itmejp thread started
+05/07/2015 19:54:40 - root - INFO - IRCBot itmejp started up!
+05/07/2015 19:54:40 - root - INFO - itmejp BOT connected to IRC server

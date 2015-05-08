@@ -155,6 +155,7 @@ class Statistics:
         #this will get a list of sessions (each session has a start and end time). If a game is played mulitple
         #times in a stream, multiple sesions will be returned
         with open(self.csvPath, 'rb') as csvfile:
+            reader = csv.reader(csvfile)
             if game is not None:
                 current_game = ""
                 start_time = 0

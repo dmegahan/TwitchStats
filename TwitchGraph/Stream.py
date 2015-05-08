@@ -24,7 +24,7 @@ class Stream(threading.Thread):
         self.config = config.config["default"]
         #we need to see if the streamer has a custom config
         for configs in config.config_users:
-            for user in configs:
+            for user in config.config_users[configs]:
                 if user == self.stream:
                     #we use this config!
                     self.config = config.config[configs]

@@ -109,7 +109,7 @@ class TwitchIRCBot(threading.Thread):
 
     def connectToIRCChannel(self):
         self.sock.connect(("irc.twitch.tv", 6667))
-        print self.stream + " BOT connected to IRC server"
+        #print self.stream + " BOT connected to IRC server"
         logging.info(self.stream + " BOT connected to IRC server")
         #time.sleep(15)
         self.sock_send("PASS " + self.token + "\r\n")
