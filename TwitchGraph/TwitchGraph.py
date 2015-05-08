@@ -56,7 +56,7 @@ class Graph:
                 #API doesnt constantly update viewer num,
                 if row[0] != last_viewer_count:
                     last_viewer_count = row[0]
-                    date = datetime.datetime.strptime(row[2], self.config["TIME_FORMAT"])
+                    date = datetime.datetime.strptime(row[2], self.config["CSV_TIME_FORMAT"])
                     time = date.time()
                     x_points.append(row[2])
                     y_points.append(row[0])
