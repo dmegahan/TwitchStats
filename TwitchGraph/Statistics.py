@@ -28,6 +28,10 @@ class Statistics:
         a = self.getTimeStreamed(stream_ses)
         jsonDict[a[0]] = a[1]
 
+        #game stats return a large dict of dicts (dict of games played, which each game having a dict of stats)
+        a = self.getGameStatistics()
+        jsonDict.update(a)
+
         return jsonDict
 
     def doAllTime(self):
@@ -81,6 +85,8 @@ class Statistics:
                     session_dict["Time Streamed"] = time_streamed
 
                     games[game][sessions].append(session_dict)
+
+        return games
 
     def getAverageViewersPerSession(self, session):
         #session currently is [start_time, end_time]
