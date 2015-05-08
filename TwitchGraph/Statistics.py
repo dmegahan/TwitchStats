@@ -25,8 +25,8 @@ class Statistics:
         stream_ses = self.getSessions()[0]
         jsonDict['Start Time'] = stream_ses[0]
         jsonDict['End Time'] = stream_ses[1]
-        a = self.getTimeStreamed(stream_ses)
-        jsonDict[a[0]] = a[1]
+        #a = self.getTimeStreamed(stream_ses)
+        #jsonDict[a[0]] = a[1]
 
         #game stats return a large dict of dicts (dict of games played, which each game having a dict of stats)
         a = self.getGameStatistics()
@@ -57,15 +57,16 @@ class Statistics:
         with open(self.csvPath, 'rb') as csvfile:
             reader = csv.reader(csvfile)
             games = {}
-            last_game = reader.next()
-            reader.seek(0)
+            last_game = reader.next()[1]
+            #reader.seek(0)
             games[last_game] = {}
+            games[last_game]["sessions"] = []
             for row in reader:
                 if last_game != row[1]:
                     #new game, add to dict
                     last_game = row[1]
                     games[last_game] = {}
-                    games[last_game][sessions] = {[]}
+                    games[last_game]["sessions"] = []
 
             #we got all the games, now lets find out their individual stats
             for game in games:
@@ -167,6 +168,7 @@ class Statistics:
                 start_time = 0
                 end_time = 0
                 sessions = []
+                session = []
                 for row in reader:
                     if row[1] == game:
                         if current_game != game:
@@ -177,8 +179,13 @@ class Statistics:
                         if current_game == game:
                             #game session ended, wrap it up
                             end_time = row[2]
-                            sessions.append(start_time, end_time)
                             current_game = row[1]
+                if end_time == 0:
+                    #file ended, get last line
+                    end_time = row[2]
+                session.append(start_time)
+                session.append(end_time)
+                sessions.append(session)
                 return sessions
             else:
                 #get stream session
@@ -224,11 +231,34 @@ class Statistics:
         seconds = seconds % 60
 
         return key, (str(hours) + ":" + str(minutes) + ":" + str(seconds))
-
 """
 stats = Statistics("./data/summit1g/D02_M05_Y2015_H01_m02_s56.csv",
                    "./data/summit1g/logs/D02_M05_Y2015_H01_m02_s56.json",
                    "./data/summit1g/logs/D02_M05_Y2015_H01_m02_s56.log",
-                   "./data/summit1g/logs/summit1g.json")
+                   "./data/summit1g/logs/summit1g.json",
+                   {
+                        "PARENT_THREAD_SLEEP_TIME": 60,
+                        "TWITCH_THREAD_SLEEP_TIME": 0.75,
+                        "IRC_THREAD_SLEEP_TIME": 1,
+                        "TIMEOUT": 5,
+                        "MATCH_PHRASES": ["BabyRage NEVER LUCKY BabyRage",],
+                        "LOGS_FOLDER": "/logs/",
+                        "STATS_FOLDER": "/stats/",
+                        "CSV_FOLDER": "/CSV/",
+                        "DATE_TIME_FORMAT": "%B %d %Y %H:%M:%S",
+                        "TIME_FORMAT": "%H:%M:%S",
+                        "GRAPH_FILE_FORMAT": "D%d_M%m_Y%Y_H%H_m%M_s%S.csv",
+                        "JSON_FILE_FORMAT": "D%d_M%m_Y%Y_H%H_m%M_s%S.json",
+                        "CHAT_LOG_FILE_FORMAT": "D%d_M%m_Y%Y_H%H_m%M_s%S.log",
+                        "LOG_FILE_FORMAT": "%d_%m_%Y",
+                        "RECONNECT_TIME": 360,
+
+                        #enable bot that reads stream IRC?
+                        "IRC_BOT": True,
+                        #if true, this will cause the IRC Bot to never stop reading chat, even if the streamer goes offline
+                        "ALWAYS_ONLINE": False,
+                        #enable bot that grabs stream data using Twitch API?
+                        "TWITCH_BOT": True,
+                    })
 stats.doDaily()
 """
