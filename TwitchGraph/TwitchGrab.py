@@ -25,7 +25,7 @@ class TwitchThread(threading.Thread):
 
     def toCSV(self, streamer_name, num_viewers, game):
         #get current time, format: Year-Month-Day Hour:Minute:Second
-        exact_time = datetime.datetime.utcnow().strftime(self.config["CSV_TIME_FORMAT"])
+        exact_time = datetime.datetime.utcnow().strftime(self.config["DATE_TIME_FORMAT"])
         #check if directory exists
         if not os.path.exists(os.path.dirname(self.directory)):
             os.makedirs(os.path.dirname(self.directory))

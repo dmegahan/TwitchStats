@@ -86,10 +86,10 @@ class Statistics:
         #session currently is [start_time, end_time]
         with open(self.csvPath, 'rb') as csvfile:
             reader = csv.reader(csvfile)
-            start_time = datetime.datetime.strptime(session[0], self.config["TIME_FORMAT"])
-            end_time = datetime.datetime.strptime(session[1], self.config["TIME_FORMAT"])
+            start_time = datetime.datetime.strptime(session[0], self.config["DATE_TIME_FORMAT"])
+            end_time = datetime.datetime.strptime(session[1], self.config["DATE_TIME_FORMAT"])
             for row in reader:
-                current_time = datetime.datetime.strptime(row[2], self.config["TIME_FORMAT"])
+                current_time = datetime.datetime.strptime(row[2], self.config["DATE_TIME_FORMAT"])
                 total_viewers = 0
                 lines_read = 0
                 if current_time >= start_time and current_time <= end_time:
@@ -104,10 +104,10 @@ class Statistics:
         #session currently is [start_time, end_time]
         with open(self.csvPath, 'rb') as csvfile:
             reader = csv.reader(csvfile)
-            start_time = datetime.datetime.strptime(session[0], self.config["TIME_FORMAT"])
-            end_time = datetime.datetime.strptime(session[1], self.config["TIME_FORMAT"])
+            start_time = datetime.datetime.strptime(session[0], self.config["DATE_TIME_FORMAT"])
+            end_time = datetime.datetime.strptime(session[1], self.config["DATE_TIME_FORMAT"])
             for row in reader:
-                current_time = datetime.datetime.strptime(row[2], self.config["TIME_FORMAT"])
+                current_time = datetime.datetime.strptime(row[2], self.config["DATE_TIME_FORMAT"])
                 current_peak = -1
                 if current_time >= start_time and current_time <= end_time:
                     #we're looking at the session data
@@ -208,8 +208,8 @@ class Statistics:
         stop_time = session[1]
 
         #convert times to a datetime object
-        start = datetime.datetime.strptime(start_time, self.config["TIME_FORMAT"])
-        end = datetime.datetime.strptime(stop_time, self.config["TIME_FORMAT"])
+        start = datetime.datetime.strptime(start_time, self.config["DATE_TIME_FORMAT"])
+        end = datetime.datetime.strptime(stop_time, self.config["DATE_TIME_FORMAT"])
 
         diff = end - start
         days, seconds = diff.days, diff.seconds

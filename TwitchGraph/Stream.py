@@ -156,6 +156,7 @@ class Stream(threading.Thread):
                         print "stream is offline. Ending threads."
                         #do end of stream
                         if self.GrabBot is not None:
+                            print "Ending GrabBot thread"
                             self.GrabBot.toCSV(self.stream, config.DEAD_THREAD_IDENTIFIER, config.STR_STREAM_OFFLINE)
                             g = Graph(self.config)
                             g.createGraphFromCSV(self.CSVfp)
@@ -163,6 +164,7 @@ class Stream(threading.Thread):
                             self.GrabBot = None
 
                         if self.IRCBot is not None:
+                            print "Ending IRCBot thread"
                             g.createGraphFromJson(self.JSONfp)
                             if self.config["ALWAYS_ONLINE"] is not True:
                                 self.IRCBot.join()

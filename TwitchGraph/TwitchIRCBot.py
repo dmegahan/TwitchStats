@@ -135,7 +135,8 @@ class TwitchIRCBot(threading.Thread):
                     user = line.partition("!")[0][1:]
                     #print message
                     message = line.split(":")[2]
-                    threading.Thread(target=self.processMessage(message))
+                    #processing of lines moved to end of stream
+                    #threading.Thread(target=self.processMessage(message))
                     self.toLog(user, message)
                 except IndexError:
                     print "Error on line: " + message + " from " + user
@@ -177,7 +178,7 @@ class TwitchIRCBot(threading.Thread):
             logging.debug(self.stream + " received socket error: " + e)
 
     def toLog(self, user, message):
-        exact_time = datetime.datetime.utcnow().strftime(self.config["TIME_FORMAT"])
+        exact_time = datetime.datetime.utcnow().strftime(self.config["DATE_TIME_FORMAT"])
 
         logThis = exact_time + " " + user + ": " + message
         with open(self.directory, 'a') as fp:

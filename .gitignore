@@ -62,5 +62,5 @@ target/
 *.json
 
 #intellij
-.idea/
-.idea/*.xml
+idea/
+idea/*.xml
