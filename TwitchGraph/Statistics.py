@@ -45,6 +45,9 @@ class Statistics:
     def getPeakAllTimeViewers(self):
         print 1
 
+    def getTotalStreamHorus(self):
+        print 1
+
     '''Daily stats'''
     def getGameStatistics(self):
         with open(self.csvPath, 'rb') as csvfile:
