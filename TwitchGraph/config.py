@@ -62,5 +62,6 @@ config = {
         "IRC_BOT": False,
         #enable bot that grabs stream data using Twitch API?
         "TWITCH_BOT": True,
+        "ALWAYS_ONLINE": False,
     }
 }
