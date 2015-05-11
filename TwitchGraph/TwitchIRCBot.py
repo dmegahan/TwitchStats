@@ -178,9 +178,9 @@ class TwitchIRCBot(threading.Thread):
             logging.debug(self.stream + " received socket error: " + e)
 
     def toLog(self, user, message):
-        exact_time = datetime.datetime.utcnow().strftime(self.config["DATE_TIME_FORMAT"])
+        exact_time = datetime.datetime.utcnow().strftime(self.config["LOG_TIME_FORMAT"])
 
-        logThis = exact_time + " " + user + ": " + message
+        logThis = "[" + exact_time + "] " + user + ": " + message
         with open(self.directory, 'a') as fp:
             #print self.stream + "|||||| " + message + " to " + str(self.directory)
             fp.write(logThis + "\r\n")

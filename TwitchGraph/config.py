@@ -27,6 +27,7 @@ config = {
         "STATS_FOLDER": "/stats/",
         "CSV_FOLDER": "/CSV/",
         "DATE_TIME_FORMAT": "%B %d %Y %H:%M:%S",
+        "LOG_TIME_FORMAT": "%B %d %Y %H:%M:%S %Z",
         "TIME_FORMAT": "%H:%M:%S",
         "GRAPH_FILE_FORMAT": "D%d_M%m_Y%Y_H%H_m%M_s%S.csv",
         "JSON_FILE_FORMAT": "D%d_M%m_Y%Y_H%H_m%M_s%S.json",

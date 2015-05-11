@@ -123,3 +123,229 @@
 05/11/2015 19:38:40 - root - INFO - trick2g BOT connected to IRC server
 05/11/2015 19:38:40 - root - INFO - dansgaming BOT connected to IRC server
 05/11/2015 19:39:51 - root - WARNING - Error on line: oris091@boris091.tmi.twitch.tv PRIVMSG #dansgaming :CruW||||| message: |||||user: ris091@boris091.tmi.twitch.tv PRIVMSG #dansgaming :CruW
+05/11/2015 19:44:12 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:44:12 - root - DEBUG - <Response [503]>
+05/11/2015 19:44:31 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:44:31 - root - DEBUG - <Response [503]>
+05/11/2015 19:44:33 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:44:33 - root - DEBUG - <Response [503]>
+05/11/2015 19:44:34 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:44:34 - root - DEBUG - <Response [503]>
+05/11/2015 19:44:37 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:44:37 - root - DEBUG - <Response [503]>
+05/11/2015 19:44:56 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:44:56 - root - DEBUG - <Response [503]>
+05/11/2015 19:45:00 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:45:00 - root - DEBUG - <Response [503]>
+05/11/2015 19:45:05 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:45:05 - root - DEBUG - <Response [503]>
+05/11/2015 19:45:17 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:45:17 - root - DEBUG - <Response [503]>
+05/11/2015 19:45:23 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:45:23 - root - DEBUG - <Response [503]>
+05/11/2015 19:45:41 - root - DEBUG - destiny - Error occurred checking online status.
+05/11/2015 19:45:41 - root - DEBUG - <Response [503]>
+05/11/2015 19:45:44 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:45:44 - root - DEBUG - <Response [503]>
+05/11/2015 19:45:57 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:45:57 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:02 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:02 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:03 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:03 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:06 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:06 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:08 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:08 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:09 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:09 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:10 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:10 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:12 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:12 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:13 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:13 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:14 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:14 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:14 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:14 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:16 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:16 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:17 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:17 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:18 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:18 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:19 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:19 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:20 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:20 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:22 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:22 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:25 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:25 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:29 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:29 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:31 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:31 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:32 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:32 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:41 - root - DEBUG - nl_kripp - Error occurred checking online status.
+05/11/2015 19:46:41 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:41 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:41 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:45 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:45 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:46 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:46 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:53 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:53 - root - DEBUG - <Response [503]>
+05/11/2015 19:46:56 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:46:56 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:01 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:01 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:02 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:02 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:05 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:05 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:07 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:07 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:08 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:08 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:12 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:12 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:18 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:18 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:19 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:19 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:22 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:22 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:25 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:25 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:35 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:35 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:36 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:36 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:38 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:38 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:39 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:39 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:41 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:41 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:42 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:42 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:43 - root - DEBUG - trumpsc - Error occurred checking online status.
+05/11/2015 19:47:43 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:49 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:49 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:50 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:50 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:51 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:51 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:52 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:52 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:54 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:54 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:55 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:55 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:56 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:56 - root - DEBUG - <Response [503]>
+05/11/2015 19:47:57 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:47:57 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:07 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:07 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:08 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:08 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:09 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:09 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:10 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:10 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:12 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:12 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:19 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:19 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:20 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:20 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:21 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:21 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:23 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:23 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:24 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:24 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:25 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:25 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:27 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:27 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:28 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:28 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:28 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:28 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:29 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:29 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:31 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:31 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:32 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:32 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:33 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:33 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:35 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:35 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:35 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:35 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:38 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:38 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:41 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:41 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:42 - root - DEBUG - nl_kripp - Error occurred checking online status.
+05/11/2015 19:48:42 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:42 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:42 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:44 - root - DEBUG - trumpsc - Error occurred checking online status.
+05/11/2015 19:48:44 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:45 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:45 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:46 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:46 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:47 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:47 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:48 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:48 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:49 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:49 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:50 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:50 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:52 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:52 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:54 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:54 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:54 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:54 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:56 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:56 - root - DEBUG - <Response [503]>
+05/11/2015 19:48:58 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:48:58 - root - DEBUG - <Response [503]>
+05/11/2015 19:49:00 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:49:00 - root - DEBUG - <Response [503]>
+05/11/2015 19:49:01 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:49:01 - root - DEBUG - <Response [503]>
+05/11/2015 19:49:02 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:49:02 - root - DEBUG - <Response [503]>
+05/11/2015 19:49:03 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:49:03 - root - DEBUG - <Response [503]>
+05/11/2015 19:49:06 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:49:06 - root - DEBUG - <Response [503]>
+05/11/2015 19:49:08 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:49:08 - root - DEBUG - <Response [503]>
+05/11/2015 19:49:10 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:49:10 - root - DEBUG - <Response [503]>
+05/11/2015 19:49:11 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:49:11 - root - DEBUG - <Response [503]>
+05/11/2015 19:49:13 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:49:13 - root - DEBUG - <Response [503]>
+05/11/2015 19:49:15 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:49:15 - root - DEBUG - <Response [503]>
+05/11/2015 19:49:15 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:49:15 - root - DEBUG - <Response [503]>
+05/11/2015 19:49:18 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:49:18 - root - DEBUG - <Response [503]>
+05/11/2015 19:49:20 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+05/11/2015 19:49:20 - root - DEBUG - <Response [503]>
