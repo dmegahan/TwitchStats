@@ -164,8 +164,8 @@ class TwitchIRCBot(threading.Thread):
         try:
             recieve = self.sock.recv(4048)
         except socket.error as e:
-            print self.stream + " received socket error: " + e
-            logging.debug(self.stream + " received socket error: " + e)
+            print self.stream + " received socket error"
+            #logging.debug(self.stream + " received socket error: " + e)
         #print "received " + recieve
         lines = recieve.split("\r\n")[:-1] #last element will always be blank
         return lines

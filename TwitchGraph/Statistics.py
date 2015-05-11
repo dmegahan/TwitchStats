@@ -66,11 +66,12 @@ class Statistics:
                     #new game, add to dict
                     last_game = row[1]
                     games[last_game] = {}
-                    games[last_game]["sessions"] = []
+                    games[last_game]["sessions"] = {}
 
             #we got all the games, now lets find out their individual stats
             for game in games:
                 sessions = self.getSessions(game)
+                i = 0
                 for session in sessions:
                     avg_viewers = self.getAverageViewersPerSession(session)
                     peak_viewers = self.getPeakViewersPerSession(session)
@@ -85,7 +86,8 @@ class Statistics:
                     session_dict["Average Viewers"] = avg_viewers
                     session_dict["Time Streamed"] = time_streamed
 
-                    games[game][sessions].append(session_dict)
+                    games[game]["sessions"]["session" + str(i)] = session_dict
+                    i += 1
 
         return games
 
@@ -101,10 +103,13 @@ class Statistics:
                 lines_read = 0
                 if current_time >= start_time and current_time <= end_time:
                     #we're looking at the session data
-                    total_viewers += row[0]
+                    total_viewers += int(row[0])
                     lines_read += 1
             #done, lets compute
-            average_viewers = total_viewers / lines_read
+            try:
+                average_viewers = total_viewers / lines_read
+            except ZeroDivisionError:
+                average_viewers = -1
             return average_viewers
 
     def getPeakViewersPerSession(self, session):
@@ -119,7 +124,7 @@ class Statistics:
                 if current_time >= start_time and current_time <= end_time:
                     #we're looking at the session data
                     if current_peak < row[0]:
-                        current_peak = row[0]
+                        current_peak = int(row[0])
 
             return current_peak
 
@@ -231,10 +236,12 @@ class Statistics:
         seconds = seconds % 60
 
         return key, (str(hours) + ":" + str(minutes) + ":" + str(seconds))
-"""
-stats = Statistics("./data/summit1g/D02_M05_Y2015_H01_m02_s56.csv",
-                   "./data/summit1g/logs/D02_M05_Y2015_H01_m02_s56.json",
-                   "./data/summit1g/logs/D02_M05_Y2015_H01_m02_s56.log",
+import JsonEditor
+
+jsonFile = JsonEditor.JsonEditor("./data/summit1g/stats/D11_M05_Y2015_H17_m33_s56.json", "")
+stats = Statistics("./data/summit1g/CSV/D11_M05_Y2015_H17_m33_s56.csv",
+                   "./data/summit1g/stats/D11_M05_Y2015_H17_m33_s56.json",
+                   "./data/summit1g/logs/D11_M05_Y2015_H17_m33_s56.log",
                    "./data/summit1g/logs/summit1g.json",
                    {
                         "PARENT_THREAD_SLEEP_TIME": 60,
@@ -260,5 +267,5 @@ stats = Statistics("./data/summit1g/D02_M05_Y2015_H01_m02_s56.csv",
                         #enable bot that grabs stream data using Twitch API?
                         "TWITCH_BOT": True,
                     })
-stats.doDaily()
-"""
+dailyStats = stats.doDaily()
+jsonFile.toJSON(dailyStats)
