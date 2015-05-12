@@ -2,6 +2,7 @@ import csv
 import os
 import time
 import datetime
+import config
 import constants
 
 __author__ = 'Danny'
@@ -60,13 +61,14 @@ class Statistics:
             last_game = reader.next()[1]
             #reader.seek(0)
             games[last_game] = {}
-            games[last_game]["sessions"] = []
+            games[last_game]["sessions"] = {}
             for row in reader:
                 if last_game != row[1]:
-                    #new game, add to dict
-                    last_game = row[1]
-                    games[last_game] = {}
-                    games[last_game]["sessions"] = {}
+                    if row[1] != config.STR_STREAM_OFFLINE:
+                        #new game, add to dict
+                        last_game = row[1]
+                        games[last_game] = {}
+                        games[last_game]["sessions"] = {}
 
             #we got all the games, now lets find out their individual stats
             for game in games:
