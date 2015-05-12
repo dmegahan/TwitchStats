@@ -236,6 +236,7 @@ class Statistics:
         seconds = seconds % 60
 
         return key, (str(hours) + ":" + str(minutes) + ":" + str(seconds))
+"""
 import JsonEditor
 
 jsonFile = JsonEditor.JsonEditor("./data/summit1g/stats/D11_M05_Y2015_H17_m33_s56.json", "")
@@ -257,7 +258,6 @@ stats = Statistics("./data/summit1g/CSV/D11_M05_Y2015_H17_m33_s56.csv",
                         "GRAPH_FILE_FORMAT": "D%d_M%m_Y%Y_H%H_m%M_s%S.csv",
                         "JSON_FILE_FORMAT": "D%d_M%m_Y%Y_H%H_m%M_s%S.json",
                         "CHAT_LOG_FILE_FORMAT": "D%d_M%m_Y%Y_H%H_m%M_s%S.log",
-                        "LOG_FILE_FORMAT": "%d_%m_%Y",
                         "RECONNECT_TIME": 360,
 
                         #enable bot that reads stream IRC?
@@ -269,3 +269,4 @@ stats = Statistics("./data/summit1g/CSV/D11_M05_Y2015_H17_m33_s56.csv",
                     })
 dailyStats = stats.doDaily()
 jsonFile.toJSON(dailyStats)
+"""

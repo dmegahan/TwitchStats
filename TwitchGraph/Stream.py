@@ -91,7 +91,7 @@ class Stream(threading.Thread):
         if not os.path.exists(os.path.dirname(self.globalPath)):
             os.makedirs(os.path.dirname(self.globalPath))
 
-        directory = './logs/' + date.strftime(self.config["LOG_FILE_FORMAT"])
+        directory = './logs/' + date.strftime(config.LOG_FILE_FORMAT)
         if not os.path.exists(os.path.dirname(directory)):
             os.makedirs(os.path.dirname(directory))
         logging.basicConfig(filename=directory,

@@ -6,6 +6,8 @@ STREAMERS = ["lirik", "itmejp", "summit1g", "destiny", "nl_kripp", "reckful", "s
              "dansgaming", "kaceytron", "watchmeblink1", "trick2g", "trumpsc", "kinetick42"]
 JSON_ATTRIBUTES = ["Peak Viewers", "Start Time", "End Time", "Average Viewers", "Time Streamed"]
 
+LOG_FILE_FORMAT = "%d_%m_%Y",
+
 #config users is a dictionary of lists, each key in the dictionary being a matching config key
 #if you want to have another stream use a different configuration, add the configuration key to the dictionary, and
 #add the streamer name, to the corresponding list
@@ -32,7 +34,6 @@ config = {
         "GRAPH_FILE_FORMAT": "D%d_M%m_Y%Y_H%H_m%M_s%S.csv",
         "JSON_FILE_FORMAT": "D%d_M%m_Y%Y_H%H_m%M_s%S.json",
         "CHAT_LOG_FILE_FORMAT": "D%d_M%m_Y%Y_H%H_m%M_s%S.log",
-        "LOG_FILE_FORMAT": "%d_%m_%Y",
         "RECONNECT_TIME": 360,
 
         #enable bot that reads stream IRC?
@@ -52,11 +53,11 @@ config = {
         "STATS_FOLDER": "/stats/",
         "CSV_FOLDER": "/CSV/",
         "DATE_TIME_FORMAT": "%B %d %Y %H:%M:%S",
+        "LOG_TIME_FORMAT": "%B %d %Y %H:%M:%S %Z",
         "TIME_FORMAT": "%H:%M:%S",
         "GRAPH_FILE_FORMAT": "D%d_M%m_Y%Y_H%H_m%M_s%S.csv",
         "JSON_FILE_FORMAT": "D%d_M%m_Y%Y_H%H_m%M_s%S.json",
         "CHAT_LOG_FILE_FORMAT": "D%d_M%m_Y%Y_H%H_m%M_s%S.log",
-        "LOG_FILE_FORMAT": "%d_%m_%Y",
         "RECONNECT_TIME": 360,
 
         #enable bot that reads stream IRC?
