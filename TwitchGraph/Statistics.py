@@ -100,10 +100,10 @@ class Statistics:
             reader = csv.reader(csvfile)
             start_time = datetime.datetime.strptime(session[0], self.config["DATE_TIME_FORMAT"])
             end_time = datetime.datetime.strptime(session[1], self.config["DATE_TIME_FORMAT"])
+            total_viewers = 0
+            lines_read = 0
             for row in reader:
                 current_time = datetime.datetime.strptime(row[2], self.config["DATE_TIME_FORMAT"])
-                total_viewers = 0
-                lines_read = 0
                 if current_time >= start_time and current_time <= end_time:
                     #we're looking at the session data
                     total_viewers += int(row[0])
@@ -121,9 +121,9 @@ class Statistics:
             reader = csv.reader(csvfile)
             start_time = datetime.datetime.strptime(session[0], self.config["DATE_TIME_FORMAT"])
             end_time = datetime.datetime.strptime(session[1], self.config["DATE_TIME_FORMAT"])
+            current_peak = -1
             for row in reader:
                 current_time = datetime.datetime.strptime(row[2], self.config["DATE_TIME_FORMAT"])
-                current_peak = -1
                 if current_time >= start_time and current_time <= end_time:
                     #we're looking at the session data
                     if current_peak < row[0]:
@@ -177,6 +177,8 @@ class Statistics:
                 end_time = 0
                 sessions = []
                 session = []
+                #retained to get accurate end time, since we wont know when a game ended until we reach a new game
+                last_line = "";
                 for row in reader:
                     if row[1] == game:
                         if current_game != game:
@@ -186,8 +188,9 @@ class Statistics:
                     else:
                         if current_game == game:
                             #game session ended, wrap it up
-                            end_time = row[2]
+                            end_time = last_line[2]
                             current_game = row[1]
+                    last_line = row
                 if end_time == 0:
                     #file ended, get last line
                     end_time = row[2]
@@ -243,10 +246,10 @@ class Statistics:
 import JsonEditor
 
 jsonFile = JsonEditor.JsonEditor("./data/summit1g/stats/D11_M05_Y2015_H17_m33_s56.json", "")
-stats = Statistics("./data/summit1g/CSV/D11_M05_Y2015_H17_m33_s56.csv",
-                   "./data/summit1g/stats/D11_M05_Y2015_H17_m33_s56.json",
-                   "./data/summit1g/logs/D11_M05_Y2015_H17_m33_s56.log",
-                   "./data/summit1g/logs/summit1g.json",
+stats = Statistics("./data/itmejp/CSV/D12_M05_Y2015_H16_m58_s12.csv",
+                   "./data/itmejp/stats/D12_M05_Y2015_H16_m58_s12.json",
+                   "./data/itmejp/logs/D12_M05_Y2015_H16_m58_s12.log",
+                   "./data/itmejp/CSV/logs/summit1g.json",
                    {
                         "PARENT_THREAD_SLEEP_TIME": 60,
                         "TWITCH_THREAD_SLEEP_TIME": 0.75,

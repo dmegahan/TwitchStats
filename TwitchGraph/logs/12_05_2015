@@ -129,3 +129,18 @@
 05/12/2015 17:17:54 - root - INFO - itmejp/JD12_M05_Y2015_H16_m58_s12 emote graph created!
 05/12/2015 17:31:02 - root - DEBUG - trick2g - request failure: https://api.twitch.tv/kraken/streams/trick2g
 05/12/2015 17:44:42 - root - WARNING - Error on line: erg.tmi.twitch.tv PRIVMSG #trick2g :i *** up sry team||||| message: |||||user: rg.tmi.twitch.tv PRIVMSG #trick2g :i *** up sry team
+05/12/2015 18:58:18 - root - INFO - lirik thread started
+05/12/2015 18:58:19 - root - INFO - trumpsc thread started
+05/12/2015 18:58:19 - root - INFO - summit1g thread started
+05/12/2015 18:58:19 - root - INFO - dansgaming thread started
+05/12/2015 18:58:19 - root - INFO - trick2g thread started
+05/12/2015 18:58:20 - root - INFO - IRCBot trumpsc started up!
+05/12/2015 18:58:20 - root - INFO - IRCBot lirik started up!
+05/12/2015 18:58:20 - root - INFO - trumpsc BOT connected to IRC server
+05/12/2015 18:58:20 - root - INFO - lirik BOT connected to IRC server
+05/12/2015 18:58:20 - root - INFO - IRCBot dansgaming started up!
+05/12/2015 18:58:20 - root - INFO - dansgaming BOT connected to IRC server
+05/12/2015 18:58:20 - root - INFO - IRCBot trick2g started up!
+05/12/2015 18:58:20 - root - INFO - trick2g BOT connected to IRC server
+05/12/2015 18:58:20 - root - INFO - IRCBot summit1g started up!
+05/12/2015 18:58:21 - root - INFO - summit1g BOT connected to IRC server
