@@ -86,7 +86,8 @@ class Statistics:
                     session_dict["Average Viewers"] = avg_viewers
                     session_dict["Time Streamed"] = time_streamed
 
-                    games[game]["sessions"]["session" + str(i)] = session_dict
+                    session_name = "session" + str(i)
+                    games[game]["sessions"][session_name] = session_dict
                     i += 1
 
         return games
@@ -236,7 +237,7 @@ class Statistics:
         seconds = seconds % 60
 
         return key, (str(hours) + ":" + str(minutes) + ":" + str(seconds))
-"""
+
 import JsonEditor
 
 jsonFile = JsonEditor.JsonEditor("./data/summit1g/stats/D11_M05_Y2015_H17_m33_s56.json", "")
@@ -269,4 +270,3 @@ stats = Statistics("./data/summit1g/CSV/D11_M05_Y2015_H17_m33_s56.csv",
                     })
 dailyStats = stats.doDaily()
 jsonFile.toJSON(dailyStats)
-"""

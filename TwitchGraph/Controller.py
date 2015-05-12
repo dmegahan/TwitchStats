@@ -19,9 +19,6 @@ class Controller:
         self.tGrab.main()
         self.tIRCBot.main()
 
-    def end(self):
-
-
 def main():
     while 1:
         input = raw_input()

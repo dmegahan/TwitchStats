@@ -1,7 +1,19 @@
+import datetime
+import logging
+import os
 import requests
+import config
 
+date = datetime.datetime.utcnow()
+directory = './logs/' + date.strftime(config.LOG_FILE_FORMAT)
+if not os.path.exists(os.path.dirname(directory)):
+    os.makedirs(os.path.dirname(directory))
+logging.basicConfig(filename=directory,
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                    datefmt='%m/%d/%Y %H:%M:%S',
+                    level=logging.DEBUG)
 
-def getTwitchEmotes(self, stream):
+def getTwitchEmotes(stream):
     EMOTE_REQUEST ="https://api.twitch.tv/kraken/chat/" + stream + "/emoticons"
     twitchEmotes = []
     try:
@@ -29,7 +41,7 @@ def getTwitchEmotes(self, stream):
         return []
     return twitchEmotes[:]
 
-def getSubEmotes(self, stream):
+def getSubEmotes(stream):
     EMOTE_REQUEST ="https://api.twitch.tv/kraken/chat/" + stream + "/emoticons"
     subEmotes = []
     try:
@@ -57,7 +69,7 @@ def getSubEmotes(self, stream):
         return []
     return subEmotes[:]
 
-def getStreamInfo(self, stream):
+def getStreamInfo(stream):
     #API only shows the first 25 followed streams by default
     #defaults: offset = 0, limit = 25
     #https://github.com/justintv/Twitch-API/blob/master/v3_resources/follows.md#get-usersuserfollowschannels
@@ -96,7 +108,7 @@ def getStreamInfo(self, stream):
     #return our relevant data
     return [viewerNum, game]
 
-def isOnline(self, stream):
+def isOnline(stream):
     #check if a stream is online by seeing if the object[stream] returns null
     STREAM_REQUEST = "https://api.twitch.tv/kraken/streams/" + stream
     streamResponse = None

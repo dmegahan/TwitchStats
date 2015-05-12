@@ -6,6 +6,7 @@ import requests
 import time
 from JsonEditor import JsonEditor
 from Statistics import Statistics
+import TwitchAPI
 from TwitchGrab import TwitchThread
 from TwitchGraph import Graph
 from TwitchIRCBot import TwitchIRCBot
@@ -99,32 +100,6 @@ class Stream(threading.Thread):
                             datefmt='%m/%d/%Y %H:%M:%S',
                             level=logging.DEBUG)
 
-    def isOnline(self, stream):
-        #check if a stream is online by seeing if the object[stream] returns null
-        STREAM_REQUEST = "https://api.twitch.tv/kraken/streams/" + stream
-        streamResponse = None
-        try:
-           streamResponse = requests.get(STREAM_REQUEST)
-        except requests.exceptions.ConnectionError:
-            #print "request failure: " + STREAM_REQUEST
-            logging.debug("request failure: " + STREAM_REQUEST)
-            #get stream info from streamResponse
-            return False
-        try:
-            streamObj = streamResponse.json()
-            if streamObj['stream'] is None:
-                return False
-            #print stream + " is online!"
-            #logging.info(stream + " is online!")
-            return True
-        except (TypeError, ValueError, KeyError):
-            #Error occured, check to see if stream is offline or if temp disconnect
-            print "Error occurred checking online status."
-            print streamResponse
-            logging.debug(stream + " - Error occurred checking online status.")
-            logging.debug(streamResponse)
-        return False
-
     def recordStats(self):
         jsonFile = JsonEditor(self.JSONfp, "")
         stats = Statistics(self.CSVfp, self.JSONfp, self.LOGfp, self.globalPath, self.config)
@@ -133,7 +108,7 @@ class Stream(threading.Thread):
 
     def run(self):
         while 1:
-            if self.isOnline(self.stream):
+            if TwitchAPI.isOnline(self.stream):
                 #start the bots up
                 if self.GrabBot is None and self.IRCBot is None:
                     #initialize the dates and filepaths

@@ -6,7 +6,7 @@ STREAMERS = ["lirik", "itmejp", "summit1g", "destiny", "nl_kripp", "reckful", "s
              "dansgaming", "kaceytron", "watchmeblink1", "trick2g", "trumpsc", "kinetick42"]
 JSON_ATTRIBUTES = ["Peak Viewers", "Start Time", "End Time", "Average Viewers", "Time Streamed"]
 
-LOG_FILE_FORMAT = "%d_%m_%Y",
+LOG_FILE_FORMAT = "%d_%m_%Y"
 
 #config users is a dictionary of lists, each key in the dictionary being a matching config key
 #if you want to have another stream use a different configuration, add the configuration key to the dictionary, and

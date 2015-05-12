@@ -8,6 +8,7 @@ import time
 import re
 import requests
 from JsonEditor import JsonEditor
+import TwitchAPI
 from TwitchGraph import Graph
 import constants
 import json
@@ -33,67 +34,10 @@ class TwitchIRCBot(threading.Thread):
             os.makedirs(os.path.dirname(self.directory))
 
         self.jdirectory = jsonPath
-        self.subEmotes = self.getSubEmotes()
-        self.twitchEmotes = self.getTwitchEmotes()
+        self.subEmotes = TwitchAPI.getSubEmotes(self.stream)
+        self.twitchEmotes = TwitchAPI.getTwitchEmotes(self.stream)
         self.allEmotes = self.subEmotes + self.twitchEmotes
         self.jEditor = JsonEditor(self.jdirectory, self.subEmotes)
-
-    def getSubEmotes(self):
-        EMOTE_REQUEST ="https://api.twitch.tv/kraken/chat/" + self.stream + "/emoticons"
-        subEmotes = []
-        try:
-            emoteResponse = requests.get(EMOTE_REQUEST)
-        except requests.exceptions.ConnectionError:
-            print "request failure: " + EMOTE_REQUEST
-            logging.debug("request failure: " + EMOTE_REQUEST)
-            #couldn't grab emotes, return empty list
-            return []
-        emoteObj = None
-        try:
-            emoteObj = emoteResponse.json()
-            allEmotes = emoteObj['emoticons']
-            for emote in allEmotes:
-                if emote['subscriber_only'] is True:
-                    subEmotes.append(emote['regex'])
-
-        except (TypeError, ValueError, KeyError):
-            print "Error occurred getting stream information on " + self.stream \
-                  + " /// streamObj: " + emoteObj
-            print emoteResponse
-            logging.debug("Error occurred getting stream information on " + self.stream
-                          + " /// streamObj: " + emoteObj)
-            logging.debug(emoteResponse)
-            return []
-        return subEmotes[:]
-
-    def getTwitchEmotes(self):
-        EMOTE_REQUEST ="https://api.twitch.tv/kraken/chat/" + self.stream + "/emoticons"
-        twitchEmotes = []
-        try:
-            emoteResponse = requests.get(EMOTE_REQUEST)
-        except requests.exceptions.ConnectionError:
-            print "request failure: " + EMOTE_REQUEST
-            logging.debug("request failure: " + EMOTE_REQUEST)
-            #couldn't grab emotes, return empty list
-            return []
-        emoteObj = None
-        try:
-            emoteObj = emoteResponse.json()
-            allEmotes = emoteObj['emoticons']
-            for emote in allEmotes:
-                if emote['subscriber_only'] is False:
-                    twitchEmotes.append(emote['regex'])
-
-        except (TypeError, ValueError, KeyError):
-            print "Error occurred getting stream information on " + self.stream \
-                  + " /// streamObj: " + emoteObj
-            print emoteResponse
-            logging.debug("Error occurred getting stream information on " + self.stream
-                          + " /// streamObj: " + emoteObj)
-            logging.debug(emoteResponse)
-            return []
-        return twitchEmotes[:]
-
 
     def run(self):
         print "IRCBot " + self.stream + " started up!"
