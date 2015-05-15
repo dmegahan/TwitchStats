@@ -144,3 +144,29 @@
 05/12/2015 18:58:20 - root - INFO - trick2g BOT connected to IRC server
 05/12/2015 18:58:20 - root - INFO - IRCBot summit1g started up!
 05/12/2015 18:58:21 - root - INFO - summit1g BOT connected to IRC server
+05/12/2015 19:09:20 - root - WARNING - Error on line: switch!qwikswitch@qwikswitch.tmi.twitch.tv PRIVMSG #dansgaming :danGasp||||| message: |||||user: witch
+05/12/2015 19:12:21 - root - WARNING - Error on line: ch.tv PRIVMSG #trick2g :@Trick2g  he talking s*** to us trick u gonna take that! #2garmy baby!||||| message: |||||user: h.tv PRIVMSG #trick2g :@Trick2g  he talking s*** to us trick u gonna take that
+05/12/2015 19:17:35 - root - WARNING - Error on line: nes.tmi.twitch.tv PRIVMSG #trick2g :trk2g||||| message: |||||user: es.tmi.twitch.tv PRIVMSG #trick2g :trk2g
+05/12/2015 19:22:42 - root - WARNING - Error on line: xia.tmi.twitch.tv PRIVMSG #dansgaming :noosh  danHype lorg  danHype||||| message: |||||user: ia.tmi.twitch.tv PRIVMSG #dansgaming :noosh  danHype lorg  danHype
+05/12/2015 19:31:58 - requests.packages.urllib3.connectionpool - INFO - Starting new HTTPS connection (1): api.twitch.tv
+05/12/2015 19:31:59 - requests.packages.urllib3.connectionpool - DEBUG - "GET /kraken/chat/itmejp/emoticons HTTP/1.1" 200 4706
+05/12/2015 19:31:59 - requests.packages.urllib3.connectionpool - INFO - Starting new HTTPS connection (1): api.twitch.tv
+05/12/2015 19:32:00 - requests.packages.urllib3.connectionpool - DEBUG - "GET /kraken/chat/itmejp/emoticons HTTP/1.1" 200 4706
+05/12/2015 19:32:26 - requests.packages.urllib3.connectionpool - INFO - Starting new HTTPS connection (1): api.twitch.tv
+05/12/2015 19:32:27 - requests.packages.urllib3.connectionpool - DEBUG - "GET /kraken/chat/itmejp/emoticons HTTP/1.1" 200 4706
+05/12/2015 19:32:27 - requests.packages.urllib3.connectionpool - INFO - Starting new HTTPS connection (1): api.twitch.tv
+05/12/2015 19:32:28 - requests.packages.urllib3.connectionpool - DEBUG - "GET /kraken/chat/itmejp/emoticons HTTP/1.1" 200 4706
+05/12/2015 19:37:35 - requests.packages.urllib3.connectionpool - INFO - Starting new HTTPS connection (1): api.twitch.tv
+05/12/2015 19:37:35 - requests.packages.urllib3.connectionpool - DEBUG - "GET /kraken/chat/itmejp/emoticons HTTP/1.1" 200 4706
+05/12/2015 19:37:36 - requests.packages.urllib3.connectionpool - INFO - Starting new HTTPS connection (1): api.twitch.tv
+05/12/2015 19:37:36 - requests.packages.urllib3.connectionpool - DEBUG - "GET /kraken/chat/itmejp/emoticons HTTP/1.1" 200 4706
+05/12/2015 20:05:39 - root - WARNING - Error on line: 92!mikehawk892@mikehawk892.tmi.twitch.tv PRIVMSG #trick2g :SHITVENTING SPECTATE SwiftRage||||| message: |||||user: 2
+05/12/2015 20:19:59 - root - DEBUG - trick2g - request failure: https://api.twitch.tv/kraken/streams/trick2g
+05/12/2015 20:32:44 - root - WARNING - Error on line: ennyhaste!bennyhaste@bennyhaste.tmi.twitch.tv PRIVMSG #trick2g :trkRip||||| message: |||||user: nnyhaste
+05/12/2015 20:32:58 - root - INFO - lirik/D12_M05_Y2015_H16_m08_s53 viewer graph created!
+05/12/2015 20:33:04 - root - INFO - lirik/JD12_M05_Y2015_H16_m08_s53 emote graph created!
+05/12/2015 20:56:03 - root - INFO - itmejp thread started
+05/12/2015 20:56:04 - root - INFO - IRCBot itmejp started up!
+05/12/2015 20:56:04 - root - INFO - itmejp BOT connected to IRC server
+05/12/2015 21:09:08 - root - INFO - trumpsc/D12_M05_Y2015_H19_m02_s59 viewer graph created!
+05/12/2015 21:09:14 - root - INFO - trumpsc/JD12_M05_Y2015_H19_m02_s59 emote graph created!

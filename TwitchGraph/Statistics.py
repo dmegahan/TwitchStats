@@ -1,33 +1,77 @@
 import csv
+import json
+import logging
 import os
 import time
 import datetime
+import re
+import TwitchAPI
 import config
 import constants
+from JsonEditor import JsonEditor
 
 __author__ = 'Danny'
 
 class Statistics:
-    def __init__(self, csvPath, jsonPath, logPath, globalPath, config):
+    def __init__(self, streamer, csvPath, jsonPath, logPath, globalPath, config):
+        self.stream = streamer
         self.jsonPath = jsonPath
         self.csvPath= csvPath
         self.logPath = logPath
         self.globalPath = globalPath
         self.config = config
+        self.jEditor = JsonEditor(self.jsonPath, self.globalPath)
+
+        date = datetime.datetime.utcnow().strftime("%d_%m_%Y")
+        directory = self.config["LOGS_FOLDER"] + date + ".log"
+        if not os.path.exists(os.path.dirname(directory)):
+            os.makedirs(os.path.dirname(directory))
+        logging.basicConfig(filename=directory,
+                            format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                            datefmt='%m/%d/%Y %H:%M:%S',
+                            level=logging.DEBUG)
+
+    def tallyEmotes(self):
+        subEmotes = TwitchAPI.getSubEmotes(self.stream)
+        twitchEmotes = TwitchAPI.getTwitchEmotes(self.stream)
+        allEmotes = subEmotes + twitchEmotes
+
+        with open(self.logPath, 'rb') as chatLog:
+            for line in chatLog:
+                split_line = line.split("]", 1)#index 0 will be the date and 1 will be everything else
+                date = split_line[0].strip("[")
+                user = split_line[1].split(":", 1)[0].strip()
+                message = split_line[1].split(":", 1)[1]
+                for emote in allEmotes:
+                    try:
+                        message = message.rstrip()
+                        if re.search(r'\b' + emote + r'\b', message):
+                            #valid emote found, lets record it
+                            if emote in subEmotes:
+                                self.jEditor.incrementSubEmote(emote)
+                            elif emote in twitchEmotes:
+                                self.jEditor.incrementTwitchEmote(emote)
+                    except UnicodeDecodeError:
+                        print "UnicodeDecodeError on " + message
+                        logging.debug("UnicodeDecodeError on " + message)
+                        break;
 
     def doDaily(self):
         #return a dict of json keys and values, to be added at the end of the stream
         jsonDict = {}
         a = self.getPeakViewers()
         jsonDict[a[0]] = a[1]
+        self.updatePeakAllTimeViewers(a[0], a[1])
         a = self.getAverageViewers()
         jsonDict[a[0]] = a[1]
+        self.updatePeakAverageViewers(a[0], a[1])
         #session is a nested list, and since we're looking for the total session we only expect 1 element returned
         stream_ses = self.getSessions()[0]
         jsonDict['Start Time'] = stream_ses[0]
         jsonDict['End Time'] = stream_ses[1]
-        #a = self.getTimeStreamed(stream_ses)
-        #jsonDict[a[0]] = a[1]
+        a = self.getTimeStreamed(stream_ses)
+        jsonDict[a[0]] = a[1]
+        self.updateTotalStreamTime(a[0], a[1])
 
         #game stats return a large dict of dicts (dict of games played, which each game having a dict of stats)
         a = self.getGameStatistics()
@@ -35,23 +79,50 @@ class Statistics:
 
         return jsonDict
 
-    def doAllTime(self):
-        print 1
+    def updateTotalStreamTime(self, key, stream_time):
+        with open(self.globalPath, 'r+') as globalStats:
+            data = json.load(globalStats)
+            try:
+                old_time = datetime.datetime.strptime(data['stats'][key], self.config['TIME_FORMAT'])
+            except KeyError:
+                data['stats'][key] = stream_time
+                globalStats.seek(0)
+                json.dump(data, globalStats, indent=4)
+                return
+            #print "Incremented emote: " + emote + " to " + str((old_val+1))
+            stream_time = datetime.datetime.strptime(stream_time, self.config['TIME_FORMAT'])
+            old_delta = datetime.timedelta(minutes=old_time.minute, seconds=old_time.second, hours=old_time.hour)
+            stream_delta = datetime.timedelta(minutes=stream_time.minute,
+                                              seconds=stream_time.second,
+                                              hours=stream_time.hour)
+            data['stats'][key] = str(old_delta + stream_delta)
+            globalStats.seek(0)
+            json.dump(data, globalStats, indent=4)
 
-    def getMostPlayedGame(self):
-        print 1
+    def updatePeakAllTimeViewers(self, key, peak_viewers):
+        with open(self.globalPath, 'r+') as globalStats:
+            data = json.load(globalStats)
+            try:
+                old_val = data['stats'][key]
+            except KeyError:
+                old_val = 0
+            #print "Incremented emote: " + emote + " to " + str((old_val+1))
+            if old_val < peak_viewers:
+                data['stats'][key] = peak_viewers
+            globalStats.seek(0)
+            json.dump(data, globalStats, indent=4)
 
-    def getAverageTimeStreamed(self):
-        print 1
-
-    def getMostPopularGame(self):
-        print 1
-
-    def getPeakAllTimeViewers(self):
-        print 1
-
-    def getTotalStreamHorus(self):
-        print 1
+    def updatePeakAverageViewers(self, key, average_viewers):
+        with open(self.globalPath, 'r+') as globalStats:
+            data = json.load(globalStats)
+            try:
+                old_val = data['stats'][key]
+            except KeyError:
+                old_val = 0
+            #print "Incremented emote: " + emote + " to " + str((old_val+1))
+            data['stats'][key] = (average_viewers + old_val / 2)
+            globalStats.seek(0)
+            json.dump(data, globalStats, indent=4)
 
     '''Daily stats'''
     def getGameStatistics(self):
@@ -86,7 +157,7 @@ class Statistics:
                     session_dict["Start Time"] = start_time
                     session_dict["End Time"] = end_time
                     session_dict["Average Viewers"] = avg_viewers
-                    session_dict["Time Streamed"] = time_streamed
+                    session_dict["Time Streamed"] = time_streamed[1]
 
                     session_name = "session" + str(i)
                     games[game]["sessions"][session_name] = session_dict
@@ -126,7 +197,7 @@ class Statistics:
                 current_time = datetime.datetime.strptime(row[2], self.config["DATE_TIME_FORMAT"])
                 if current_time >= start_time and current_time <= end_time:
                     #we're looking at the session data
-                    if current_peak < row[0]:
+                    if int(current_peak) < int(row[0]):
                         current_peak = int(row[0])
 
             return current_peak
@@ -145,7 +216,7 @@ class Statistics:
                             peak = viewers
                 else:
                     viewers = row[0]
-                    if viewers > peak:
+                    if int(viewers) > int(peak):
                         peak = viewers
         return key, peak
 
@@ -242,36 +313,3 @@ class Statistics:
         seconds = seconds % 60
 
         return key, (str(hours) + ":" + str(minutes) + ":" + str(seconds))
-
-import JsonEditor
-
-jsonFile = JsonEditor.JsonEditor("./data/summit1g/stats/D11_M05_Y2015_H17_m33_s56.json", "")
-stats = Statistics("./data/itmejp/CSV/D12_M05_Y2015_H16_m58_s12.csv",
-                   "./data/itmejp/stats/D12_M05_Y2015_H16_m58_s12.json",
-                   "./data/itmejp/logs/D12_M05_Y2015_H16_m58_s12.log",
-                   "./data/itmejp/CSV/logs/summit1g.json",
-                   {
-                        "PARENT_THREAD_SLEEP_TIME": 60,
-                        "TWITCH_THREAD_SLEEP_TIME": 0.75,
-                        "IRC_THREAD_SLEEP_TIME": 1,
-                        "TIMEOUT": 5,
-                        "MATCH_PHRASES": ["BabyRage NEVER LUCKY BabyRage",],
-                        "LOGS_FOLDER": "/logs/",
-                        "STATS_FOLDER": "/stats/",
-                        "CSV_FOLDER": "/CSV/",
-                        "DATE_TIME_FORMAT": "%B %d %Y %H:%M:%S",
-                        "TIME_FORMAT": "%H:%M:%S",
-                        "GRAPH_FILE_FORMAT": "D%d_M%m_Y%Y_H%H_m%M_s%S.csv",
-                        "JSON_FILE_FORMAT": "D%d_M%m_Y%Y_H%H_m%M_s%S.json",
-                        "CHAT_LOG_FILE_FORMAT": "D%d_M%m_Y%Y_H%H_m%M_s%S.log",
-                        "RECONNECT_TIME": 360,
-
-                        #enable bot that reads stream IRC?
-                        "IRC_BOT": True,
-                        #if true, this will cause the IRC Bot to never stop reading chat, even if the streamer goes offline
-                        "ALWAYS_ONLINE": False,
-                        #enable bot that grabs stream data using Twitch API?
-                        "TWITCH_BOT": True,
-                    })
-dailyStats = stats.doDaily()
-jsonFile.toJSON(dailyStats)

@@ -1,0 +1,39 @@
+05/14/2015 20:03:35 - requests.packages.urllib3.connectionpool - INFO - Starting new HTTPS connection (1): api.twitch.tv
+05/14/2015 20:03:36 - requests.packages.urllib3.connectionpool - DEBUG - "GET /kraken/chat/_TEST_/emoticons HTTP/1.1" 404 102
+05/14/2015 20:03:55 - requests.packages.urllib3.connectionpool - INFO - Starting new HTTPS connection (1): api.twitch.tv
+05/14/2015 20:03:56 - requests.packages.urllib3.connectionpool - DEBUG - "GET /kraken/chat/_TEST_/emoticons HTTP/1.1" 404 102
+05/14/2015 20:05:02 - requests.packages.urllib3.connectionpool - INFO - Starting new HTTPS connection (1): api.twitch.tv
+05/14/2015 20:05:02 - requests.packages.urllib3.connectionpool - DEBUG - "GET /kraken/chat/_TEST_/emoticons HTTP/1.1" 404 102
+05/14/2015 20:05:11 - requests.packages.urllib3.connectionpool - INFO - Starting new HTTPS connection (1): api.twitch.tv
+05/14/2015 20:05:12 - requests.packages.urllib3.connectionpool - DEBUG - "GET /kraken/chat/_TEST_/emoticons HTTP/1.1" 404 102
+05/14/2015 20:13:04 - root - INFO - dansgaming thread started
+05/14/2015 20:13:04 - root - INFO - summit1g thread started
+05/14/2015 20:13:04 - root - INFO - kaceytron thread started
+05/14/2015 20:13:04 - root - INFO - itmejp thread started
+05/14/2015 20:13:04 - root - INFO - reckful thread started
+05/14/2015 20:13:04 - root - INFO - sodapoppin thread started
+05/14/2015 20:13:04 - root - INFO - trick2g thread started
+05/14/2015 20:13:06 - root - INFO - IRCBot kaceytron started up!
+05/14/2015 20:13:06 - root - INFO - kaceytron BOT connected to IRC server
+05/14/2015 20:13:06 - root - INFO - IRCBot reckful started up!
+05/14/2015 20:13:06 - root - INFO - IRCBot summit1g started up!
+05/14/2015 20:13:06 - root - INFO - reckful BOT connected to IRC server
+05/14/2015 20:13:06 - root - INFO - summit1g BOT connected to IRC server
+05/14/2015 20:13:06 - root - INFO - IRCBot dansgaming started up!
+05/14/2015 20:13:06 - root - INFO - dansgaming BOT connected to IRC server
+05/14/2015 20:13:06 - root - INFO - IRCBot itmejp started up!
+05/14/2015 20:13:06 - root - INFO - IRCBot sodapoppin started up!
+05/14/2015 20:13:06 - root - INFO - IRCBot trick2g started up!
+05/14/2015 20:13:06 - root - INFO - itmejp BOT connected to IRC server
+05/14/2015 20:13:06 - root - INFO - sodapoppin BOT connected to IRC server
+05/14/2015 20:13:06 - root - INFO - trick2g BOT connected to IRC server
+05/14/2015 20:13:33 - root - WARNING - Error on line:  PRIVMSG #dansgaming :danLol||||| message: |||||user: PRIVMSG #dansgaming :danLol
+05/14/2015 20:14:36 - root - WARNING - Error on line: rr_!vectorr_@vectorr_.tmi.twitch.tv PRIVMSG #kaceytron :I sexually Identify as a KKona. Ever since I was a KKona I dreamed of soaring over the KKona dropping hot sticky loads on disgusting KKona. People say to me that a KKona being a KKona is Impossible and I’m fucking KKona but I don’t care, I’m KKona . I’m having a plastic KKona install rotary KKona, 30 mm KKona ‘s and AMG-114 Hellfire KKona on my body. From now on I want you guys to call me ” KKona ” and respect my right to KKona from above and KKona needlessly. If you can’t KKona me you’re a heli- KKona and need to check your KKona privilege. Thank you for being so KKona ..||||| message: |||||user: r_
+05/14/2015 20:16:41 - root - WARNING - Error on line: .tmi.twitch.tv PRIVMSG #itmejp :LOL||||| message: |||||user: tmi.twitch.tv PRIVMSG #itmejp :LOL
+05/14/2015 20:17:59 - root - WARNING - Error on line: @sharkk_tooth.tmi.twitch.tv PRIVMSG #kaceytron :I sexually Identify as a sodaW . Ever since I was a sodaW I dreamed of soaring over the sodaW dropping hot sticky loads on disgusting sodaW . People say to me that a sodaW being a sodaW is Impossible and I’m fucking sodaW but I don’t care, I’m sodaW . I’m having a plastic sodaW install rotary sodaW , 30 mm sodaW ‘s and AMG-114 Hellfire sodaW on my body. From now on I want you guys to call me ” sodaW ” and respect my right to sodaW from above and sodaW needlessly. If you can’t sodaW me you’re a heli- sodaW and need to check your sodaW privilege. Thank you for being so sodaW ..||||| message: |||||user: sharkk_tooth.tmi.twitch.tv PRIVMSG #kaceytron :I sexually Identify as a sodaW . Ever since I was a sodaW I dreamed of soaring over the sodaW dropping hot sticky loads on disgusting sodaW . People say to me that a sodaW being a sodaW is Impossible and I’m fucking sodaW but I don’t care, I’m sodaW . I’m having a plastic sodaW install rotary sodaW , 30 mm sodaW ‘s and AMG-114 Hellfire sodaW on my body. From now on I want you guys to call me ” sodaW ” and respect my right to sodaW from above and sodaW needlessly. If you can’t sodaW me you’re a heli- sodaW and need to check your sodaW privilege. Thank you for being so sodaW ..
+05/14/2015 20:20:03 - root - WARNING - Error on line: us@fenarious.tmi.twitch.tv PRIVMSG #kaceytron :just shut the fuck up you've dug yourself a hole||||| message: |||||user: s@fenarious.tmi.twitch.tv PRIVMSG #kaceytron :just shut the fuck up you've dug yourself a hole
+05/14/2015 20:20:58 - root - WARNING - Error on line: ooko@tadooko.tmi.twitch.tv PRIVMSG #kaceytron :I sexually Identify as a KKona. Ever since I was a KKona I dreamed of soaring over the KKona dropping hot sticky loads on disgusting KKona. People say to me that a KKona being a KKona is Impossible and I’m fucking KKona but I don’t care, I’m KKona . I’m having a plastic KKona install rotary KKona, 30 mm KKona ‘s and AMG-114 Hellfire KKona on my body. From now on I want you guys to call me ” KKona ” and respect my right to KKona from above and KKona needlessly.  Thank you for being so KKona .||||| message: |||||user: oko@tadooko.tmi.twitch.tv PRIVMSG #kaceytron :I sexually Identify as a KKona. Ever since I was a KKona I dreamed of soaring over the KKona dropping hot sticky loads on disgusting KKona. People say to me that a KKona being a KKona is Impossible and I’m fucking KKona but I don’t care, I’m KKona . I’m having a plastic KKona install rotary KKona, 30 mm KKona ‘s and AMG-114 Hellfire KKona on my body. From now on I want you guys to call me ” KKona ” and respect my right to KKona from above and KKona needlessly.  Thank you for being so KKona .
+05/14/2015 20:28:13 - root - WARNING - Error on line: rbeez12@kilerbeez12.tmi.twitch.tv PRIVMSG #kaceytron :Duuuuddddduuuudduuuuu||||| message: |||||user: beez12@kilerbeez12.tmi.twitch.tv PRIVMSG #kaceytron :Duuuuddddduuuudduuuuu
+05/14/2015 20:29:16 - root - WARNING - Error on line: urewife@zionsfuturewife.tmi.twitch.tv PRIVMSG #kaceytron :Dudududududududu||||| message: |||||user: rewife@zionsfuturewife.tmi.twitch.tv PRIVMSG #kaceytron :Dudududududududu
+05/14/2015 20:30:23 - root - WARNING - Error on line: ow.tmi.twitch.tv PRIVMSG #kaceytron :FeelsBadMan kacey never reads my messages FeelsBadMan||||| message: |||||user: w.tmi.twitch.tv PRIVMSG #kaceytron :FeelsBadMan kacey never reads my messages FeelsBadMan
+05/14/2015 20:30:24 - root - WARNING - Error on line: ch.tv PRIVMSG #kaceytron :Duduudduduudddududududududududududuudududududududuududdududududdduudududdudu||||| message: |||||user: h.tv PRIVMSG #kaceytron :Duduudduduudddududududududududududuudududududududuududdududududdduudududdudu

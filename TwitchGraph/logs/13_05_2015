@@ -1,0 +1,313 @@
+05/12/2015 21:23:05 - requests.packages.urllib3.connectionpool - INFO - Starting new HTTPS connection (1): api.twitch.tv
+05/12/2015 21:23:28 - requests.packages.urllib3.connectionpool - INFO - Starting new HTTPS connection (1): api.twitch.tv
+05/12/2015 21:23:29 - requests.packages.urllib3.connectionpool - DEBUG - "GET /kraken/chat/itmejp/emoticons HTTP/1.1" 200 4706
+05/12/2015 21:23:29 - requests.packages.urllib3.connectionpool - INFO - Starting new HTTPS connection (1): api.twitch.tv
+05/12/2015 21:23:29 - requests.packages.urllib3.connectionpool - DEBUG - "GET /kraken/chat/itmejp/emoticons HTTP/1.1" 200 4706
+05/12/2015 21:23:45 - requests.packages.urllib3.connectionpool - INFO - Starting new HTTPS connection (1): api.twitch.tv
+05/12/2015 21:23:46 - requests.packages.urllib3.connectionpool - DEBUG - "GET /kraken/chat/itmejp/emoticons HTTP/1.1" 200 4706
+05/12/2015 21:23:46 - requests.packages.urllib3.connectionpool - INFO - Starting new HTTPS connection (1): api.twitch.tv
+05/12/2015 21:23:47 - requests.packages.urllib3.connectionpool - DEBUG - "GET /kraken/chat/itmejp/emoticons HTTP/1.1" 200 4706
+05/12/2015 21:24:12 - root - INFO - summit1g thread started
+05/12/2015 21:24:12 - root - INFO - itmejp thread started
+05/12/2015 21:24:12 - root - INFO - trick2g thread started
+05/12/2015 21:24:12 - root - INFO - dansgaming thread started
+05/12/2015 21:24:12 - root - INFO - ryuzilla thread started
+05/12/2015 21:24:25 - root - INFO - trick2g thread started
+05/12/2015 21:24:25 - root - INFO - dansgaming thread started
+05/12/2015 21:24:25 - root - INFO - ryuzilla thread started
+05/12/2015 21:24:25 - root - INFO - itmejp thread started
+05/12/2015 21:24:25 - root - INFO - summit1g thread started
+05/12/2015 21:24:27 - root - INFO - IRCBot ryuzilla started up!
+05/12/2015 21:24:27 - root - INFO - ryuzilla BOT connected to IRC server
+05/12/2015 21:24:27 - root - INFO - IRCBot itmejp started up!
+05/12/2015 21:24:27 - root - INFO - IRCBot dansgaming started up!
+05/12/2015 21:24:27 - root - INFO - itmejp BOT connected to IRC server
+05/12/2015 21:24:27 - root - INFO - dansgaming BOT connected to IRC server
+05/12/2015 21:24:27 - root - INFO - IRCBot summit1g started up!
+05/12/2015 21:24:27 - root - INFO - summit1g BOT connected to IRC server
+05/12/2015 21:24:27 - root - INFO - IRCBot trick2g started up!
+05/12/2015 21:24:27 - root - INFO - trick2g BOT connected to IRC server
+05/12/2015 21:51:37 - root - INFO - dansgaming/D12_M05_Y2015_H20_m34_s39 viewer graph created!
+05/12/2015 21:51:39 - root - INFO - dansgaming/JD12_M05_Y2015_H20_m34_s39 emote graph created!
+05/12/2015 22:12:04 - root - INFO - summit1g thread started
+05/12/2015 22:12:04 - root - INFO - dansgaming thread started
+05/12/2015 22:12:04 - root - INFO - trick2g thread started
+05/12/2015 22:12:04 - root - INFO - itmejp thread started
+05/12/2015 22:12:04 - root - INFO - ryuzilla thread started
+05/12/2015 22:12:05 - root - INFO - IRCBot ryuzilla started up!
+05/12/2015 22:12:05 - root - INFO - IRCBot itmejp started up!
+05/12/2015 22:12:05 - root - INFO - ryuzilla BOT connected to IRC server
+05/12/2015 22:12:05 - root - INFO - itmejp BOT connected to IRC server
+05/12/2015 22:12:06 - root - INFO - IRCBot summit1g started up!
+05/12/2015 22:12:06 - root - INFO - IRCBot trick2g started up!
+05/12/2015 22:12:06 - root - INFO - summit1g BOT connected to IRC server
+05/12/2015 22:12:06 - root - INFO - trick2g BOT connected to IRC server
+05/12/2015 22:12:06 - root - INFO - IRCBot dansgaming started up!
+05/12/2015 22:12:06 - root - INFO - dansgaming BOT connected to IRC server
+05/12/2015 22:12:18 - root - WARNING - Error on line:  PRIVMSG #ryuzilla :?whats is going on||||| message: |||||user: PRIVMSG #ryuzilla :?whats is going on
+05/12/2015 23:20:17 - root - DEBUG - dansgaming - request failure: https://api.twitch.tv/kraken/streams/dansgaming
+05/13/2015 00:11:53 - root - INFO - reckful thread started
+05/13/2015 00:11:54 - root - INFO - IRCBot reckful started up!
+05/13/2015 00:11:54 - root - INFO - reckful BOT connected to IRC server
+05/13/2015 00:14:28 - root - WARNING - Error on line: inwax!pusyonthechainwax@pusyonthechainwax.tmi.twitch.tv PRIVMSG #reckful :שש בש||||| message: |||||user: nwax
+05/13/2015 00:15:52 - root - INFO - itmejp/D13_M05_Y2015_H00_m56_s03 viewer graph created!
+05/13/2015 00:15:52 - root - INFO - itmejp/JD13_M05_Y2015_H00_m56_s03 emote graph created!
+05/13/2015 00:45:03 - root - INFO - nl_kripp thread started
+05/13/2015 00:45:04 - root - INFO - IRCBot nl_kripp started up!
+05/13/2015 00:45:04 - root - INFO - nl_kripp BOT connected to IRC server
+05/13/2015 00:52:28 - root - WARNING - Error on line: ker!jaffacaker@jaffacaker.tmi.twitch.tv PRIVMSG #nl_kripp :ResidentSleeper||||| message: |||||user: er
+05/13/2015 00:52:28 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/itmejp
+05/13/2015 00:52:29 - root - DEBUG - dansgaming - request failure: https://api.twitch.tv/kraken/streams/dansgaming
+05/13/2015 00:52:29 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/kaceytron
+05/13/2015 00:52:50 - root - DEBUG - dansgaming - request failure: https://api.twitch.tv/kraken/streams/dansgaming
+05/13/2015 00:52:55 - root - DEBUG - trick2g - request failure: https://api.twitch.tv/kraken/streams/trick2g
+05/13/2015 00:53:11 - root - DEBUG - reckful - request failure: https://api.twitch.tv/kraken/streams/reckful
+05/13/2015 00:53:16 - root - DEBUG - trick2g - request failure: https://api.twitch.tv/kraken/streams/trick2g
+05/13/2015 00:53:28 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/trumpsc
+05/13/2015 00:53:38 - root - DEBUG - trick2g - request failure: https://api.twitch.tv/kraken/streams/trick2g
+05/13/2015 00:53:49 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/itmejp
+05/13/2015 00:53:55 - root - DEBUG - dansgaming - request failure: https://api.twitch.tv/kraken/streams/dansgaming
+05/13/2015 00:53:59 - root - DEBUG - trick2g - request failure: https://api.twitch.tv/kraken/streams/trick2g
+05/13/2015 00:54:25 - root - WARNING - Error on line: lord0fterror.tmi.twitch.tv PRIVMSG #nl_kripp :xD||||| message: |||||user: ord0fterror.tmi.twitch.tv PRIVMSG #nl_kripp :xD
+05/13/2015 00:55:25 - root - DEBUG - summit1g - request failure: https://api.twitch.tv/kraken/streams/summit1g
+05/13/2015 00:55:25 - root - DEBUG - nl_kripp - request failure: https://api.twitch.tv/kraken/streams/nl_kripp
+05/13/2015 00:55:25 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/dansgaming
+05/13/2015 00:56:25 - root - DEBUG - ryuzilla - request failure: https://api.twitch.tv/kraken/streams/ryuzilla
+05/13/2015 00:58:43 - root - WARNING - Error on line: tch.tv PRIVMSG #nl_kripp :OSfrog||||| message: |||||user: ch.tv PRIVMSG #nl_kripp :OSfrog
+05/13/2015 00:59:42 - root - WARNING - Error on line: i.twitch.tv PRIVMSG #nl_kripp :krippWall krippWall krippWall krippWall krippWall krippWall||||| message: |||||user: .twitch.tv PRIVMSG #nl_kripp :krippWall krippWall krippWall krippWall krippWall krippWall
+05/13/2015 01:06:29 - root - INFO - dansgaming/D13_M05_Y2015_H02_m12_s04 viewer graph created!
+05/13/2015 01:06:34 - root - INFO - dansgaming/JD13_M05_Y2015_H02_m12_s04 emote graph created!
+05/13/2015 01:30:26 - root - WARNING - Error on line: roymashine!destroymashine@destroymashine.tmi.twitch.tv PRIVMSG #reckful :this cunt is gay||||| message: |||||user: oymashine
+05/13/2015 02:12:14 - root - DEBUG - summit1g - request failure: https://api.twitch.tv/kraken/streams/summit1g
+05/13/2015 02:42:26 - root - INFO - ryuzilla/D13_M05_Y2015_H01_m24_s12 viewer graph created!
+05/13/2015 02:42:27 - root - INFO - ryuzilla/JD13_M05_Y2015_H01_m24_s12 emote graph created!
+05/13/2015 03:13:50 - root - INFO - summit1g/D12_M05_Y2015_H17_m12_s18 viewer graph created!
+05/13/2015 03:13:52 - root - INFO - summit1g/JD12_M05_Y2015_H17_m12_s18 emote graph created!
+05/13/2015 09:37:15 - root - INFO - destiny thread started
+05/13/2015 09:37:16 - root - INFO - destiny thread started
+05/13/2015 12:13:14 - root - INFO - destiny/D13_M05_Y2015_H13_m37_s15 viewer graph created!
+05/13/2015 12:13:16 - root - INFO - destiny/D13_M05_Y2015_H13_m37_s15 viewer graph created!
+05/13/2015 12:20:16 - root - INFO - lirik thread started
+05/13/2015 12:20:18 - root - INFO - IRCBot lirik started up!
+05/13/2015 12:20:18 - root - INFO - lirik BOT connected to IRC server
+05/13/2015 12:20:18 - root - INFO - lirik thread started
+05/13/2015 12:20:20 - root - INFO - IRCBot lirik started up!
+05/13/2015 12:20:20 - root - INFO - lirik BOT connected to IRC server
+05/13/2015 12:20:31 - root - WARNING - Error on line:  PRIVMSG #lirik :sound?||||| message: |||||user: PRIVMSG #lirik :sound?
+05/13/2015 12:20:32 - root - WARNING - Error on line: quiizal.tmi.twitch.tv PRIVMSG #lirik :lirikW lirikW lirikW lirikW lirikW lirikW lirikW lirikW lirikW lirikW lirikW||||| message: |||||user: uiizal.tmi.twitch.tv PRIVMSG #lirik :lirikW lirikW lirikW lirikW lirikW lirikW lirikW lirikW lirikW lirikW lirikW
+05/13/2015 12:20:39 - root - WARNING - Error on line: tmi.twitch.tv PRIVMSG #lirik :Awwwwwwwwwww||||| message: |||||user: mi.twitch.tv PRIVMSG #lirik :Awwwwwwwwwww
+05/13/2015 12:20:40 - root - WARNING - Error on line: _rockheart!the_rockheart@the_rockheart.tmi.twitch.tv PRIVMSG #lirik :lirikL lirikTEN lirikL lirikTEN lirikL lirikTEN lirikL lirikTEN lirikL lirikTEN||||| message: |||||user: rockheart
+05/13/2015 12:20:41 - root - WARNING - Error on line: itch.tv PRIVMSG #lirik :lirikHype||||| message: |||||user: tch.tv PRIVMSG #lirik :lirikHype
+05/13/2015 12:20:41 - root - WARNING - Error on line: tch.tv PRIVMSG #lirik :lirikC lirikC lirikC lirikC lirikC lirikC lirikC lirikC lirikC lirikC lirikC||||| message: |||||user: ch.tv PRIVMSG #lirik :lirikC lirikC lirikC lirikC lirikC lirikC lirikC lirikC lirikC lirikC lirikC
+05/13/2015 12:20:43 - root - WARNING - Error on line: v PRIVMSG #lirik :lirikAppa lirikAppa lirikAppa lirikAppa lirikAppa||||| message: |||||user:  PRIVMSG #lirik :lirikAppa lirikAppa lirikAppa lirikAppa lirikAppa
+05/13/2015 13:42:49 - root - INFO - summit1g thread started
+05/13/2015 13:42:50 - root - INFO - summit1g thread started
+05/13/2015 13:42:51 - root - INFO - IRCBot summit1g started up!
+05/13/2015 13:42:51 - root - INFO - summit1g BOT connected to IRC server
+05/13/2015 13:42:51 - root - INFO - IRCBot summit1g started up!
+05/13/2015 13:42:52 - root - INFO - summit1g BOT connected to IRC server
+05/13/2015 13:43:16 - root - WARNING - Error on line: .tv PRIVMSG #summit1g :Yoo||||| message: |||||user: tv PRIVMSG #summit1g :Yoo
+05/13/2015 13:43:16 - root - WARNING - Error on line: .tv PRIVMSG #summit1g :Yoo||||| message: |||||user: tv PRIVMSG #summit1g :Yoo
+05/13/2015 13:57:54 - root - WARNING - Error on line: nightbot.tmi.twitch.tv PRIVMSG #summit1g :the next normal start time will be in 1 Hours, 2 Minutes, 10 Seconds||||| message: |||||user: ightbot.tmi.twitch.tv PRIVMSG #summit1g :the next normal start time will be in 1 Hours, 2 Minutes, 10 Seconds
+05/13/2015 13:57:54 - root - WARNING - Error on line: nightbot.tmi.twitch.tv PRIVMSG #summit1g :the next normal start time will be in 1 Hours, 2 Minutes, 10 Seconds||||| message: |||||user: ightbot.tmi.twitch.tv PRIVMSG #summit1g :the next normal start time will be in 1 Hours, 2 Minutes, 10 Seconds
+05/13/2015 13:58:49 - root - WARNING - Error on line: rre@mrjotaerre.tmi.twitch.tv PRIVMSG #summit1g :YES YES||||| message: |||||user: re@mrjotaerre.tmi.twitch.tv PRIVMSG #summit1g :YES YES
+05/13/2015 13:58:49 - root - WARNING - Error on line: rre@mrjotaerre.tmi.twitch.tv PRIVMSG #summit1g :YES YES||||| message: |||||user: re@mrjotaerre.tmi.twitch.tv PRIVMSG #summit1g :YES YES
+05/13/2015 13:59:55 - root - WARNING - Error on line: rch.tmi.twitch.tv PRIVMSG #summit1g :Timthetatman?||||| message: |||||user: ch.tmi.twitch.tv PRIVMSG #summit1g :Timthetatman?
+05/13/2015 14:28:06 - root - INFO - lirik/D13_M05_Y2015_H16_m20_s16 viewer graph created!
+05/13/2015 14:28:08 - root - INFO - lirik/JD13_M05_Y2015_H16_m20_s16 emote graph created!
+05/13/2015 14:28:08 - root - INFO - lirik/D13_M05_Y2015_H16_m20_s16 viewer graph created!
+05/13/2015 14:28:14 - root - INFO - lirik/JD13_M05_Y2015_H16_m20_s16 emote graph created!
+05/13/2015 15:07:21 - root - INFO - trumpsc thread started
+05/13/2015 15:07:21 - root - INFO - trumpsc thread started
+05/13/2015 15:07:23 - root - INFO - IRCBot trumpsc started up!
+05/13/2015 15:07:23 - root - INFO - trumpsc BOT connected to IRC server
+05/13/2015 15:07:23 - root - INFO - IRCBot trumpsc started up!
+05/13/2015 15:07:23 - root - INFO - trumpsc BOT connected to IRC server
+05/13/2015 15:21:52 - root - DEBUG - trumpsc - request failure: https://api.twitch.tv/kraken/streams/trumpsc
+05/13/2015 15:32:07 - root - WARNING - Error on line: boom@adoggoboom.tmi.twitch.tv PRIVMSG #trumpsc :boom?||||| message: |||||user: oom@adoggoboom.tmi.twitch.tv PRIVMSG #trumpsc :boom?
+05/13/2015 15:32:07 - root - WARNING - Error on line: boom@adoggoboom.tmi.twitch.tv PRIVMSG #trumpsc :boom?||||| message: |||||user: oom@adoggoboom.tmi.twitch.tv PRIVMSG #trumpsc :boom?
+05/13/2015 16:00:45 - root - INFO - dansgaming thread started
+05/13/2015 16:00:47 - root - INFO - IRCBot dansgaming started up!
+05/13/2015 16:00:47 - root - INFO - dansgaming BOT connected to IRC server
+05/13/2015 16:01:46 - root - INFO - dansgaming thread started
+05/13/2015 16:01:47 - root - INFO - IRCBot dansgaming started up!
+05/13/2015 16:01:47 - root - INFO - dansgaming BOT connected to IRC server
+05/13/2015 16:36:43 - root - WARNING - Error on line: amboknife_!ramboknife_@ramboknife_.tmi.twitch.tv PRIVMSG #dansgaming :THis foliage danGasm ||||| message: |||||user: mboknife_
+05/13/2015 16:36:43 - root - WARNING - Error on line: amboknife_!ramboknife_@ramboknife_.tmi.twitch.tv PRIVMSG #dansgaming :THis foliage danGasm ||||| message: |||||user: mboknife_
+05/13/2015 17:03:06 - root - INFO - trick2g thread started
+05/13/2015 17:03:08 - root - INFO - IRCBot trick2g started up!
+05/13/2015 17:03:08 - root - INFO - trick2g thread started
+05/13/2015 17:03:08 - root - INFO - trick2g BOT connected to IRC server
+05/13/2015 17:03:11 - root - INFO - IRCBot trick2g started up!
+05/13/2015 17:03:11 - root - INFO - trick2g BOT connected to IRC server
+05/13/2015 17:19:16 - root - WARNING - Error on line: PRIVMSG #dansgaming :danLewd||||| message: |||||user: RIVMSG #dansgaming :danLewd
+05/13/2015 17:19:16 - root - WARNING - Error on line: PRIVMSG #dansgaming :danLewd||||| message: |||||user: RIVMSG #dansgaming :danLewd
+05/13/2015 17:44:10 - root - WARNING - Error on line: mi.twitch.tv PRIVMSG #trick2g :Lmao||||| message: |||||user: i.twitch.tv PRIVMSG #trick2g :Lmao
+05/13/2015 17:44:10 - root - WARNING - Error on line: mi.twitch.tv PRIVMSG #trick2g :Lmao||||| message: |||||user: i.twitch.tv PRIVMSG #trick2g :Lmao
+05/13/2015 17:46:18 - root - DEBUG - trumpsc - request failure: https://api.twitch.tv/kraken/streams/trumpsc
+05/13/2015 18:01:32 - root - INFO - kaceytron thread started
+05/13/2015 18:01:32 - root - INFO - kaceytron thread started
+05/13/2015 18:01:34 - root - INFO - IRCBot kaceytron started up!
+05/13/2015 18:01:34 - root - INFO - IRCBot kaceytron started up!
+05/13/2015 18:01:34 - root - INFO - kaceytron BOT connected to IRC server
+05/13/2015 18:01:34 - root - INFO - kaceytron BOT connected to IRC server
+05/13/2015 18:05:06 - root - WARNING - Error on line: aint!lastswordsaint@lastswordsaint.tmi.twitch.tv PRIVMSG #kaceytron :Today I consider subing||||| message: |||||user: int
+05/13/2015 18:08:23 - root - WARNING - Error on line: allyimportant.tmi.twitch.tv PRIVMSG #kaceytron :can non-subs pls stop being kaceyToxic||||| message: |||||user: llyimportant.tmi.twitch.tv PRIVMSG #kaceytron :can non-subs pls stop being kaceyToxic
+05/13/2015 18:10:26 - root - WARNING - Error on line: ard.tmi.twitch.tv PRIVMSG #kaceytron :Yo bitch start already wtf we need to see tittes and I'm getting limp now FeelsBadMan||||| message: |||||user: rd.tmi.twitch.tv PRIVMSG #kaceytron :Yo bitch start already wtf we need to see tittes and I'm getting limp now FeelsBadMan
+05/13/2015 18:14:41 - root - WARNING - Error on line: ng2244@zang2244.tmi.twitch.tv PRIVMSG #kaceytron :ПЕВЕТ ЕПТА БЛЯ ЖМЫХИ ЕБАНЫЕ||||| message: |||||user: g2244@zang2244.tmi.twitch.tv PRIVMSG #kaceytron :ПЕВЕТ ЕПТА БЛЯ ЖМЫХИ ЕБАНЫЕ
+05/13/2015 18:14:41 - root - WARNING - Error on line: ng2244@zang2244.tmi.twitch.tv PRIVMSG #kaceytron :ПЕВЕТ ЕПТА БЛЯ ЖМЫХИ ЕБАНЫЕ||||| message: |||||user: g2244@zang2244.tmi.twitch.tv PRIVMSG #kaceytron :ПЕВЕТ ЕПТА БЛЯ ЖМЫХИ ЕБАНЫЕ
+05/13/2015 18:16:57 - root - WARNING - Error on line: owiard.tmi.twitch.tv PRIVMSG #kaceytron :PogChamp S O D A P O P P I N B O Y S PogChamp S O D A P O P P I N B O Y S PogChamp S O D A P O P P I N B O Y S PogChamp S O D A P O P P I N B O Y S PogChamp S O D A P O P P I N B O Y S PogChamp S O D A P O P P I N B O Y S PogChamp.||||| message: |||||user: wiard.tmi.twitch.tv PRIVMSG #kaceytron :PogChamp S O D A P O P P I N B O Y S PogChamp S O D A P O P P I N B O Y S PogChamp S O D A P O P P I N B O Y S PogChamp S O D A P O P P I N B O Y S PogChamp S O D A P O P P I N B O Y S PogChamp S O D A P O P P I N B O Y S PogChamp.
+05/13/2015 18:16:57 - root - WARNING - Error on line: owiard.tmi.twitch.tv PRIVMSG #kaceytron :PogChamp S O D A P O P P I N B O Y S PogChamp S O D A P O P P I N B O Y S PogChamp S O D A P O P P I N B O Y S PogChamp S O D A P O P P I N B O Y S PogChamp S O D A P O P P I N B O Y S PogChamp S O D A P O P P I N B O Y S PogChamp.||||| message: |||||user: wiard.tmi.twitch.tv PRIVMSG #kaceytron :PogChamp S O D A P O P P I N B O Y S PogChamp S O D A P O P P I N B O Y S PogChamp S O D A P O P P I N B O Y S PogChamp S O D A P O P P I N B O Y S PogChamp S O D A P O P P I N B O Y S PogChamp S O D A P O P P I N B O Y S PogChamp.
+05/13/2015 18:17:56 - root - WARNING - Error on line: @jadin_13.tmi.twitch.tv PRIVMSG #kaceytron :dizzyDolphin dizzyDolphin dizzyDolphin||||| message: |||||user: jadin_13.tmi.twitch.tv PRIVMSG #kaceytron :dizzyDolphin dizzyDolphin dizzyDolphin
+05/13/2015 18:17:56 - root - WARNING - Error on line: @jadin_13.tmi.twitch.tv PRIVMSG #kaceytron :dizzyDolphin dizzyDolphin dizzyDolphin||||| message: |||||user: jadin_13.tmi.twitch.tv PRIVMSG #kaceytron :dizzyDolphin dizzyDolphin dizzyDolphin
+05/13/2015 18:18:59 - root - WARNING - Error on line: .twitch.tv PRIVMSG #kaceytron :WATCHING YOUR STREAM ALL SUMMER <3||||| message: |||||user: twitch.tv PRIVMSG #kaceytron :WATCHING YOUR STREAM ALL SUMMER <3
+05/13/2015 18:18:59 - root - WARNING - Error on line: .twitch.tv PRIVMSG #kaceytron :WATCHING YOUR STREAM ALL SUMMER <3||||| message: |||||user: twitch.tv PRIVMSG #kaceytron :WATCHING YOUR STREAM ALL SUMMER <3
+05/13/2015 18:23:23 - root - WARNING - Error on line: nja69!dorkninja69@dorkninja69.tmi.twitch.tv PRIVMSG #kaceytron :no||||| message: |||||user: ja69
+05/13/2015 18:23:23 - root - WARNING - Error on line: nja69!dorkninja69@dorkninja69.tmi.twitch.tv PRIVMSG #kaceytron :no||||| message: |||||user: ja69
+05/13/2015 18:25:28 - root - WARNING - Error on line: .tv PRIVMSG #kaceytron :MASTURBATE OUTSIDE I GOT IT||||| message: |||||user: tv PRIVMSG #kaceytron :MASTURBATE OUTSIDE I GOT IT
+05/13/2015 18:25:28 - root - WARNING - Error on line: .tv PRIVMSG #kaceytron :MASTURBATE OUTSIDE I GOT IT||||| message: |||||user: tv PRIVMSG #kaceytron :MASTURBATE OUTSIDE I GOT IT
+05/13/2015 18:25:29 - root - WARNING - Error on line: sandoz.tmi.twitch.tv PRIVMSG #kaceytron :JERKING OUTSIDE =O||||| message: |||||user: andoz.tmi.twitch.tv PRIVMSG #kaceytron :JERKING OUTSIDE =O
+05/13/2015 18:25:29 - root - WARNING - Error on line: sandoz.tmi.twitch.tv PRIVMSG #kaceytron :JERKING OUTSIDE =O||||| message: |||||user: andoz.tmi.twitch.tv PRIVMSG #kaceytron :JERKING OUTSIDE =O
+05/13/2015 18:26:35 - root - WARNING - Error on line: itch.tv PRIVMSG #kaceytron :no dont do that lol||||| message: |||||user: tch.tv PRIVMSG #kaceytron :no dont do that lol
+05/13/2015 18:26:35 - root - WARNING - Error on line: itch.tv PRIVMSG #kaceytron :no dont do that lol||||| message: |||||user: tch.tv PRIVMSG #kaceytron :no dont do that lol
+05/13/2015 18:28:45 - root - WARNING - Error on line: axxheart!maxxheart@maxxheart.tmi.twitch.tv PRIVMSG #kaceytron :@seldric omg hi HeyGuys <3 <3||||| message: |||||user: xxheart
+05/13/2015 19:19:44 - root - DEBUG - summit1g - request failure: https://api.twitch.tv/kraken/streams/summit1g
+05/13/2015 19:51:08 - root - INFO - itmejp thread started
+05/13/2015 19:51:08 - root - INFO - itmejp thread started
+05/13/2015 19:51:10 - root - INFO - IRCBot itmejp started up!
+05/13/2015 19:51:10 - root - INFO - itmejp BOT connected to IRC server
+05/13/2015 19:51:10 - root - INFO - IRCBot itmejp started up!
+05/13/2015 19:51:10 - root - INFO - itmejp BOT connected to IRC server
+05/13/2015 20:39:46 - root - DEBUG - dansgaming - request failure: https://api.twitch.tv/kraken/streams/dansgaming
+05/13/2015 20:48:14 - root - WARNING - Error on line: mon@jamesthedaemon.tmi.twitch.tv PRIVMSG #itmejp :Well it is over guys||||| message: |||||user: on@jamesthedaemon.tmi.twitch.tv PRIVMSG #itmejp :Well it is over guys
+05/13/2015 20:58:43 - root - WARNING - Error on line: r.tmi.twitch.tv PRIVMSG #itmejp :Transformers!!||||| message: |||||user: .tmi.twitch.tv PRIVMSG #itmejp :Transformers
+05/13/2015 20:58:43 - root - WARNING - Error on line: r.tmi.twitch.tv PRIVMSG #itmejp :Transformers!!||||| message: |||||user: .tmi.twitch.tv PRIVMSG #itmejp :Transformers
+05/13/2015 21:10:40 - root - INFO - trumpsc/D13_M05_Y2015_H19_m07_s21 viewer graph created!
+05/13/2015 21:10:40 - root - INFO - trumpsc/D13_M05_Y2015_H19_m07_s21 viewer graph created!
+05/13/2015 21:10:40 - root - INFO - trumpsc/JD13_M05_Y2015_H19_m07_s21 emote graph created!
+05/13/2015 21:10:40 - root - INFO - trumpsc/JD13_M05_Y2015_H19_m07_s21 emote graph created!
+05/13/2015 21:37:54 - root - INFO - kaceytron/D13_M05_Y2015_H22_m01_s32 viewer graph created!
+05/13/2015 21:37:55 - root - INFO - kaceytron/D13_M05_Y2015_H22_m01_s32 viewer graph created!
+05/13/2015 21:37:55 - root - INFO - kaceytron/JD13_M05_Y2015_H22_m01_s32 emote graph created!
+05/13/2015 21:37:56 - root - INFO - kaceytron/JD13_M05_Y2015_H22_m01_s32 emote graph created!
+05/13/2015 22:12:08 - root - DEBUG - itmejp - request failure: https://api.twitch.tv/kraken/streams/itmejp
+05/13/2015 23:18:32 - root - INFO - dansgaming/D13_M05_Y2015_H20_m00_s45 viewer graph created!
+05/13/2015 23:18:33 - root - INFO - dansgaming/JD13_M05_Y2015_H20_m00_s45 emote graph created!
+05/13/2015 23:19:31 - root - INFO - dansgaming/D13_M05_Y2015_H20_m00_s45 viewer graph created!
+05/13/2015 23:19:32 - root - INFO - dansgaming/JD13_M05_Y2015_H20_m00_s45 emote graph created!
+05/13/2015 23:33:57 - root - DEBUG - trick2g - request failure: https://api.twitch.tv/kraken/streams/trick2g
+05/13/2015 23:41:43 - root - INFO - reckful thread started
+05/13/2015 23:41:43 - root - INFO - reckful thread started
+05/13/2015 23:41:44 - root - INFO - IRCBot reckful started up!
+05/13/2015 23:41:44 - root - INFO - reckful BOT connected to IRC server
+05/13/2015 23:41:44 - root - INFO - IRCBot reckful started up!
+05/13/2015 23:41:44 - root - INFO - reckful BOT connected to IRC server
+05/14/2015 00:09:20 - root - DEBUG - reckful - request failure: https://api.twitch.tv/kraken/streams/reckful
+05/14/2015 00:20:49 - root - INFO - itmejp/D13_M05_Y2015_H23_m51_s08 viewer graph created!
+05/14/2015 00:20:49 - root - INFO - itmejp/D13_M05_Y2015_H23_m51_s08 viewer graph created!
+05/14/2015 00:20:51 - root - INFO - itmejp/JD13_M05_Y2015_H23_m51_s08 emote graph created!
+05/14/2015 00:20:51 - root - INFO - itmejp/JD13_M05_Y2015_H23_m51_s08 emote graph created!
+05/14/2015 00:27:42 - root - WARNING - Error on line: e.tmi.twitch.tv PRIVMSG #reckful :WOAH PogChamp||||| message: |||||user: .tmi.twitch.tv PRIVMSG #reckful :WOAH PogChamp
+05/14/2015 00:27:42 - root - WARNING - Error on line: e.tmi.twitch.tv PRIVMSG #reckful :WOAH PogChamp||||| message: |||||user: .tmi.twitch.tv PRIVMSG #reckful :WOAH PogChamp
+05/14/2015 00:28:42 - root - WARNING - Error on line: man@rokozshaman.tmi.twitch.tv PRIVMSG #reckful :EDGELORD||||| message: |||||user: an@rokozshaman.tmi.twitch.tv PRIVMSG #reckful :EDGELORD
+05/14/2015 00:45:58 - root - INFO - nl_kripp thread started
+05/14/2015 00:45:58 - root - INFO - nl_kripp thread started
+05/14/2015 00:45:59 - root - INFO - IRCBot nl_kripp started up!
+05/14/2015 00:45:59 - root - INFO - nl_kripp BOT connected to IRC server
+05/14/2015 00:45:59 - root - INFO - IRCBot nl_kripp started up!
+05/14/2015 00:45:59 - root - INFO - nl_kripp BOT connected to IRC server
+05/14/2015 00:47:44 - root - WARNING - Error on line: bot@nightbot.tmi.twitch.tv PRIVMSG #reckful :Reckful has been streaming for 1 hour, 8 minutes||||| message: |||||user: ot@nightbot.tmi.twitch.tv PRIVMSG #reckful :Reckful has been streaming for 1 hour, 8 minutes
+05/14/2015 00:47:48 - root - WARNING - Error on line: @yu40610.tmi.twitch.tv PRIVMSG #nl_kripp :T U C K F R U M P DansGame=ε/̵͇̿̿/’̿’̿ ̿ ̿̿ ̿̿ ̿̿ trumpW.||||| message: |||||user: yu40610.tmi.twitch.tv PRIVMSG #nl_kripp :T U C K F R U M P DansGame=ε/̵͇̿̿/’̿’̿ ̿ ̿̿ ̿̿ ̿̿ trumpW.
+05/14/2015 00:47:48 - root - WARNING - Error on line: @yu40610.tmi.twitch.tv PRIVMSG #nl_kripp :T U C K F R U M P DansGame=ε/̵͇̿̿/’̿’̿ ̿ ̿̿ ̿̿ ̿̿ trumpW.||||| message: |||||user: yu40610.tmi.twitch.tv PRIVMSG #nl_kripp :T U C K F R U M P DansGame=ε/̵͇̿̿/’̿’̿ ̿ ̿̿ ̿̿ ̿̿ trumpW.
+05/14/2015 00:48:47 - root - WARNING - Error on line: enbergxo.tmi.twitch.tv PRIVMSG #nl_kripp :booobs||||| message: |||||user: nbergxo.tmi.twitch.tv PRIVMSG #nl_kripp :booobs
+05/14/2015 00:48:47 - root - WARNING - Error on line: enbergxo.tmi.twitch.tv PRIVMSG #nl_kripp :booobs||||| message: |||||user: nbergxo.tmi.twitch.tv PRIVMSG #nl_kripp :booobs
+05/14/2015 00:53:04 - root - WARNING - Error on line: uck!guard226duck@guard226duck.tmi.twitch.tv PRIVMSG #nl_kripp :Kreygasm D Kreygasm R Kreygasm U Kreygasm M Kreygasm S Kreygasm ....||||| message: |||||user: ck
+05/14/2015 00:53:04 - root - WARNING - Error on line: uck!guard226duck@guard226duck.tmi.twitch.tv PRIVMSG #nl_kripp :Kreygasm D Kreygasm R Kreygasm U Kreygasm M Kreygasm S Kreygasm ....||||| message: |||||user: ck
+05/14/2015 00:56:12 - root - WARNING - Error on line: da@nethada.tmi.twitch.tv PRIVMSG #nl_kripp :agar.io||||| message: |||||user: a@nethada.tmi.twitch.tv PRIVMSG #nl_kripp :agar.io
+05/14/2015 00:56:12 - root - WARNING - Error on line: da@nethada.tmi.twitch.tv PRIVMSG #nl_kripp :agar.io||||| message: |||||user: a@nethada.tmi.twitch.tv PRIVMSG #nl_kripp :agar.io
+05/14/2015 01:04:44 - root - WARNING - Error on line: solemnp@solemnp.tmi.twitch.tv PRIVMSG #nl_kripp :ACTION MAKE FIRE MAGE SwiftRage||||| message: |||||user: olemnp@solemnp.tmi.twitch.tv PRIVMSG #nl_kripp :ACTION MAKE FIRE MAGE SwiftRage
+05/14/2015 01:33:21 - root - DEBUG - reckful - request failure: https://api.twitch.tv/kraken/streams/reckful
+05/14/2015 01:33:22 - root - DEBUG - trick2g - request failure: https://api.twitch.tv/kraken/streams/trick2g
+05/14/2015 01:33:26 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/kinetick42
+05/14/2015 01:33:26 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/kinetick42
+05/14/2015 01:33:33 - root - DEBUG - reckful - request failure: https://api.twitch.tv/kraken/streams/reckful
+05/14/2015 01:33:37 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/trick2g
+05/14/2015 01:33:38 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/nl_kripp
+05/14/2015 01:33:43 - root - DEBUG - trick2g - request failure: https://api.twitch.tv/kraken/streams/trick2g
+05/14/2015 01:33:48 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/dansgaming
+05/14/2015 01:33:48 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/lirik
+05/14/2015 01:33:50 - root - DEBUG - nl_kripp - request failure: https://api.twitch.tv/kraken/streams/nl_kripp
+05/14/2015 01:34:05 - root - DEBUG - trick2g - request failure: https://api.twitch.tv/kraken/streams/trick2g
+05/14/2015 01:34:07 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/ryuzilla
+05/14/2015 01:34:26 - root - DEBUG - trick2g - request failure: https://api.twitch.tv/kraken/streams/trick2g
+05/14/2015 01:34:30 - root - DEBUG - summit1g - request failure: https://api.twitch.tv/kraken/streams/summit1g
+05/14/2015 01:34:46 - root - DEBUG - trick2g - request failure: https://api.twitch.tv/kraken/streams/trick2g
+05/14/2015 01:34:47 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/kinetick42
+05/14/2015 01:34:47 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/kinetick42
+05/14/2015 01:34:52 - root - DEBUG - summit1g - request failure: https://api.twitch.tv/kraken/streams/summit1g
+05/14/2015 01:34:58 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/trick2g
+05/14/2015 01:35:00 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/lirik
+05/14/2015 01:35:00 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/kaceytron
+05/14/2015 01:35:04 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/destiny
+05/14/2015 01:35:07 - root - DEBUG - trick2g - request failure: https://api.twitch.tv/kraken/streams/trick2g
+05/14/2015 01:35:09 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/lirik
+05/14/2015 01:35:15 - root - DEBUG - summit1g - request failure: https://api.twitch.tv/kraken/streams/summit1g
+05/14/2015 01:35:24 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/ryuzilla
+05/14/2015 01:35:28 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/ryuzilla
+05/14/2015 01:35:29 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/trumpsc
+05/14/2015 01:35:29 - root - DEBUG - trick2g - request failure: https://api.twitch.tv/kraken/streams/trick2g
+05/14/2015 01:35:37 - root - DEBUG - trick2g - request failure: https://api.twitch.tv/kraken/streams/trick2g
+05/14/2015 01:35:57 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/trick2g
+05/14/2015 01:36:01 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/dansgaming
+05/14/2015 01:36:03 - root - DEBUG - summit1g - request failure: https://api.twitch.tv/kraken/streams/summit1g
+05/14/2015 01:36:15 - root - DEBUG - nl_kripp - request failure: https://api.twitch.tv/kraken/streams/nl_kripp
+05/14/2015 01:37:15 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/trumpsc
+05/14/2015 01:37:15 - root - DEBUG - reckful - request failure: https://api.twitch.tv/kraken/streams/reckful
+05/14/2015 01:37:15 - root - DEBUG - reckful - request failure: https://api.twitch.tv/kraken/streams/reckful
+05/14/2015 01:37:15 - root - DEBUG - nl_kripp - request failure: https://api.twitch.tv/kraken/streams/nl_kripp
+05/14/2015 01:37:23 - root - WARNING - Error on line:  PRIVMSG #reckful :Reynard nudes?||||| message: |||||user: PRIVMSG #reckful :Reynard nudes?
+05/14/2015 01:37:23 - root - WARNING - Error on line:  PRIVMSG #reckful :Reynard nudes?||||| message: |||||user: PRIVMSG #reckful :Reynard nudes?
+05/14/2015 01:38:16 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/reckful
+05/14/2015 01:40:37 - root - WARNING - Error on line:  PRIVMSG #reckful :reynad showed his adress on stream||||| message: |||||user: PRIVMSG #reckful :reynad showed his adress on stream
+05/14/2015 01:40:37 - root - WARNING - Error on line:  PRIVMSG #reckful :reynad showed his adress on stream||||| message: |||||user: PRIVMSG #reckful :reynad showed his adress on stream
+05/14/2015 01:47:50 - root - WARNING - Error on line: tv PRIVMSG #reckful :#FREE MY NIGGAH REYNAD||||| message: |||||user: v PRIVMSG #reckful :#FREE MY NIGGAH REYNAD
+05/14/2015 01:47:50 - root - WARNING - Error on line: tv PRIVMSG #reckful :#FREE MY NIGGAH REYNAD||||| message: |||||user: v PRIVMSG #reckful :#FREE MY NIGGAH REYNAD
+05/14/2015 02:10:14 - root - DEBUG - summit1g - request failure: https://api.twitch.tv/kraken/streams/summit1g
+05/14/2015 02:25:27 - root - WARNING - Error on line: .tmi.twitch.tv PRIVMSG #reckful :ITS DE HAT MON||||| message: |||||user: tmi.twitch.tv PRIVMSG #reckful :ITS DE HAT MON
+05/14/2015 02:25:27 - root - WARNING - Error on line: .tmi.twitch.tv PRIVMSG #reckful :ITS DE HAT MON||||| message: |||||user: tmi.twitch.tv PRIVMSG #reckful :ITS DE HAT MON
+05/14/2015 02:33:58 - root - INFO - summit1g/D13_M05_Y2015_H17_m42_s49 viewer graph created!
+05/14/2015 02:33:59 - root - INFO - summit1g/JD13_M05_Y2015_H17_m42_s49 emote graph created!
+05/14/2015 02:34:27 - root - INFO - summit1g/D13_M05_Y2015_H17_m42_s49 viewer graph created!
+05/14/2015 02:34:27 - root - INFO - summit1g/JD13_M05_Y2015_H17_m42_s49 emote graph created!
+05/14/2015 03:58:07 - root - INFO - reckful/D14_M05_Y2015_H03_m41_s42 viewer graph created!
+05/14/2015 03:58:10 - root - INFO - reckful/JD14_M05_Y2015_H03_m41_s42 emote graph created!
+05/14/2015 03:58:52 - root - INFO - reckful/D14_M05_Y2015_H03_m41_s42 viewer graph created!
+05/14/2015 03:58:58 - root - INFO - reckful/JD14_M05_Y2015_H03_m41_s42 emote graph created!
+05/14/2015 04:35:04 - root - INFO - trick2g/D13_M05_Y2015_H21_m03_s06 viewer graph created!
+05/14/2015 04:35:08 - root - INFO - trick2g/JD13_M05_Y2015_H21_m03_s06 emote graph created!
+05/14/2015 04:36:02 - root - INFO - trick2g/D13_M05_Y2015_H21_m03_s06 viewer graph created!
+05/14/2015 04:36:06 - root - INFO - trick2g/JD13_M05_Y2015_H21_m03_s06 emote graph created!
+05/14/2015 05:01:00 - root - DEBUG - nl_kripp - request failure: https://api.twitch.tv/kraken/streams/nl_kripp
+05/14/2015 09:17:37 - root - INFO - nl_kripp/D14_M05_Y2015_H04_m45_s58 viewer graph created!
+05/14/2015 09:17:43 - root - INFO - nl_kripp/JD14_M05_Y2015_H04_m45_s58 emote graph created!
+05/14/2015 09:18:53 - root - INFO - nl_kripp/D14_M05_Y2015_H04_m45_s58 viewer graph created!
+05/14/2015 09:18:54 - root - INFO - nl_kripp/JD14_M05_Y2015_H04_m45_s58 emote graph created!
+05/14/2015 09:21:05 - root - INFO - destiny thread started
+05/14/2015 09:21:23 - root - INFO - destiny thread started
+05/14/2015 11:36:00 - root - DEBUG - destiny - request failure: https://api.twitch.tv/kraken/streams/destiny
+05/14/2015 12:32:18 - root - INFO - destiny/D14_M05_Y2015_H13_m21_s05 viewer graph created!
+05/14/2015 12:32:36 - root - INFO - destiny/D14_M05_Y2015_H13_m21_s05 viewer graph created!
+05/14/2015 13:32:01 - root - INFO - sodapoppin thread started
+05/14/2015 13:32:02 - root - INFO - IRCBot sodapoppin started up!
+05/14/2015 13:32:02 - root - INFO - sodapoppin BOT connected to IRC server
+05/14/2015 13:32:05 - root - INFO - sodapoppin thread started
+05/14/2015 13:32:07 - root - INFO - IRCBot sodapoppin started up!
+05/14/2015 13:32:07 - root - INFO - sodapoppin BOT connected to IRC server
+05/14/2015 13:33:19 - root - WARNING - Error on line: asonthepotato!jasonthepotato@jasonthepotato.tmi.twitch.tv PRIVMSG #sodapoppin :DatSheffy  DatSheffy  DatSheffy  DatSheffy||||| message: |||||user: sonthepotato
+05/14/2015 13:33:20 - root - WARNING - Error on line: mi@alice_mayami.tmi.twitch.tv PRIVMSG #sodapoppin :DatSheffy DatSheffy DatSheffy DatSheffy||||| message: |||||user: i@alice_mayami.tmi.twitch.tv PRIVMSG #sodapoppin :DatSheffy DatSheffy DatSheffy DatSheffy
+05/14/2015 13:34:11 - root - WARNING - Error on line: tch.tv PRIVMSG #sodapoppin :WHY HIT NICK DansGame||||| message: |||||user: ch.tv PRIVMSG #sodapoppin :WHY HIT NICK DansGame
+05/14/2015 13:34:12 - root - WARNING - Error on line: ldur106.tmi.twitch.tv PRIVMSG #sodapoppin :Kappa||||| message: |||||user: dur106.tmi.twitch.tv PRIVMSG #sodapoppin :Kappa
+05/14/2015 13:34:13 - root - WARNING - Error on line: h.tmi.twitch.tv PRIVMSG #sodapoppin :Kappa||||| message: |||||user: .tmi.twitch.tv PRIVMSG #sodapoppin :Kappa
+05/14/2015 13:34:15 - root - WARNING - Error on line: armobi.tmi.twitch.tv PRIVMSG #sodapoppin :Kappa||||| message: |||||user: rmobi.tmi.twitch.tv PRIVMSG #sodapoppin :Kappa
+05/14/2015 13:36:18 - root - WARNING - Error on line: liliiliilil@illiililliililliliiliilil.tmi.twitch.tv PRIVMSG #sodapoppin :you owe us you fuck||||| message: |||||user: iliiliilil@illiililliililliliiliilil.tmi.twitch.tv PRIVMSG #sodapoppin :you owe us you fuck
+05/14/2015 13:36:19 - root - WARNING - Error on line: ch.tv PRIVMSG #sodapoppin :sodaL sodaL sodaL sodaL sodaL sodaL sodaL sodaL sodaL||||| message: |||||user: h.tv PRIVMSG #sodapoppin :sodaL sodaL sodaL sodaL sodaL sodaL sodaL sodaL sodaL

@@ -16,7 +16,7 @@ import json
 logging.getLogger("requests").setLevel(logging.WARNING)
 
 class TwitchIRCBot(threading.Thread):
-    def __init__(self, stream, jsonPath, logPath, config):
+    def __init__(self, stream, jsonPath, logPath, config, globalPath):
         threading.Thread.__init__(self)
 
         self.user = "Kinetick42"
@@ -29,6 +29,7 @@ class TwitchIRCBot(threading.Thread):
         self._stopevent = threading.Event( )
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.directory = logPath
+        self.globalPath = globalPath
 
         if not os.path.exists(os.path.dirname(self.directory)):
             os.makedirs(os.path.dirname(self.directory))
@@ -37,7 +38,7 @@ class TwitchIRCBot(threading.Thread):
         self.subEmotes = TwitchAPI.getSubEmotes(self.stream)
         self.twitchEmotes = TwitchAPI.getTwitchEmotes(self.stream)
         self.allEmotes = self.subEmotes + self.twitchEmotes
-        self.jEditor = JsonEditor(self.jdirectory, self.subEmotes)
+        self.jEditor = JsonEditor(self.jdirectory, self.globalPath)
 
     def run(self):
         print "IRCBot " + self.stream + " started up!"

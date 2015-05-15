@@ -5,15 +5,15 @@ import constants
 __author__ = 'Danny'
 
 class JsonEditor:
-    def __init__(self, file, emotesList):
+    def __init__(self, file, globalpath):
         #initialize the json file if empty
-        self.emotesList = emotesList
         self.directory = file
+        self.globalJson = globalpath
         if not os.path.exists(os.path.dirname(self.directory)):
             os.makedirs(os.path.dirname(self.directory))
         self.initializeJson(file)
-        self.initializeStats(file)
-        #self.initializeEmotes(file)
+        #self.initializeStats(file)
+        self.initializeGlobal(globalpath)
 
     def toJSON(self, stats):
         #takes in a dictionary of keys and values, to be put into the json file
@@ -29,23 +29,25 @@ class JsonEditor:
             data['sub emotes'] = {}
             data['twitch emotes'] = {}
             data['stats'] = {}
+            data['stats']['All'] = {}
             json.dump(data, f)
             f.seek(0)
             json.dump(data, f, indent=4)
+
+    def initializeGlobal(self, file):
+        if not os.path.isfile(file):
+            with open(file, 'w') as f:
+                data = {}
+                data['stats'] = {}
+                json.dump(data, f)
+                f.seek(0)
+                json.dump(data, f, indent=4)
 
     def initializeStats(self, file):
         with open(file, 'r+') as f:
             data = json.load(f)
             for attr in constants.JSON_ATTRIBUTES:
                 data['stats'][attr] = 0
-            f.seek(0)
-            json.dump(data, f, indent=4)
-
-    def initializeEmotes(self, file):
-        with open(file, 'r+') as f:
-            data = json.load(f)
-            for emote in self.emotesList:
-                data['sub emotes'][emote] = 0
             f.seek(0)
             json.dump(data, f, indent=4)
 
@@ -81,6 +83,14 @@ class JsonEditor:
     def setValueForStat(self, stat, value):
         with open(self.directory, 'r+') as f:
             data = json.load(f)
+            data['stats']['All'][stat] = value
+            f.seek(0)
+            json.dump(data, f, indent=4)
+
+    def setValueForGlobalStat(self, stat, value):
+        with open(self.globalJson, 'r+') as f:
+            data = json.load(f)
             data['stats'][stat] = value
             f.seek(0)
             json.dump(data, f, indent=4)
+

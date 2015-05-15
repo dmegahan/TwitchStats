@@ -101,10 +101,13 @@ class Stream(threading.Thread):
                             level=logging.DEBUG)
 
     def recordStats(self):
-        jsonFile = JsonEditor(self.JSONfp, "")
-        stats = Statistics(self.CSVfp, self.JSONfp, self.LOGfp, self.globalPath, self.config)
+        jsonFile = JsonEditor(self.JSONfp)
+        stats = Statistics(self.stream, self.CSVfp, self.JSONfp, self.LOGfp, self.globalPath, self.config)
         dailyStats = stats.doDaily()
         jsonFile.toJSON(dailyStats)
+        print self.stream + ": Tally Emotes started!"
+        stats.tallyEmotes()
+        print self.stream + ": End of stream tasks finished!"
 
     def run(self):
         while 1:
@@ -120,7 +123,7 @@ class Stream(threading.Thread):
                         self.GrabBot.start()
 
                     if self.config["IRC_BOT"] is True:
-                        self.IRCBot = TwitchIRCBot(self.stream, self.JSONfp, self.LOGfp, self.config)
+                        self.IRCBot = TwitchIRCBot(self.stream, self.JSONfp, self.LOGfp, self.config, self.globalPath)
                         self.IRCBot.setDaemon(False)
                         self.IRCBot.start()
             else:

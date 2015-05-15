@@ -3,7 +3,7 @@ DEAD_THREAD_IDENTIFIER = -1
 STR_STREAM_OFFLINE = "Stream Offline!"
 #list of streamers to gather data from
 STREAMERS = ["lirik", "itmejp", "summit1g", "destiny", "nl_kripp", "reckful", "sodapoppin",
-             "dansgaming", "kaceytron", "watchmeblink1", "trick2g", "trumpsc", "kinetick42"]
+             "dansgaming", "kaceytron", "watchmeblink1", "trick2g", "trumpsc", "kinetick42", "ryuzilla"]
 JSON_ATTRIBUTES = ["Peak Viewers", "Start Time", "End Time", "Average Viewers", "Time Streamed"]
 
 LOG_FILE_FORMAT = "%d_%m_%Y"
