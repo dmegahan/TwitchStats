@@ -2,16 +2,22 @@ import csv
 import json
 import logging
 import os
-import time
 import datetime
 import re
 import TwitchAPI
 import config
-import constants
 from JsonEditor import JsonEditor
 
 __author__ = 'Danny'
 
+"""
+    Class that generates all our special statistics from the twitch data gathered from the TwitchGrab and the IRCBot
+
+    Sessions are to track the statistics for individual gaming "sessions", usually based around a game. When a streamer,
+    switches the game he/she is playing, a new "session" is started, and that means we start tracking a new peak viewer,
+    average viewer, time started, time ended for that session. This allows us to calculate and track stats only for
+    certain games, as well as tracking universal stats for the entire stream.
+"""
 class Statistics:
     def __init__(self, streamer, csvPath, jsonPath, logPath, globalPath, config):
         self.stream = streamer
@@ -22,6 +28,7 @@ class Statistics:
         self.config = config
         self.jEditor = JsonEditor(self.jsonPath, self.globalPath)
 
+
         date = datetime.datetime.utcnow().strftime("%d_%m_%Y")
         directory = self.config["LOGS_FOLDER"] + date + ".log"
         if not os.path.exists(os.path.dirname(directory)):
@@ -31,17 +38,25 @@ class Statistics:
                             datefmt='%m/%d/%Y %H:%M:%S',
                             level=logging.DEBUG)
 
+    #adds up the number each time emote was used in a chatlog
     def tallyEmotes(self):
+        #sub emotes are specific to the streamer
         subEmotes = TwitchAPI.getSubEmotes(self.stream)
+        #twitch emotes are universal to twitch
         twitchEmotes = TwitchAPI.getTwitchEmotes(self.stream)
         allEmotes = subEmotes + twitchEmotes
 
         with open(self.logPath, 'rb') as chatLog:
             for line in chatLog:
-                split_line = line.split("]", 1)#index 0 will be the date and 1 will be everything else
-                date = split_line[0].strip("[")
-                user = split_line[1].split(":", 1)[0].strip()
-                message = split_line[1].split(":", 1)[1]
+                try:
+                    split_line = line.split("]", 1)#index 0 will be the date and 1 will be everything else
+                    date = split_line[0].strip("[")
+                    user = split_line[1].split(":", 1)[0].strip()
+                    message = split_line[1].split(":", 1)[1]
+                except(IndexError):
+                    print "Index Error on  " + str(split_line)
+                    logging.debug("Index Error on  " + str(split_line))
+                    break;
                 for emote in allEmotes:
                     try:
                         message = message.rstrip()
@@ -55,7 +70,7 @@ class Statistics:
                         print "UnicodeDecodeError on " + message
                         logging.debug("UnicodeDecodeError on " + message)
                         break;
-
+    #this function gets run at the end of the stream. It compiles our "daily" stats
     def doDaily(self):
         #return a dict of json keys and values, to be added at the end of the stream
         jsonDict = {}
@@ -67,8 +82,8 @@ class Statistics:
         self.updatePeakAverageViewers(a[0], a[1])
         #session is a nested list, and since we're looking for the total session we only expect 1 element returned
         stream_ses = self.getSessions()[0]
-        jsonDict['Start Time'] = stream_ses[0]
-        jsonDict['End Time'] = stream_ses[1]
+        jsonDict['StartTime'] = stream_ses[0]
+        jsonDict['EndTime'] = stream_ses[1]
         a = self.getTimeStreamed(stream_ses)
         jsonDict[a[0]] = a[1]
         self.updateTotalStreamTime(a[0], a[1])
@@ -107,7 +122,7 @@ class Statistics:
             except KeyError:
                 old_val = 0
             #print "Incremented emote: " + emote + " to " + str((old_val+1))
-            if old_val < peak_viewers:
+            if int(old_val) < int(peak_viewers):
                 data['stats'][key] = peak_viewers
             globalStats.seek(0)
             json.dump(data, globalStats, indent=4)
@@ -120,7 +135,7 @@ class Statistics:
             except KeyError:
                 old_val = 0
             #print "Incremented emote: " + emote + " to " + str((old_val+1))
-            data['stats'][key] = (average_viewers + old_val / 2)
+            data['stats'][key] = (int(average_viewers) + int(old_val) / 2)
             globalStats.seek(0)
             json.dump(data, globalStats, indent=4)
 
@@ -153,11 +168,11 @@ class Statistics:
                     end_time = session[1]
 
                     session_dict = {}
-                    session_dict["Peak Viewers"] = peak_viewers
-                    session_dict["Start Time"] = start_time
-                    session_dict["End Time"] = end_time
-                    session_dict["Average Viewers"] = avg_viewers
-                    session_dict["Time Streamed"] = time_streamed[1]
+                    session_dict["PeakViewers"] = peak_viewers
+                    session_dict["StartTime"] = start_time
+                    session_dict["EndTime"] = end_time
+                    session_dict["AverageViewers"] = avg_viewers
+                    session_dict["TimeStreamed"] = time_streamed[1]
 
                     session_name = "session" + str(i)
                     games[game]["sessions"][session_name] = session_dict
@@ -203,7 +218,7 @@ class Statistics:
             return current_peak
 
     def getPeakViewers(self, game=None):
-        key = "Peak Viewers"
+        key = "PeakViewers"
         with open(self.csvPath, 'rb') as csvfile:
             reader = csv.reader(csvfile)
             peak = 0
@@ -212,7 +227,7 @@ class Statistics:
                     #we're looking for a specific game here
                     if row[1] == game:
                         viewers = row[0]
-                        if viewers > peak:
+                        if int(viewers) > int(peak):
                             peak = viewers
                 else:
                     viewers = row[0]
@@ -221,7 +236,7 @@ class Statistics:
         return key, peak
 
     def getAverageViewers(self, game=None):
-        key = "Average Viewers"
+        key = "AverageViewers"
         with open(self.csvPath, 'rb') as csvfile:
             reader = csv.reader(csvfile)
             total_viewers = 0
@@ -279,7 +294,7 @@ class Statistics:
                 return [[start_time, stop_time]]
 
     def getStartTime(self, game=None):
-        key = "Start Time"
+        key = "StartTime"
         #read first line and set that as the start time
         with open(self.csvPath, 'rb') as csvfile:
             reader = csv.reader(csvfile)
@@ -288,7 +303,7 @@ class Statistics:
         return key, start_time
 
     def getStopTime(self, game=None):
-        key = "Stop Time"
+        key = "StopTime"
         #read last line and set that as the stream end time
         with open(self.csvPath, 'rb') as csvfile:
             reader = csv.reader(csvfile)
@@ -298,7 +313,7 @@ class Statistics:
         return key, stop_time
 
     def getTimeStreamed(self, session):
-        key = "Time Streamed"
+        key = "TimeStreamed"
         start_time = session[0]
         stop_time = session[1]
 

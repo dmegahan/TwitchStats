@@ -1,0 +1,320 @@
+06/09/2015 11:11:50 - root - INFO - reckful thread started
+06/09/2015 11:11:51 - root - INFO - IRCBot reckful started up!
+06/09/2015 11:11:52 - root - INFO - reckful BOT connected to IRC server
+06/09/2015 12:06:10 - root - INFO - lirik thread started
+06/09/2015 12:06:12 - root - INFO - IRCBot lirik started up!
+06/09/2015 12:06:12 - root - INFO - lirik BOT connected to IRC server
+06/09/2015 12:07:12 - root - WARNING - Error on line: witch.tv PRIVMSG #lirik :CAGE DE PLEBS||||| message: |||||user: itch.tv PRIVMSG #lirik :CAGE DE PLEBS
+06/09/2015 12:07:13 - root - WARNING - Error on line: roboy@og_afroboy.tmi.twitch.tv PRIVMSG #lirik :lirikLEWD lirikLEWD lirikLEWD||||| message: |||||user: oboy@og_afroboy.tmi.twitch.tv PRIVMSG #lirik :lirikLEWD lirikLEWD lirikLEWD
+06/09/2015 12:09:11 - root - WARNING - Error on line: !ciggzy@ciggzy.tmi.twitch.tv PRIVMSG #lirik :lirikH lirikH lirikH lirikH lirikH||||| message: |||||user: 
+06/09/2015 12:09:16 - root - WARNING - Error on line: h.tv PRIVMSG #lirik :lirikLEWD lirikLEWD lirikLEWD lirikLEWD lirikLEWD lirikLEWD lirikLEWD lirikLEWD lirikLEWD||||| message: |||||user: .tv PRIVMSG #lirik :lirikLEWD lirikLEWD lirikLEWD lirikLEWD lirikLEWD lirikLEWD lirikLEWD lirikLEWD lirikLEWD
+06/09/2015 12:13:27 - root - WARNING - Error on line: ygc@eygc.tmi.twitch.tv PRIVMSG #reckful :I AINT *** WITCHU BibleThump||||| message: |||||user: gc@eygc.tmi.twitch.tv PRIVMSG #reckful :I AINT *** WITCHU BibleThump
+06/09/2015 12:19:45 - root - WARNING - Error on line: twitch.tv PRIVMSG #reckful :RIP RECKFUL||||| message: |||||user: witch.tv PRIVMSG #reckful :RIP RECKFUL
+06/09/2015 12:23:07 - root - WARNING - Error on line: grill!im_a_hot_grill@im_a_hot_grill.tmi.twitch.tv PRIVMSG #reckful :WutFace||||| message: |||||user: rill
+06/09/2015 12:50:16 - root - WARNING - Error on line: ralizee.tmi.twitch.tv PRIVMSG #reckful :PLAY WOW||||| message: |||||user: alizee.tmi.twitch.tv PRIVMSG #reckful :PLAY WOW
+06/09/2015 13:09:55 - root - DEBUG - lirik - request failure: https://api.twitch.tv/kraken/streams/lirik
+06/09/2015 13:09:55 - root - DEBUG - reckful - request failure: https://api.twitch.tv/kraken/streams/reckful
+06/09/2015 13:09:55 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/trick2g
+06/09/2015 13:09:55 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/summit1g
+06/09/2015 13:09:56 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/sodapoppin
+06/09/2015 13:09:57 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/nl_kripp
+06/09/2015 13:09:57 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/trumpsc
+06/09/2015 13:09:57 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/itmejp
+06/09/2015 13:09:57 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/lirik
+06/09/2015 13:09:57 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/reckful
+06/09/2015 13:09:57 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/dansgaming
+06/09/2015 13:09:58 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/destiny
+06/09/2015 13:09:59 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/kaceytron
+06/09/2015 13:10:00 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/ryuzilla
+06/09/2015 13:10:00 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/watchmeblink1
+06/09/2015 13:10:03 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/kinetick42
+06/09/2015 13:10:16 - root - DEBUG - lirik - request failure: https://api.twitch.tv/kraken/streams/lirik
+06/09/2015 13:10:16 - root - DEBUG - reckful - request failure: https://api.twitch.tv/kraken/streams/reckful
+06/09/2015 13:10:38 - root - DEBUG - lirik - request failure: https://api.twitch.tv/kraken/streams/lirik
+06/09/2015 13:10:38 - root - DEBUG - reckful - request failure: https://api.twitch.tv/kraken/streams/reckful
+06/09/2015 13:10:59 - root - DEBUG - lirik - request failure: https://api.twitch.tv/kraken/streams/lirik
+06/09/2015 13:10:59 - root - DEBUG - reckful - request failure: https://api.twitch.tv/kraken/streams/reckful
+06/09/2015 13:11:16 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/trick2g
+06/09/2015 13:11:16 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/summit1g
+06/09/2015 13:11:17 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/sodapoppin
+06/09/2015 13:11:18 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/nl_kripp
+06/09/2015 13:11:18 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/trumpsc
+06/09/2015 13:11:18 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/itmejp
+06/09/2015 13:11:18 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/lirik
+06/09/2015 13:11:18 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/reckful
+06/09/2015 13:11:18 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/dansgaming
+06/09/2015 13:11:19 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/destiny
+06/09/2015 13:11:20 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/kaceytron
+06/09/2015 13:11:21 - root - DEBUG - lirik - request failure: https://api.twitch.tv/kraken/streams/lirik
+06/09/2015 13:11:21 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/ryuzilla
+06/09/2015 13:11:21 - root - DEBUG - reckful - request failure: https://api.twitch.tv/kraken/streams/reckful
+06/09/2015 13:11:21 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/watchmeblink1
+06/09/2015 13:11:24 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/kinetick42
+06/09/2015 13:11:42 - root - DEBUG - lirik - request failure: https://api.twitch.tv/kraken/streams/lirik
+06/09/2015 13:11:42 - root - DEBUG - reckful - request failure: https://api.twitch.tv/kraken/streams/reckful
+06/09/2015 13:12:04 - root - DEBUG - lirik - request failure: https://api.twitch.tv/kraken/streams/lirik
+06/09/2015 13:12:04 - root - DEBUG - reckful - request failure: https://api.twitch.tv/kraken/streams/reckful
+06/09/2015 13:12:25 - root - DEBUG - lirik - request failure: https://api.twitch.tv/kraken/streams/lirik
+06/09/2015 13:12:25 - root - DEBUG - reckful - request failure: https://api.twitch.tv/kraken/streams/reckful
+06/09/2015 13:12:37 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/trick2g
+06/09/2015 13:12:38 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/summit1g
+06/09/2015 13:12:38 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/sodapoppin
+06/09/2015 13:12:39 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/nl_kripp
+06/09/2015 13:12:39 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/trumpsc
+06/09/2015 13:12:39 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/itmejp
+06/09/2015 13:12:39 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/lirik
+06/09/2015 13:12:39 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/reckful
+06/09/2015 13:12:39 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/dansgaming
+06/09/2015 13:12:40 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/destiny
+06/09/2015 13:12:41 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/kaceytron
+06/09/2015 13:12:42 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/ryuzilla
+06/09/2015 13:12:42 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/watchmeblink1
+06/09/2015 13:12:45 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/kinetick42
+06/09/2015 13:12:47 - root - DEBUG - lirik - request failure: https://api.twitch.tv/kraken/streams/lirik
+06/09/2015 13:12:47 - root - DEBUG - reckful - request failure: https://api.twitch.tv/kraken/streams/reckful
+06/09/2015 13:12:49 - root - DEBUG - lirik - request failure: https://api.twitch.tv/kraken/streams/lirik
+06/09/2015 13:12:52 - root - DEBUG - reckful - request failure: https://api.twitch.tv/kraken/streams/reckful
+06/09/2015 13:12:54 - root - DEBUG - lirik - request failure: https://api.twitch.tv/kraken/streams/lirik
+06/09/2015 13:12:56 - root - DEBUG - reckful - request failure: https://api.twitch.tv/kraken/streams/reckful
+06/09/2015 13:34:50 - root - DEBUG - reckful - request failure: https://api.twitch.tv/kraken/streams/reckful
+06/09/2015 13:36:47 - root - INFO - sodapoppin thread started
+06/09/2015 13:36:49 - root - INFO - IRCBot sodapoppin started up!
+06/09/2015 13:36:49 - root - INFO - sodapoppin BOT connected to IRC server
+06/09/2015 13:36:57 - root - WARNING - Error on line: kriss531.tmi.twitch.tv PRIVMSG #sodapoppin :inc kreygasm||||| message: |||||user: riss531.tmi.twitch.tv PRIVMSG #sodapoppin :inc kreygasm
+06/09/2015 13:37:48 - root - WARNING - Error on line: zz3023!buzz3023@buzz3023.tmi.twitch.tv PRIVMSG #sodapoppin :WutFace||||| message: |||||user: z3023
+06/09/2015 13:39:49 - root - WARNING - Error on line: twitch.tv PRIVMSG #sodapoppin :IS that literally the voice of scar from Lion King||||| message: |||||user: witch.tv PRIVMSG #sodapoppin :IS that literally the voice of scar from Lion King
+06/09/2015 13:42:58 - root - WARNING - Error on line: fosho@tylerfosho.tmi.twitch.tv PRIVMSG #sodapoppin :NOW Kreygasm THATS Kreygasm WHAT Kreygasm I Kreygasm CALL Kreygasm MUSIC||||| message: |||||user: osho@tylerfosho.tmi.twitch.tv PRIVMSG #sodapoppin :NOW Kreygasm THATS Kreygasm WHAT Kreygasm I Kreygasm CALL Kreygasm MUSIC
+06/09/2015 13:45:00 - root - WARNING - Error on line: me1893@minime1893.tmi.twitch.tv PRIVMSG #sodapoppin :DansGame||||| message: |||||user: e1893@minime1893.tmi.twitch.tv PRIVMSG #sodapoppin :DansGame
+06/09/2015 13:45:08 - root - WARNING - Error on line: !adknight@adknight.tmi.twitch.tv PRIVMSG #sodapoppin :ResidentSleeper ResidentSleeper ResidentSleeper||||| message: |||||user: 
+06/09/2015 14:22:23 - root - WARNING - Error on line: and67@armand67.tmi.twitch.tv PRIVMSG #sodapoppin :༼ ºل͜º ༽ºل͜º ༽ºل͜º ༽ ＥＶＥＲＹＯＮＥ，ＧＥＴ ＩＮ ＨＥＲＥ ༼ ºل͜º༼ ºل͜º༼ ºل͜º ༽                       ||||| message: |||||user: nd67@armand67.tmi.twitch.tv PRIVMSG #sodapoppin :༼ ºل͜º ༽ºل͜º ༽ºل͜º ༽ ＥＶＥＲＹＯＮＥ，ＧＥＴ ＩＮ ＨＥＲＥ ༼ ºل͜º༼ ºل͜º༼ ºل͜º ༽                       
+06/09/2015 14:36:00 - root - WARNING - Error on line: reel@eepicdreel.tmi.twitch.tv PRIVMSG #sodapoppin :HENTAI||||| message: |||||user: eel@eepicdreel.tmi.twitch.tv PRIVMSG #sodapoppin :HENTAI
+06/09/2015 14:36:09 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/09/2015 14:36:09 - root - DEBUG - <Response [502]>
+06/09/2015 14:36:14 - root - DEBUG - dansgaming - Error occurred checking online status.
+06/09/2015 14:36:14 - root - DEBUG - <Response [502]>
+06/09/2015 14:36:14 - root - DEBUG - sodapoppin - Error occurred checking online status.
+06/09/2015 14:36:14 - root - DEBUG - <Response [502]>
+06/09/2015 14:36:17 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/09/2015 14:36:17 - root - DEBUG - <Response [503]>
+06/09/2015 14:36:20 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/09/2015 14:36:20 - root - DEBUG - <Response [503]>
+06/09/2015 14:36:20 - root - DEBUG - reckful - Error occurred getting stream information on reckful
+06/09/2015 14:36:20 - root - DEBUG - <Response [503]>
+06/09/2015 14:36:20 - root - DEBUG - ryuzilla - Error occurred checking online status.
+06/09/2015 14:36:20 - root - DEBUG - <Response [503]>
+06/09/2015 14:36:29 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/09/2015 14:36:29 - root - DEBUG - <Response [503]>
+06/09/2015 14:36:33 - root - DEBUG - reckful - Error occurred getting stream information on reckful
+06/09/2015 14:36:33 - root - DEBUG - <Response [503]>
+06/09/2015 14:36:34 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/09/2015 14:36:34 - root - DEBUG - <Response [503]>
+06/09/2015 14:36:44 - root - DEBUG - reckful - Error occurred getting stream information on reckful
+06/09/2015 14:36:44 - root - DEBUG - <Response [502]>
+06/09/2015 14:36:45 - root - DEBUG - reckful - Error occurred getting stream information on reckful
+06/09/2015 14:36:45 - root - DEBUG - <Response [502]>
+06/09/2015 14:36:48 - root - DEBUG - reckful - Error occurred getting stream information on reckful
+06/09/2015 14:36:48 - root - DEBUG - <Response [502]>
+06/09/2015 14:36:48 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/09/2015 14:36:48 - root - DEBUG - <Response [503]>
+06/09/2015 14:36:52 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/09/2015 14:36:52 - root - DEBUG - <Response [503]>
+06/09/2015 14:40:08 - root - WARNING - Error on line: y2585!richhy2585@richhy2585.tmi.twitch.tv PRIVMSG #sodapoppin :lol||||| message: |||||user: 2585
+06/09/2015 14:40:24 - root - WARNING - Error on line: ar@redseabear.tmi.twitch.tv PRIVMSG #sodapoppin :ANELE||||| message: |||||user: r@redseabear.tmi.twitch.tv PRIVMSG #sodapoppin :ANELE
+06/09/2015 14:45:33 - root - WARNING - Error on line: riixter!itztriixter@itztriixter.tmi.twitch.tv PRIVMSG #sodapoppin :(ditto) (ditto) (ditto) (ditto) (ditto) (ditto)||||| message: |||||user: iixter
+06/09/2015 14:59:33 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/09/2015 14:59:33 - root - DEBUG - <Response [502]>
+06/09/2015 15:01:20 - root - INFO - summit1g thread started
+06/09/2015 15:01:21 - root - INFO - IRCBot summit1g started up!
+06/09/2015 15:01:22 - root - INFO - summit1g BOT connected to IRC server
+06/09/2015 15:02:58 - root - WARNING - Error on line: tch.tv PRIVMSG #summit1g :first time i have ever csme to a starting of summits stream, all just random||||| message: |||||user: ch.tv PRIVMSG #summit1g :first time i have ever csme to a starting of summits stream, all just random
+06/09/2015 15:03:22 - root - INFO - trumpsc thread started
+06/09/2015 15:03:24 - root - INFO - IRCBot trumpsc started up!
+06/09/2015 15:03:24 - root - INFO - trumpsc BOT connected to IRC server
+06/09/2015 15:03:54 - root - WARNING - Error on line: i452!fatboi452@fatboi452.tmi.twitch.tv PRIVMSG #summit1g :ff||||| message: |||||user: 452
+06/09/2015 15:07:08 - root - WARNING - Error on line: v PRIVMSG #summit1g :Polib si||||| message: |||||user:  PRIVMSG #summit1g :Polib si
+06/09/2015 15:10:11 - root - WARNING - Error on line: rielfan!sacrielfan@sacrielfan.tmi.twitch.tv PRIVMSG #summit1g :the back button on ur mouse ?||||| message: |||||user: ielfan
+06/09/2015 15:12:22 - root - WARNING - Error on line: padude@thedonatingkappadude.tmi.twitch.tv PRIVMSG #summit1g :new sponser Kappa||||| message: |||||user: adude@thedonatingkappadude.tmi.twitch.tv PRIVMSG #summit1g :new sponser Kappa
+06/09/2015 15:13:30 - root - WARNING - Error on line: r!boocebunger@boocebunger.tmi.twitch.tv PRIVMSG #summit1g :yes||||| message: |||||user: 
+06/09/2015 15:14:39 - root - WARNING - Error on line: !masterjoyest@masterjoyest.tmi.twitch.tv PRIVMSG #summit1g :Ark||||| message: |||||user: 
+06/09/2015 15:15:35 - root - WARNING - Error on line: eract!manutdtesseract@manutdtesseract.tmi.twitch.tv PRIVMSG #trumpsc :trumpW||||| message: |||||user: ract
+06/09/2015 15:15:36 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/09/2015 15:15:36 - root - DEBUG - <Response [502]>
+06/09/2015 15:15:37 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/09/2015 15:15:37 - root - DEBUG - <Response [502]>
+06/09/2015 15:25:50 - root - WARNING - Error on line: s_!seaofdoubts_@seaofdoubts_.tmi.twitch.tv PRIVMSG #trumpsc :trumpGrumble trumpKappa||||| message: |||||user: _
+06/09/2015 15:32:05 - root - WARNING - Error on line: elmarb@jelmarb.tmi.twitch.tv PRIVMSG #sodapoppin :CHANCE MWORRIS||||| message: |||||user: lmarb@jelmarb.tmi.twitch.tv PRIVMSG #sodapoppin :CHANCE MWORRIS
+06/09/2015 15:32:06 - root - WARNING - Error on line: un123@emilobruun123.tmi.twitch.tv PRIVMSG #sodapoppin :CALK||||| message: |||||user: n123@emilobruun123.tmi.twitch.tv PRIVMSG #sodapoppin :CALK
+06/09/2015 15:32:08 - root - WARNING - Error on line: iexamples315!iiexamples315@iiexamples315.tmi.twitch.tv PRIVMSG #sodapoppin :Chance||||| message: |||||user: examples315
+06/09/2015 15:32:09 - root - WARNING - Error on line: talin.tmi.twitch.tv PRIVMSG #sodapoppin :Chink||||| message: |||||user: alin.tmi.twitch.tv PRIVMSG #sodapoppin :Chink
+06/09/2015 15:32:10 - root - WARNING - Error on line: tmi.twitch.tv PRIVMSG #sodapoppin :CHUNCE||||| message: |||||user: mi.twitch.tv PRIVMSG #sodapoppin :CHUNCE
+06/09/2015 15:32:12 - root - WARNING - Error on line: hdore@thdore.tmi.twitch.tv PRIVMSG #sodapoppin :Thomas||||| message: |||||user: dore@thdore.tmi.twitch.tv PRIVMSG #sodapoppin :Thomas
+06/09/2015 15:32:13 - root - WARNING - Error on line: ckmister!superchuckmister@superchuckmister.tmi.twitch.tv PRIVMSG #summit1g :cayinGasm cayinWat||||| message: |||||user: kmister
+06/09/2015 15:32:13 - root - WARNING - Error on line: ch.tv PRIVMSG #sodapoppin :Chance Thomas Morris||||| message: |||||user: h.tv PRIVMSG #sodapoppin :Chance Thomas Morris
+06/09/2015 15:32:14 - root - WARNING - Error on line: on@theodeon.tmi.twitch.tv PRIVMSG #summit1g :sumRip sumRip sumRip sumRip sumRip sumRip sumRip sumRip sumRip sumRip sumRip||||| message: |||||user: n@theodeon.tmi.twitch.tv PRIVMSG #summit1g :sumRip sumRip sumRip sumRip sumRip sumRip sumRip sumRip sumRip sumRip sumRip
+06/09/2015 15:32:15 - root - WARNING - Error on line: ck72@b1gnick72.tmi.twitch.tv PRIVMSG #sodapoppin :Thomas chance morris||||| message: |||||user: k72@b1gnick72.tmi.twitch.tv PRIVMSG #sodapoppin :Thomas chance morris
+06/09/2015 15:32:17 - root - WARNING - Error on line: hifer.tmi.twitch.tv PRIVMSG #sodapoppin :Thomas Morris||||| message: |||||user: ifer.tmi.twitch.tv PRIVMSG #sodapoppin :Thomas Morris
+06/09/2015 15:32:20 - root - WARNING - Error on line: nimesmith!minimesmith@minimesmith.tmi.twitch.tv PRIVMSG #sodapoppin :chance Morris||||| message: |||||user: imesmith
+06/09/2015 15:33:18 - root - WARNING - Error on line: ivinism@divinism.tmi.twitch.tv PRIVMSG #sodapoppin :FOR YOU TO THINK WE CAN TYPE YOUR NAME CORRECTLY, DO YOU THINK THERE IS ANY CHANCE, MORRIS?,||||| message: |||||user: vinism@divinism.tmi.twitch.tv PRIVMSG #sodapoppin :FOR YOU TO THINK WE CAN TYPE YOUR NAME CORRECTLY, DO YOU THINK THERE IS ANY CHANCE, MORRIS?,
+06/09/2015 15:35:43 - root - WARNING - Error on line: ljintheginger@ziljintheginger.tmi.twitch.tv PRIVMSG #sodapoppin :Kappa||||| message: |||||user: jintheginger@ziljintheginger.tmi.twitch.tv PRIVMSG #sodapoppin :Kappa
+06/09/2015 15:35:44 - root - WARNING - Error on line: r.tmi.twitch.tv PRIVMSG #sodapoppin :Kappa||||| message: |||||user: .tmi.twitch.tv PRIVMSG #sodapoppin :Kappa
+06/09/2015 15:53:35 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/09/2015 15:53:35 - root - DEBUG - <Response [502]>
+06/09/2015 15:53:39 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/09/2015 15:53:39 - root - DEBUG - <Response [502]>
+06/09/2015 15:57:47 - root - WARNING - Error on line: itch.tv PRIVMSG #sodapoppin :WEEEEEEEEEEEEEEEEEEEEEEEEEEEEE||||| message: |||||user: tch.tv PRIVMSG #sodapoppin :WEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+06/09/2015 16:02:48 - root - INFO - dansgaming thread started
+06/09/2015 16:02:50 - root - INFO - IRCBot dansgaming started up!
+06/09/2015 16:02:50 - root - INFO - dansgaming BOT connected to IRC server
+06/09/2015 16:06:18 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/09/2015 16:06:18 - root - DEBUG - <Response [502]>
+06/09/2015 16:31:48 - root - WARNING - Error on line: allinestepper!habituallinestepper@habituallinestepper.tmi.twitch.tv PRIVMSG #dansgaming :Pedobear||||| message: |||||user: llinestepper
+06/09/2015 16:44:29 - root - WARNING - Error on line: illerbumpkin.tmi.twitch.tv PRIVMSG #dansgaming :Chemistry confirmed easy||||| message: |||||user: llerbumpkin.tmi.twitch.tv PRIVMSG #dansgaming :Chemistry confirmed easy
+06/09/2015 16:47:44 - root - WARNING - Error on line: lobster01.tmi.twitch.tv PRIVMSG #dansgaming :BOY||||| message: |||||user: obster01.tmi.twitch.tv PRIVMSG #dansgaming :BOY
+06/09/2015 16:48:10 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/09/2015 16:48:10 - root - DEBUG - <Response [502]>
+06/09/2015 16:48:11 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/09/2015 16:48:11 - root - DEBUG - <Response [502]>
+06/09/2015 16:50:22 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/lirik
+06/09/2015 16:59:11 - root - WARNING - Error on line: rus@packetvirus.tmi.twitch.tv PRIVMSG #dansgaming :BULLY||||| message: |||||user: us@packetvirus.tmi.twitch.tv PRIVMSG #dansgaming :BULLY
+06/09/2015 17:00:52 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/09/2015 17:00:52 - root - DEBUG - <Response [503]>
+06/09/2015 17:08:28 - root - WARNING - Error on line: es@bewiseopeneyes.tmi.twitch.tv PRIVMSG #dansgaming :Babies in chat. Waaa it's choppy waaa||||| message: |||||user: s@bewiseopeneyes.tmi.twitch.tv PRIVMSG #dansgaming :Babies in chat. Waaa it's choppy waaa
+06/09/2015 17:16:15 - root - DEBUG - sodapoppin - Error occurred checking online status.
+06/09/2015 17:16:15 - root - DEBUG - <Response [502]>
+06/09/2015 17:40:35 - root - WARNING - Error on line: i.tmi.twitch.tv PRIVMSG #sodapoppin :"I LOVE THE FEELING OF ACTUALLY EARNING MY GEAR" (cries all day in raids for gear) .||||| message: |||||user: .tmi.twitch.tv PRIVMSG #sodapoppin :"I LOVE THE FEELING OF ACTUALLY EARNING MY GEAR" (cries all day in raids for gear) .
+06/09/2015 17:47:42 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/09/2015 17:47:42 - root - DEBUG - <Response [502]>
+06/09/2015 17:49:24 - root - INFO - trick2g thread started
+06/09/2015 17:49:26 - root - INFO - IRCBot trick2g started up!
+06/09/2015 17:49:26 - root - INFO - trick2g BOT connected to IRC server
+06/09/2015 17:51:13 - root - WARNING - Error on line: n187!bison187@bison187.tmi.twitch.tv PRIVMSG #dansgaming :this kids really hated||||| message: |||||user: 187
+06/09/2015 17:57:34 - root - WARNING - Error on line: com23@zer0xcom23.tmi.twitch.tv PRIVMSG #dansgaming :Was that a bomb?||||| message: |||||user: om23@zer0xcom23.tmi.twitch.tv PRIVMSG #dansgaming :Was that a bomb?
+06/09/2015 17:58:40 - root - WARNING - Error on line: mpkin.tmi.twitch.tv PRIVMSG #dansgaming :Let's be fair here, Gary had it coming||||| message: |||||user: pkin.tmi.twitch.tv PRIVMSG #dansgaming :Let's be fair here, Gary had it coming
+06/09/2015 18:31:48 - root - INFO - destiny thread started
+06/09/2015 18:58:11 - root - DEBUG - destiny - request failure: https://api.twitch.tv/kraken/streams/destiny
+06/09/2015 19:52:12 - root - INFO - itmejp thread started
+06/09/2015 19:52:14 - root - INFO - IRCBot itmejp started up!
+06/09/2015 19:52:14 - root - INFO - itmejp BOT connected to IRC server
+06/09/2015 19:53:33 - root - INFO - lirik/D09_M06_Y2015_H16_m06_s10 viewer graph created!
+06/09/2015 19:53:38 - root - INFO - lirik/JD09_M06_Y2015_H16_m06_s10 emote graph created!
+06/09/2015 20:13:50 - root - DEBUG - destiny - request failure: https://api.twitch.tv/kraken/streams/destiny
+06/09/2015 20:13:52 - root - DEBUG - reckful - Error occurred getting stream information on reckful
+06/09/2015 20:13:52 - root - DEBUG - <Response [502]>
+06/09/2015 20:13:53 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+06/09/2015 20:13:53 - root - DEBUG - <Response [502]>
+06/09/2015 20:13:53 - root - DEBUG - summit1g - Error occurred getting stream information on summit1g
+06/09/2015 20:13:53 - root - DEBUG - <Response [502]>
+06/09/2015 20:13:53 - root - DEBUG - trick2g - Error occurred getting stream information on trick2g
+06/09/2015 20:13:53 - root - DEBUG - <Response [502]>
+06/09/2015 20:13:54 - root - DEBUG - destiny - Error occurred getting stream information on destiny
+06/09/2015 20:13:54 - root - DEBUG - <Response [502]>
+06/09/2015 20:13:57 - root - DEBUG - itmejp - Error occurred getting stream information on itmejp
+06/09/2015 20:13:57 - root - DEBUG - <Response [502]>
+06/09/2015 20:14:01 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/09/2015 20:14:01 - root - DEBUG - <Response [503]>
+06/09/2015 20:14:01 - root - DEBUG - dansgaming - Error occurred getting stream information on dansgaming
+06/09/2015 20:14:01 - root - DEBUG - <Response [502]>
+06/09/2015 20:14:06 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+06/09/2015 20:14:06 - root - DEBUG - <Response [502]>
+06/09/2015 20:14:10 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/09/2015 20:14:10 - root - DEBUG - <Response [503]>
+06/09/2015 20:16:03 - root - WARNING - Error on line: h.tv PRIVMSG #summit1g :stuff||||| message: |||||user: .tv PRIVMSG #summit1g :stuff
+06/09/2015 20:33:46 - root - WARNING - Error on line: ch.tv PRIVMSG #trick2g :DUDUDUDUDUDUDUDUDUUDUDUDUDUDUD||||| message: |||||user: h.tv PRIVMSG #trick2g :DUDUDUDUDUDUDUDUDUUDUDUDUDUDUD
+06/09/2015 20:33:57 - root - WARNING - Error on line:  PRIVMSG #trick2g :DUDUDUDUDUDUDUDUDUDUUDUDUDUD||||| message: |||||user: PRIVMSG #trick2g :DUDUDUDUDUDUDUDUDUDUUDUDUDUD
+06/09/2015 20:45:37 - root - INFO - sodapoppin/D09_M06_Y2015_H17_m36_s47 viewer graph created!
+06/09/2015 20:45:43 - root - INFO - sodapoppin/JD09_M06_Y2015_H17_m36_s47 emote graph created!
+06/09/2015 20:47:35 - root - DEBUG - reckful - request failure: https://api.twitch.tv/kraken/streams/reckful
+06/09/2015 20:50:59 - root - INFO - ryuzilla thread started
+06/09/2015 20:51:00 - root - INFO - IRCBot ryuzilla started up!
+06/09/2015 20:51:00 - root - INFO - ryuzilla BOT connected to IRC server
+06/09/2015 20:54:13 - root - DEBUG - Index Error on  ['Chance\r\n']
+06/09/2015 21:05:43 - root - INFO - trumpsc/D09_M06_Y2015_H19_m03_s22 viewer graph created!
+06/09/2015 21:05:44 - root - INFO - trumpsc/JD09_M06_Y2015_H19_m03_s22 emote graph created!
+06/09/2015 21:07:46 - root - DEBUG - Index Error on  ["But I know we'll meet again some sunny day.\r\r\n"]
+06/09/2015 21:31:54 - root - INFO - reckful/D09_M06_Y2015_H15_m11_s50 viewer graph created!
+06/09/2015 21:31:59 - root - INFO - reckful/JD09_M06_Y2015_H15_m11_s50 emote graph created!
+06/09/2015 21:49:18 - root - WARNING - Error on line: 120@apexemissary120.tmi.twitch.tv PRIVMSG #dansgaming :bye dan PogChamp /||||| message: |||||user: 20@apexemissary120.tmi.twitch.tv PRIVMSG #dansgaming :bye dan PogChamp /
+06/09/2015 21:54:04 - root - INFO - dansgaming/D09_M06_Y2015_H20_m02_s48 viewer graph created!
+06/09/2015 21:54:07 - root - INFO - dansgaming/JD09_M06_Y2015_H20_m02_s48 emote graph created!
+06/09/2015 23:05:29 - root - INFO - nl_kripp thread started
+06/09/2015 23:05:30 - root - INFO - IRCBot nl_kripp started up!
+06/09/2015 23:05:30 - root - INFO - nl_kripp BOT connected to IRC server
+06/09/2015 23:12:59 - root - DEBUG - destiny - request failure: https://api.twitch.tv/kraken/streams/destiny
+06/09/2015 23:13:25 - root - WARNING - Error on line: .twitch.tv PRIVMSG #nl_kripp :PogChamp||||| message: |||||user: twitch.tv PRIVMSG #nl_kripp :PogChamp
+06/09/2015 23:14:35 - root - WARNING - Error on line: !dinomandino@dinomandino.tmi.twitch.tv PRIVMSG #nl_kripp :SELLOUT||||| message: |||||user: 
+06/09/2015 23:15:36 - root - WARNING - Error on line: ead2@wolfhead2.tmi.twitch.tv PRIVMSG #nl_kripp :Holy *** yellow wall||||| message: |||||user: ad2@wolfhead2.tmi.twitch.tv PRIVMSG #nl_kripp :Holy *** yellow wall
+06/09/2015 23:16:43 - root - WARNING - Error on line: tmi.twitch.tv PRIVMSG #nl_kripp :да||||| message: |||||user: mi.twitch.tv PRIVMSG #nl_kripp :да
+06/09/2015 23:18:54 - root - WARNING - Error on line: tch.tv PRIVMSG #nl_kripp :RIP ears in 3...2...1||||| message: |||||user: ch.tv PRIVMSG #nl_kripp :RIP ears in 3...2...1
+06/09/2015 23:23:31 - root - WARNING - Error on line: .tv PRIVMSG #nl_kripp :Can someone explain to me just what the *** it means to end an otherwise complete sentence with the nonsense word, "Kappa"???? DansGame||||| message: |||||user: tv PRIVMSG #nl_kripp :Can someone explain to me just what the *** it means to end an otherwise complete sentence with the nonsense word, "Kappa"???? DansGame
+06/09/2015 23:26:31 - root - WARNING - Error on line: .twitch.tv PRIVMSG #nl_kripp :HE DID IT||||| message: |||||user: twitch.tv PRIVMSG #nl_kripp :HE DID IT
+06/09/2015 23:31:40 - root - INFO - itmejp/D09_M06_Y2015_H23_m52_s12 viewer graph created!
+06/09/2015 23:31:42 - root - INFO - itmejp/JD09_M06_Y2015_H23_m52_s12 emote graph created!
+06/09/2015 23:34:19 - root - WARNING - Error on line: ooooooooooohooo.tmi.twitch.tv PRIVMSG #nl_kripp :OpieOP||||| message: |||||user: oooooooooohooo.tmi.twitch.tv PRIVMSG #nl_kripp :OpieOP
+06/09/2015 23:35:17 - root - WARNING - Error on line: ch.tv PRIVMSG #nl_kripp :Welcome to the BAYLIFE, Jesterfootwear. You are the 12708 member to join the gayest of legions.||||| message: |||||user: h.tv PRIVMSG #nl_kripp :Welcome to the BAYLIFE, Jesterfootwear. You are the 12708 member to join the gayest of legions.
+06/09/2015 23:41:42 - root - INFO - summit1g/D09_M06_Y2015_H19_m01_s20 viewer graph created!
+06/09/2015 23:41:45 - root - INFO - summit1g/JD09_M06_Y2015_H19_m01_s20 emote graph created!
+06/10/2015 00:00:06 - root - INFO - itmejp thread started
+06/10/2015 00:00:08 - root - INFO - IRCBot itmejp started up!
+06/10/2015 00:00:08 - root - INFO - itmejp BOT connected to IRC server
+06/10/2015 01:43:52 - root - INFO - ryuzilla/D10_M06_Y2015_H00_m50_s59 viewer graph created!
+06/10/2015 01:43:55 - root - INFO - ryuzilla/JD10_M06_Y2015_H00_m50_s59 emote graph created!
+06/10/2015 02:02:26 - root - DEBUG - nl_kripp - request failure: https://api.twitch.tv/kraken/streams/nl_kripp
+06/10/2015 02:33:06 - root - INFO - itmejp/D10_M06_Y2015_H04_m00_s06 viewer graph created!
+06/10/2015 02:33:07 - root - INFO - itmejp/JD10_M06_Y2015_H04_m00_s06 emote graph created!
+06/10/2015 02:54:10 - root - WARNING - Error on line: itch.tv PRIVMSG #nl_kripp :LOL||||| message: |||||user: tch.tv PRIVMSG #nl_kripp :LOL
+06/10/2015 03:55:19 - root - INFO - nl_kripp/D10_M06_Y2015_H03_m05_s29 viewer graph created!
+06/10/2015 03:55:21 - root - INFO - nl_kripp/JD10_M06_Y2015_H03_m05_s29 emote graph created!
+06/10/2015 05:45:25 - root - DEBUG - trick2g - Error occurred getting stream information on trick2g
+06/10/2015 05:45:25 - root - DEBUG - <Response [500]>
+06/10/2015 05:56:05 - root - INFO - destiny/D09_M06_Y2015_H22_m31_s48 viewer graph created!
+06/10/2015 06:05:09 - root - INFO - trick2g/D09_M06_Y2015_H21_m49_s24 viewer graph created!
+06/10/2015 06:05:10 - root - INFO - trick2g/JD09_M06_Y2015_H21_m49_s24 emote graph created!
+06/10/2015 06:07:43 - root - DEBUG - Index Error on  ['DU\r\n']
+06/10/2015 09:05:52 - root - INFO - trick2g thread started
+06/10/2015 09:05:54 - root - INFO - IRCBot trick2g started up!
+06/10/2015 09:05:54 - root - INFO - trick2g BOT connected to IRC server
+06/10/2015 09:37:13 - root - WARNING - Error on line: PRIVMSG #trick2g :ACTION CAGE PLEBS ╭∩╮||||| message: |||||user: RIVMSG #trick2g :ACTION CAGE PLEBS ╭∩╮
+06/10/2015 10:11:38 - root - DEBUG - trick2g - request failure: https://api.twitch.tv/kraken/streams/trick2g
+06/10/2015 10:23:28 - root - WARNING - Error on line: iast1996.tmi.twitch.tv PRIVMSG #trick2g :no 1v1?||||| message: |||||user: ast1996.tmi.twitch.tv PRIVMSG #trick2g :no 1v1?
+06/10/2015 10:30:38 - root - WARNING - Error on line: trick2deepinyabutterino.tmi.twitch.tv PRIVMSG #trick2g :trkLegend trkLegend trkLegend 😂😂😂||||| message: |||||user: rick2deepinyabutterino.tmi.twitch.tv PRIVMSG #trick2g :trkLegend trkLegend trkLegend 😂😂😂
+06/10/2015 10:49:21 - root - WARNING - Error on line: .tv PRIVMSG #trick2g :RACIST||||| message: |||||user: tv PRIVMSG #trick2g :RACIST
+06/10/2015 11:04:39 - root - INFO - trick2g/D10_M06_Y2015_H13_m05_s52 viewer graph created!
+06/10/2015 11:04:43 - root - INFO - trick2g/JD10_M06_Y2015_H13_m05_s52 emote graph created!
+06/10/2015 14:53:30 - root - INFO - itmejp thread started
+06/10/2015 14:53:32 - root - INFO - IRCBot itmejp started up!
+06/10/2015 14:53:32 - root - INFO - itmejp BOT connected to IRC server
+06/10/2015 15:15:28 - root - WARNING - Error on line: johnmatrix69!johnmatrix69@johnmatrix69.tmi.twitch.tv PRIVMSG #itmejp :itmejpKING itmejpKING itmejpKING||||| message: |||||user: ohnmatrix69
+06/10/2015 15:32:47 - root - INFO - itmejp/D10_M06_Y2015_H18_m53_s30 viewer graph created!
+06/10/2015 15:32:49 - root - INFO - itmejp/JD10_M06_Y2015_H18_m53_s30 emote graph created!
+06/10/2015 15:34:21 - root - INFO - itmejp thread started
+06/10/2015 15:34:23 - root - INFO - IRCBot itmejp started up!
+06/10/2015 15:34:23 - root - INFO - itmejp BOT connected to IRC server
+06/10/2015 15:34:55 - root - INFO - trumpsc thread started
+06/10/2015 15:34:57 - root - INFO - IRCBot trumpsc started up!
+06/10/2015 15:34:57 - root - INFO - trumpsc BOT connected to IRC server
+06/10/2015 16:03:04 - root - WARNING - Error on line: twitch.tv PRIVMSG #trumpsc :@Trumpsc what are you looking for in opening hand?  Hard mulligan for weapons? What else?||||| message: |||||user: witch.tv PRIVMSG #trumpsc :@Trumpsc what are you looking for in opening hand?  Hard mulligan for weapons? What else?
+06/10/2015 16:20:08 - root - DEBUG - dansgaming - Error occurred checking online status.
+06/10/2015 16:20:08 - root - DEBUG - <Response [502]>
+06/10/2015 16:20:15 - root - DEBUG - itmejp - Error occurred getting stream information on itmejp
+06/10/2015 16:20:15 - root - DEBUG - <Response [503]>
+06/10/2015 16:20:16 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+06/10/2015 16:20:16 - root - DEBUG - <Response [503]>
+06/10/2015 16:20:22 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+06/10/2015 16:20:22 - root - DEBUG - <Response [502]>
+06/10/2015 16:20:23 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+06/10/2015 16:20:23 - root - DEBUG - <Response [502]>
+06/10/2015 16:20:26 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+06/10/2015 16:20:26 - root - DEBUG - <Response [502]>
+06/10/2015 16:24:05 - root - WARNING - Error on line: ul!peterthepaul@peterthepaul.tmi.twitch.tv PRIVMSG #trumpsc :why never arenas||||| message: |||||user: l
+06/10/2015 16:30:12 - root - INFO - dansgaming thread started
+06/10/2015 16:30:14 - root - INFO - IRCBot dansgaming started up!
+06/10/2015 16:30:14 - root - INFO - dansgaming BOT connected to IRC server
+06/10/2015 16:54:09 - root - DEBUG - dansgaming - Error occurred getting stream information on dansgaming
+06/10/2015 16:54:09 - root - DEBUG - <Response [502]>
+06/10/2015 16:54:09 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+06/10/2015 16:54:09 - root - DEBUG - <Response [502]>
+06/10/2015 16:54:10 - root - DEBUG - trumpsc - Error occurred getting stream information on trumpsc
+06/10/2015 16:54:10 - root - DEBUG - <Response [502]>
+06/10/2015 16:54:14 - root - DEBUG - dansgaming - Error occurred getting stream information on dansgaming
+06/10/2015 16:54:14 - root - DEBUG - <Response [502]>
+06/10/2015 17:05:20 - root - WARNING - Error on line: PRIVMSG #dansgaming :you're gonna play harvesters right? Kappa||||| message: |||||user: RIVMSG #dansgaming :you're gonna play harvesters right? Kappa

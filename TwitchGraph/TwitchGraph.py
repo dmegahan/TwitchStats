@@ -9,9 +9,13 @@ import time
 import constants
 
 
+"""
+This class will graph the data captured in the csv file. Currently, it uses plotly to graph the data
+"""
 class Graph:
     def __init__(self, config):
         self.config = config
+        #set up the log file
         date = datetime.datetime.utcnow().strftime("%d_%m_%Y")
         directory = self.config["LOGS_FOLDER"] + date + ".log"
         if not os.path.exists(os.path.dirname(directory)):
@@ -23,10 +27,12 @@ class Graph:
 
     """Creates a line graph from a CSV populated with viewer data from a stream"""
     def createGraphFromCSV(self, csvPath):
+        #split the file path to get the stream name from the folder structure we use
         splitPath = csvPath.split('/')[2:]
         streamer = splitPath[0]
+        #get the date from the filename
         raw_date = splitPath[2].split('.',1)[0]
-        date = splitPath[2].split('.',1)[0].replace('_','/')
+        #date = splitPath[2].split('.',1)[0].replace('_','/')
         with open(csvPath, 'rb') as csvfile:
             reader = csv.reader(csvfile)
             x_points = []
@@ -72,6 +78,7 @@ class Graph:
             logging.info(title + " viewer graph created!")
             plot_url = py.plot(fig,filename=title, auto_open=False)
 
+    #create a basic bar graph based on the emotes used during the stream
     def createGraphFromJson(self, jsonPath):
         splitPath = jsonPath.split('/')[2:]
         streamer = splitPath[0]

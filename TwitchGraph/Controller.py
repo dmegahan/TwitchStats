@@ -1,11 +1,12 @@
 """Controls the other classes, gives commands the user can use"""
 
 from TwitchIRCBot import TwitchIRCBot
-import TwitchGrab.py
+import TwitchBot.py
 
+#not yet implemented
 class Controller:
     def __init__(self):
-        self.tGrab = TwitchGrab()
+        self.tGrab = TwitchBot()
         self.tIRCBot = TwitchIRCBot()
 
     def killThread(self, t):

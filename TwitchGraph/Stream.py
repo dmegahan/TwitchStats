@@ -2,12 +2,13 @@ import datetime
 import os
 import threading
 import logging
+import sys
 import requests
 import time
 from JsonEditor import JsonEditor
 from Statistics import Statistics
 import TwitchAPI
-from TwitchGrab import TwitchThread
+from TwitchBot import TwitchThread
 from TwitchGraph import Graph
 from TwitchIRCBot import TwitchIRCBot
 import config
@@ -15,6 +16,8 @@ import constants
 
 __author__ = 'Danny'
 
+#A Stream object is the encompassing object that holds both the IRCBot and the GrabBot(Which is a bot that collects
+#stream data). The Stream object keeps track
 class Stream(threading.Thread):
     def __init__(self, stream):
         threading.Thread.__init__(self)
@@ -73,16 +76,20 @@ class Stream(threading.Thread):
         parent_dir = './data/' + self.stream
         recent_file_name = self.getRecentStream()
         if recent_file_name is not None:
+            #we check to see if a file is in "progress". This is so we dont create a new file if the stream got
+            #disconnected, on our end or theirs.
             print self.stream + " is continuing!"
             self.CSVfp = parent_dir + self.config["CSV_FOLDER"] + recent_file_name + ".csv"
             self.JSONfp = parent_dir + self.config["STATS_FOLDER"] + recent_file_name + ".json"
             self.LOGfp = parent_dir + self.config["LOGS_FOLDER"] + recent_file_name + ".log"
         else:
+            #else we start a new, fresh file
             self.CSVfp = date.strftime(parent_dir + self.config["CSV_FOLDER"] + self.config["GRAPH_FILE_FORMAT"])
             self.JSONfp = date.strftime(parent_dir + self.config["STATS_FOLDER"] + self.config["JSON_FILE_FORMAT"])
             self.LOGfp = date.strftime(parent_dir + self.config["LOGS_FOLDER"] + self.config["CHAT_LOG_FILE_FORMAT"])
         self.globalPath = parent_dir + self.config["STATS_FOLDER"] + self.stream + ".json"
 
+        #create the files if they dont exist
         if not os.path.exists(os.path.dirname(self.CSVfp)):
             os.makedirs(os.path.dirname(self.CSVfp))
         if not os.path.exists(os.path.dirname(self.JSONfp)):
@@ -92,6 +99,7 @@ class Stream(threading.Thread):
         if not os.path.exists(os.path.dirname(self.globalPath)):
             os.makedirs(os.path.dirname(self.globalPath))
 
+        #add a file for our logs so we can bugfix if we need to
         directory = './logs/' + date.strftime(config.LOG_FILE_FORMAT)
         if not os.path.exists(os.path.dirname(directory)):
             os.makedirs(os.path.dirname(directory))
@@ -101,7 +109,8 @@ class Stream(threading.Thread):
                             level=logging.DEBUG)
 
     def recordStats(self):
-        jsonFile = JsonEditor(self.JSONfp)
+        #create all of our stats for the stream, is run after the stream is over
+        jsonFile = JsonEditor(self.JSONfp, self.globalPath)
         stats = Statistics(self.stream, self.CSVfp, self.JSONfp, self.LOGfp, self.globalPath, self.config)
         dailyStats = stats.doDaily()
         jsonFile.toJSON(dailyStats)
@@ -111,20 +120,25 @@ class Stream(threading.Thread):
 
     def run(self):
         while 1:
+            #if stream is online
             if TwitchAPI.isOnline(self.stream):
                 #start the bots up
                 if self.GrabBot is None and self.IRCBot is None:
                     #initialize the dates and filepaths
                     self.initFileNames()
 
+                    #check to see if the config specifies whether the twitch bot and irc bot should be on or off (t/f)
                     if self.config["TWITCH_BOT"] is True:
+                        print("Started bot: " + self.stream);
                         self.GrabBot = TwitchThread(self.stream, self.CSVfp, self.config)
                         self.GrabBot.setDaemon(False)
+                        #start the GrabBot up
                         self.GrabBot.start()
 
                     if self.config["IRC_BOT"] is True:
                         self.IRCBot = TwitchIRCBot(self.stream, self.JSONfp, self.LOGfp, self.config, self.globalPath)
                         self.IRCBot.setDaemon(False)
+                        #start the IRCBot up
                         self.IRCBot.start()
             else:
                 #if something is active
@@ -162,12 +176,15 @@ class Stream(threading.Thread):
             time.sleep(self.config["PARENT_THREAD_SLEEP_TIME"])
 
 def main():
+    sys.setdefaultencoding('utf-8')
+    #set all streams to inactive, pull the streamers we want to track from the config
     inactiveStreams = config.STREAMERS[:]
     activeStreams = []
     while 1:
         for stream in inactiveStreams[:]:
             s = Stream(stream)
             s.setDaemon(False)
+            #start the stream thread (calls Stream.run())
             s.start()
             activeStreams.append(s)
             inactiveStreams.remove(s.stream)

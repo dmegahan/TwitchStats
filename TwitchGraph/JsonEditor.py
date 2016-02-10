@@ -4,11 +4,16 @@ import constants
 
 __author__ = 'Danny'
 
+"""
+    Object used to edit JSON files, like adding fields, editing fields, incrementing fields, etc
+"""
 class JsonEditor:
-    def __init__(self, file, globalpath):
+    def __init__(self, file, globalpath, config):
         #initialize the json file if empty
         self.directory = file
         self.globalJson = globalpath
+        #takes in a config to generate JSON_ATTRIBUTES from
+        self.config = config
         if not os.path.exists(os.path.dirname(self.directory)):
             os.makedirs(os.path.dirname(self.directory))
         self.initializeJson(file)

@@ -19,10 +19,10 @@ class TwitchIRCBot(threading.Thread):
     def __init__(self, stream, jsonPath, logPath, config, globalPath):
         threading.Thread.__init__(self)
 
-        self.user = "Kinetick42"
+        self.user = "kinetick42"
         self.token = "oauth:4eekng63twhsyg9fhlgtnu2ttghf4s"
         self.stream = stream
-        self.chan = "#" + stream
+        self.chan = "#" + stream.lower()
         self.config = config
         #incremented int value that keeps the thread alive till it reaches a certain number, ParentThread uses it
         self.timeout = 0
@@ -38,10 +38,9 @@ class TwitchIRCBot(threading.Thread):
         self.subEmotes = TwitchAPI.getSubEmotes(self.stream)
         self.twitchEmotes = TwitchAPI.getTwitchEmotes(self.stream)
         self.allEmotes = self.subEmotes + self.twitchEmotes
-        self.jEditor = JsonEditor(self.jdirectory, self.globalPath)
+        self.jEditor = JsonEditor(self.jdirectory, self.globalPath, self.config)
 
     def run(self):
-        print "IRCBot " + self.stream + " started up!"
         logging.info("IRCBot " + self.stream + " started up!")
         self.connectToIRCChannel()
 
@@ -56,7 +55,7 @@ class TwitchIRCBot(threading.Thread):
         self.sock.connect(("irc.twitch.tv", 6667))
         #print self.stream + " BOT connected to IRC server"
         logging.info(self.stream + " BOT connected to IRC server")
-        #time.sleep(15)
+        #time.sleep(5)
         self.sock_send("PASS " + self.token + "\r\n")
         self.sock_send("NICK " + self.user + "\r\n")
         self.sock_send("JOIN " + self.chan + "\r\n")
@@ -71,6 +70,7 @@ class TwitchIRCBot(threading.Thread):
         #print lines
         #print self.stream + " ||||||||| " + str(lines)
         for line in lines:
+            #PRIVMSG is something we want to capture (PRIVMSG is a person saying something in chat)
             if "PRIVMSG" in line:
                 #print self.stream + "||||||||||" + str(line)
                 #twitch message starts with :, so chop it off
@@ -90,6 +90,7 @@ class TwitchIRCBot(threading.Thread):
                 #print "PING RECEIVED"
                 self.sock_send("PONG :tmi.twitch.tv\r\n")
 
+    #processMessage takes a chat message and determines if an emote has been used, and tallies it if one has
     def processMessage(self, message):
         for emote in self.allEmotes:
             try:
@@ -110,7 +111,7 @@ class TwitchIRCBot(threading.Thread):
             recieve = self.sock.recv(4048)
         except socket.error as e:
             print self.stream + " received socket error"
-            #logging.debug(self.stream + " received socket error: " + e)
+            logging.debug(self.stream + " received socket error: " + e)
         #print "received " + recieve
         lines = recieve.split("\r\n")[:-1] #last element will always be blank
         return lines
@@ -125,7 +126,7 @@ class TwitchIRCBot(threading.Thread):
     def toLog(self, user, message):
         exact_time = datetime.datetime.utcnow().strftime(self.config["LOG_TIME_FORMAT"])
 
-        logThis = "[" + exact_time + "] " + user + ": " + message
+        logThis = "[" + exact_time + "]" + user + ": " + message
         with open(self.directory, 'a') as fp:
             #print self.stream + "|||||| " + message + " to " + str(self.directory)
             fp.write(logThis + "\r\n")
@@ -134,10 +135,3 @@ class TwitchIRCBot(threading.Thread):
         """ Stop the thread and wait for it to end. """
         self._stopevent.set( )
         threading.Thread.join(self, timeout)
-
-"""
-def main():
-    botParent = ParentThread()
-    botParent.setDaemon(False)
-    botParent.start()
-"""

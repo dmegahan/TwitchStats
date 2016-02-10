@@ -4,6 +4,10 @@ import os
 import requests
 import config
 
+"""
+    Static "class" for twitch REST commands
+"""
+
 date = datetime.datetime.utcnow()
 directory = './logs/' + date.strftime(config.LOG_FILE_FORMAT)
 if not os.path.exists(os.path.dirname(directory)):
@@ -14,20 +18,23 @@ logging.basicConfig(filename=directory,
                     level=logging.DEBUG)
 
 def getTwitchEmotes(stream):
+    #format out request
     EMOTE_REQUEST ="https://api.twitch.tv/kraken/chat/" + stream + "/emoticons"
     twitchEmotes = []
     try:
         emoteResponse = requests.get(EMOTE_REQUEST)
     except requests.exceptions.ConnectionError:
         print "request failure: " + EMOTE_REQUEST
-        logging.debug("request failure: " + EMOTE_REQUEST)
+        logging.debug("twitch emotes request failure: " + EMOTE_REQUEST)
         #couldn't grab emotes, return empty list
         return []
     emoteObj = None
     try:
+        #format response to json
         emoteObj = emoteResponse.json()
         allEmotes = emoteObj['emoticons']
         for emote in allEmotes:
+            #dont count any emotes that are subscriber only
             if emote['subscriber_only'] is False:
                 twitchEmotes.append(emote['regex'])
 
@@ -38,6 +45,7 @@ def getTwitchEmotes(stream):
         logging.debug("Error occurred getting stream information on " + stream
                       + " /// streamObj: " + emoteObj)
         logging.debug(emoteResponse)
+        #return empty list to indicate nothing was grabbed
         return []
     return twitchEmotes[:]
 
@@ -48,7 +56,7 @@ def getSubEmotes(stream):
         emoteResponse = requests.get(EMOTE_REQUEST)
     except requests.exceptions.ConnectionError:
         print "request failure: " + EMOTE_REQUEST
-        logging.debug("request failure: " + EMOTE_REQUEST)
+        logging.debug("sub emotes request failure: " + EMOTE_REQUEST)
         #couldn't grab emotes, return empty list
         return []
     emoteObj = None
@@ -81,7 +89,7 @@ def getStreamInfo(stream):
        streamResponse = requests.get(STREAM_REQUEST)
     except requests.exceptions.ConnectionError:
         print "request failure: " + STREAM_REQUEST
-        logging.debug(stream + " - request failure: " + STREAM_REQUEST)
+        logging.debug(stream + " - stream info request failure: " + STREAM_REQUEST)
         return [None, None]
 
     #get stream info from streamResponse
@@ -116,7 +124,7 @@ def isOnline(stream):
        streamResponse = requests.get(STREAM_REQUEST)
     except requests.exceptions.ConnectionError:
         #print "request failure: " + STREAM_REQUEST
-        logging.debug("request failure: " + STREAM_REQUEST)
+        logging.debug("isOnline request failure: " + STREAM_REQUEST)
         #get stream info from streamResponse
         return False
     try:

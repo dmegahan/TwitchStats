@@ -50,4 +50,4 @@ class TestStatistics(unittest.TestCase):
 
     def test_timeStreamed(self):
         stream_ses = self.stats.getSessions()[0]
-        self.assertEqual(self.stats.getTimeStreamed(stream_ses), "7:18:45")
+        self.assertEqual(self.stats.getTimeStreamed(stream_ses)[1], "7:18:45")

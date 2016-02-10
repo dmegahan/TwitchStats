@@ -3,7 +3,10 @@ import json
 import re
 
 __author__ = 'Danny'
-"""This script will compare the number of emotes recorded in the json files with the messages recorded in the logs"""
+"""
+Helper class to check if the json and chat logs match
+This script will compare the number of emotes recorded in the json files with the messages recorded in the logs
+"""
 
 def countJson(fp):
     with open(fp, 'r') as f:

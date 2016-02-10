@@ -1,0 +1,498 @@
+06/07/2015 20:45:11 - root - INFO - destiny thread started
+06/07/2015 20:45:12 - root - INFO - kaceytron thread started
+06/07/2015 20:45:12 - root - INFO - itmejp thread started
+06/07/2015 20:45:12 - root - INFO - dansgaming thread started
+06/07/2015 20:45:12 - root - INFO - summit1g thread started
+06/07/2015 20:45:14 - root - INFO - IRCBot kaceytron started up!
+06/07/2015 20:45:14 - root - INFO - IRCBot itmejp started up!
+06/07/2015 20:45:14 - root - INFO - IRCBot dansgaming started up!
+06/07/2015 20:45:14 - root - INFO - kaceytron BOT connected to IRC server
+06/07/2015 20:45:14 - root - INFO - IRCBot summit1g started up!
+06/07/2015 20:45:14 - root - INFO - itmejp BOT connected to IRC server
+06/07/2015 20:45:14 - root - INFO - dansgaming BOT connected to IRC server
+06/07/2015 20:45:14 - root - INFO - summit1g BOT connected to IRC server
+06/07/2015 20:48:15 - root - INFO - summit1g thread started
+06/07/2015 20:48:15 - root - INFO - dansgaming thread started
+06/07/2015 20:48:15 - root - INFO - destiny thread started
+06/07/2015 20:48:15 - root - INFO - kaceytron thread started
+06/07/2015 20:48:15 - root - INFO - itmejp thread started
+06/07/2015 20:48:16 - root - INFO - IRCBot kaceytron started up!
+06/07/2015 20:48:16 - root - INFO - IRCBot summit1g started up!
+06/07/2015 20:48:16 - root - INFO - kaceytron BOT connected to IRC server
+06/07/2015 20:48:16 - root - INFO - summit1g BOT connected to IRC server
+06/07/2015 20:48:16 - root - INFO - IRCBot itmejp started up!
+06/07/2015 20:48:16 - root - INFO - itmejp BOT connected to IRC server
+06/07/2015 20:48:17 - root - INFO - IRCBot dansgaming started up!
+06/07/2015 20:48:17 - root - INFO - dansgaming BOT connected to IRC server
+06/07/2015 20:50:37 - root - WARNING - Error on line: 1@daepicbomb11.tmi.twitch.tv PRIVMSG #dansgaming :DansGame 7||||| message: |||||user: @daepicbomb11.tmi.twitch.tv PRIVMSG #dansgaming :DansGame 7
+06/07/2015 21:12:45 - root - WARNING - Error on line: es@vantales.tmi.twitch.tv PRIVMSG #dansgaming :just install steamOS on your normal PC -> steam box done||||| message: |||||user: s@vantales.tmi.twitch.tv PRIVMSG #dansgaming :just install steamOS on your normal PC -> steam box done
+06/07/2015 21:14:56 - root - WARNING - Error on line: iin!22110fusrodovahkiin@22110fusrodovahkiin.tmi.twitch.tv PRIVMSG #dansgaming :he watched the two girls one cup video while eating||||| message: |||||user: in
+06/07/2015 21:37:35 - root - INFO - ryuzilla thread started
+06/07/2015 21:37:37 - root - INFO - IRCBot ryuzilla started up!
+06/07/2015 21:37:37 - root - INFO - ryuzilla BOT connected to IRC server
+06/07/2015 21:40:36 - root - INFO - itmejp/D08_M06_Y2015_H00_m45_s11 viewer graph created!
+06/07/2015 21:40:42 - root - INFO - itmejp/JD08_M06_Y2015_H00_m45_s11 emote graph created!
+06/07/2015 22:15:48 - root - INFO - destiny/D08_M06_Y2015_H00_m45_s11 viewer graph created!
+06/07/2015 22:21:51 - root - INFO - kaceytron/D08_M06_Y2015_H00_m45_s11 viewer graph created!
+06/07/2015 22:21:54 - root - INFO - kaceytron/JD08_M06_Y2015_H00_m45_s11 emote graph created!
+06/07/2015 23:36:19 - root - INFO - summit1g/D08_M06_Y2015_H00_m45_s11 viewer graph created!
+06/07/2015 23:36:22 - root - INFO - summit1g/JD08_M06_Y2015_H00_m45_s11 emote graph created!
+06/07/2015 23:55:44 - root - WARNING - Error on line: h.tv PRIVMSG #dansgaming :HeyGuys||||| message: |||||user: .tv PRIVMSG #dansgaming :HeyGuys
+06/08/2015 00:04:29 - root - INFO - dansgaming/D08_M06_Y2015_H00_m45_s11 viewer graph created!
+06/08/2015 00:04:34 - root - INFO - dansgaming/JD08_M06_Y2015_H00_m45_s11 emote graph created!
+06/08/2015 01:33:16 - root - DEBUG - ryuzilla - request failure: https://api.twitch.tv/kraken/streams/ryuzilla
+06/08/2015 02:34:27 - root - INFO - ryuzilla/D08_M06_Y2015_H01_m37_s35 viewer graph created!
+06/08/2015 02:34:29 - root - INFO - ryuzilla/JD08_M06_Y2015_H01_m37_s35 emote graph created!
+06/08/2015 05:55:43 - root - INFO - trick2g thread started
+06/08/2015 05:55:45 - root - INFO - IRCBot trick2g started up!
+06/08/2015 05:55:45 - root - INFO - trick2g BOT connected to IRC server
+06/08/2015 07:23:47 - root - WARNING - Error on line: rtimo14!gamertimo14@gamertimo14.tmi.twitch.tv PRIVMSG #trick2g :trkBoom||||| message: |||||user: timo14
+06/08/2015 07:50:26 - root - WARNING - Error on line: witch.tv PRIVMSG #trick2g :CAVS||||| message: |||||user: itch.tv PRIVMSG #trick2g :CAVS
+06/08/2015 08:12:29 - root - WARNING - Error on line: danhert@jordanhert.tmi.twitch.tv PRIVMSG #trick2g :LAG SO REAL||||| message: |||||user: anhert@jordanhert.tmi.twitch.tv PRIVMSG #trick2g :LAG SO REAL
+06/08/2015 08:20:49 - root - WARNING - Error on line: mi.twitch.tv PRIVMSG #trick2g :HOLD UP THE BLUE CARD THE BUE||||| message: |||||user: i.twitch.tv PRIVMSG #trick2g :HOLD UP THE BLUE CARD THE BUE
+06/08/2015 11:15:27 - root - WARNING - Error on line: heimpaler.tmi.twitch.tv PRIVMSG #trick2g :get off on what||||| message: |||||user: eimpaler.tmi.twitch.tv PRIVMSG #trick2g :get off on what
+06/08/2015 12:01:01 - root - WARNING - Error on line: ballsgrab.tmi.twitch.tv PRIVMSG #trick2g :trick betrayel incoming||||| message: |||||user: allsgrab.tmi.twitch.tv PRIVMSG #trick2g :trick betrayel incoming
+06/08/2015 12:04:59 - root - INFO - lirik thread started
+06/08/2015 12:05:00 - root - INFO - IRCBot lirik started up!
+06/08/2015 12:05:01 - root - INFO - lirik BOT connected to IRC server
+06/08/2015 12:05:15 - root - WARNING - Error on line: itch.tv PRIVMSG #lirik :LEWEEEK||||| message: |||||user: tch.tv PRIVMSG #lirik :LEWEEEK
+06/08/2015 12:06:19 - root - WARNING - Error on line: hetirant@andrethetirant.tmi.twitch.tv PRIVMSG #lirik :lirikCHAMP lirikCHAMP lirikCHAMP lirikCHAMP lirikCHAMP lirikCHAMP||||| message: |||||user: etirant@andrethetirant.tmi.twitch.tv PRIVMSG #lirik :lirikCHAMP lirikCHAMP lirikCHAMP lirikCHAMP lirikCHAMP lirikCHAMP
+06/08/2015 12:06:20 - root - WARNING - Error on line: witch.tv PRIVMSG #lirik :lirikTEN lirikH lirikO lirikGasm lirikO lirikH lirikGOTY||||| message: |||||user: itch.tv PRIVMSG #lirik :lirikTEN lirikH lirikO lirikGasm lirikO lirikH lirikGOTY
+06/08/2015 12:06:22 - root - WARNING - Error on line: !andrethetirant@andrethetirant.tmi.twitch.tv PRIVMSG #lirik :lirikTEN lirikTEN lirikTEN lirikTEN lirikTEN||||| message: |||||user: 
+06/08/2015 12:06:23 - root - WARNING - Error on line:  PRIVMSG #lirik :lirikMLG lirikMLG lirikMLG lirikCRASH||||| message: |||||user: PRIVMSG #lirik :lirikMLG lirikMLG lirikMLG lirikCRASH
+06/08/2015 12:07:29 - root - WARNING - Error on line: tch.tv PRIVMSG #lirik :meow||||| message: |||||user: ch.tv PRIVMSG #lirik :meow
+06/08/2015 12:07:35 - root - WARNING - Error on line: tv PRIVMSG #lirik :lirikCHAMP lirikHYPE lirikCHAMP lirikHYPE lirikCHAMP lirikHYPE lirikCHAMP lirikHYPE lirikCHAMP lirikHYPE||||| message: |||||user: v PRIVMSG #lirik :lirikCHAMP lirikHYPE lirikCHAMP lirikHYPE lirikCHAMP lirikHYPE lirikCHAMP lirikHYPE lirikCHAMP lirikHYPE
+06/08/2015 12:07:53 - root - WARNING - Error on line: _potato.tmi.twitch.tv PRIVMSG #lirik :lirikHYPE lirikHYPE lirikHYPE||||| message: |||||user: potato.tmi.twitch.tv PRIVMSG #lirik :lirikHYPE lirikHYPE lirikHYPE
+06/08/2015 12:07:59 - root - WARNING - Error on line: tv PRIVMSG #lirik :lirikO lirikO lirikO lirikFAT lirikFAT lirikFAT||||| message: |||||user: v PRIVMSG #lirik :lirikO lirikO lirikO lirikFAT lirikFAT lirikFAT
+06/08/2015 12:14:22 - root - WARNING - Error on line: ous.tmi.twitch.tv PRIVMSG #trick2g :Tony not a mod? trkThump||||| message: |||||user: us.tmi.twitch.tv PRIVMSG #trick2g :Tony not a mod? trkThump
+06/08/2015 13:06:22 - root - WARNING - Error on line: ave_i_l@1_l_wave_i_l.tmi.twitch.tv PRIVMSG #trick2g :its not accurate at all ||||| message: |||||user: ve_i_l@1_l_wave_i_l.tmi.twitch.tv PRIVMSG #trick2g :its not accurate at all 
+06/08/2015 13:34:57 - root - WARNING - Error on line: u@mannyknowsyou.tmi.twitch.tv PRIVMSG #trick2g :na subwars so i can be in one trkKappa||||| message: |||||user: @mannyknowsyou.tmi.twitch.tv PRIVMSG #trick2g :na subwars so i can be in one trkKappa
+06/08/2015 13:38:02 - root - INFO - reckful thread started
+06/08/2015 13:38:03 - root - INFO - IRCBot reckful started up!
+06/08/2015 13:38:03 - root - INFO - reckful BOT connected to IRC server
+06/08/2015 13:44:18 - root - WARNING - Error on line: @maeldun81.tmi.twitch.tv PRIVMSG #trick2g :What is going on right now lol||||| message: |||||user: maeldun81.tmi.twitch.tv PRIVMSG #trick2g :What is going on right now lol
+06/08/2015 13:45:11 - root - WARNING - Error on line: style3@andystyle3.tmi.twitch.tv PRIVMSG #trick2g :trkSalt trkSalt trkSalt trkSalt trkSalt trkSalt trkSalt trkSalt ||||| message: |||||user: tyle3@andystyle3.tmi.twitch.tv PRIVMSG #trick2g :trkSalt trkSalt trkSalt trkSalt trkSalt trkSalt trkSalt trkSalt 
+06/08/2015 13:47:25 - root - WARNING - Error on line: agent_scully@special_agent_scully.tmi.twitch.tv PRIVMSG #trick2g :BibleThump we can pretend BibleThump||||| message: |||||user: gent_scully@special_agent_scully.tmi.twitch.tv PRIVMSG #trick2g :BibleThump we can pretend BibleThump
+06/08/2015 13:48:33 - root - WARNING - Error on line: !ownu333@ownu333.tmi.twitch.tv PRIVMSG #trick2g :kappa||||| message: |||||user: 
+06/08/2015 13:49:32 - root - WARNING - Error on line: zhq!ferzhq@ferzhq.tmi.twitch.tv PRIVMSG #trick2g :TRICK U FAG||||| message: |||||user: hq
+06/08/2015 14:02:51 - root - INFO - sodapoppin thread started
+06/08/2015 14:02:52 - root - INFO - IRCBot sodapoppin started up!
+06/08/2015 14:02:52 - root - INFO - sodapoppin BOT connected to IRC server
+06/08/2015 14:02:59 - root - WARNING - Error on line: i.twitch.tv PRIVMSG #sodapoppin :Kappa||||| message: |||||user: .twitch.tv PRIVMSG #sodapoppin :Kappa
+06/08/2015 14:03:34 - root - WARNING - Error on line: tch.tv PRIVMSG #sodapoppin :(ditto) (ditto) (ditto) (ditto) (ditto) (ditto) (ditto) (ditto) (ditto)||||| message: |||||user: ch.tv PRIVMSG #sodapoppin :(ditto) (ditto) (ditto) (ditto) (ditto) (ditto) (ditto) (ditto) (ditto)
+06/08/2015 14:03:35 - root - WARNING - Error on line: rea1996.tmi.twitch.tv PRIVMSG #sodapoppin :AndyCharm Thanos, you need to try harder my friend! AndyLol||||| message: |||||user: ea1996.tmi.twitch.tv PRIVMSG #sodapoppin :AndyCharm Thanos, you need to try harder my friend
+06/08/2015 14:03:36 - root - WARNING - Error on line: .tv PRIVMSG #sodapoppin :ditto||||| message: |||||user: tv PRIVMSG #sodapoppin :ditto
+06/08/2015 14:03:37 - root - WARNING - Error on line: v PRIVMSG #sodapoppin :SODAPOPPIN||||| message: |||||user:  PRIVMSG #sodapoppin :SODAPOPPIN
+06/08/2015 14:04:37 - root - WARNING - Error on line: @2girls1couple.tmi.twitch.tv PRIVMSG #sodapoppin :I JUST CAME MY PANTIES||||| message: |||||user: 2girls1couple.tmi.twitch.tv PRIVMSG #sodapoppin :I JUST CAME MY PANTIES
+06/08/2015 14:05:40 - root - WARNING - Error on line: ather@sonofather.tmi.twitch.tv PRIVMSG #sodapoppin :BIbleThump Adorable!  BibleThump||||| message: |||||user: ther@sonofather.tmi.twitch.tv PRIVMSG #sodapoppin :BIbleThump Adorable
+06/08/2015 14:06:35 - root - WARNING - Error on line: a.tmi.twitch.tv PRIVMSG #sodapoppin :xanHY xanPE babaDoe babaR nahmsay1n Resub! sodaW||||| message: |||||user: .tmi.twitch.tv PRIVMSG #sodapoppin :xanHY xanPE babaDoe babaR nahmsay1n Resub
+06/08/2015 14:06:36 - root - WARNING - Error on line: twitch.tv PRIVMSG #sodapoppin :soda <3333||||| message: |||||user: witch.tv PRIVMSG #sodapoppin :soda <3333
+06/08/2015 14:07:28 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/08/2015 14:07:28 - root - DEBUG - <Response [502]>
+06/08/2015 14:07:38 - root - WARNING - Error on line: witch.tv PRIVMSG #sodapoppin :sodaHYPE sodaHYPE||||| message: |||||user: itch.tv PRIVMSG #sodapoppin :sodaHYPE sodaHYPE
+06/08/2015 14:07:39 - root - WARNING - Error on line: hnuffeleu@schnuffeleu.tmi.twitch.tv PRIVMSG #sodapoppin :xscchlong||||| message: |||||user: nuffeleu@schnuffeleu.tmi.twitch.tv PRIVMSG #sodapoppin :xscchlong
+06/08/2015 14:08:40 - root - WARNING - Error on line: egariotz@megariotz.tmi.twitch.tv PRIVMSG #sodapoppin :cool beard and muschase@ @sodapoppin||||| message: |||||user: gariotz@megariotz.tmi.twitch.tv PRIVMSG #sodapoppin :cool beard and muschase@ @sodapoppin
+06/08/2015 14:17:40 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/08/2015 14:17:40 - root - DEBUG - <Response [502]>
+06/08/2015 14:17:45 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/08/2015 14:17:45 - root - DEBUG - <Response [502]>
+06/08/2015 14:26:11 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/08/2015 14:26:11 - root - DEBUG - <Response [503]>
+06/08/2015 14:56:14 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/08/2015 14:56:14 - root - DEBUG - <Response [503]>
+06/08/2015 15:10:12 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/08/2015 15:10:12 - root - DEBUG - <Response [503]>
+06/08/2015 15:30:55 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/08/2015 15:30:55 - root - DEBUG - <Response [503]>
+06/08/2015 15:46:22 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/08/2015 15:46:22 - root - DEBUG - <Response [502]>
+06/08/2015 15:48:56 - root - WARNING - Error on line: memustard!getmemustard@getmemustard.tmi.twitch.tv PRIVMSG #reckful :Time to scratch this deck Kappa||||| message: |||||user: emustard
+06/08/2015 15:51:10 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/08/2015 15:51:10 - root - DEBUG - <Response [502]>
+06/08/2015 15:59:36 - root - INFO - dansgaming thread started
+06/08/2015 15:59:38 - root - INFO - IRCBot dansgaming started up!
+06/08/2015 15:59:39 - root - INFO - dansgaming BOT connected to IRC server
+06/08/2015 16:13:34 - root - WARNING - Error on line: engaming!marksdrunkengaming@marksdrunkengaming.tmi.twitch.tv PRIVMSG #reckful :The gates are open!||||| message: |||||user: ngaming
+06/08/2015 16:32:14 - root - WARNING - Error on line: kal.tmi.twitch.tv PRIVMSG #reckful :Kreygasm||||| message: |||||user: al.tmi.twitch.tv PRIVMSG #reckful :Kreygasm
+06/08/2015 16:46:17 - root - DEBUG - lirik - request failure: https://api.twitch.tv/kraken/streams/lirik
+06/08/2015 17:01:48 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/08/2015 17:01:48 - root - DEBUG - <Response [502]>
+06/08/2015 17:01:51 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/08/2015 17:01:51 - root - DEBUG - <Response [503]>
+06/08/2015 17:01:54 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/08/2015 17:01:54 - root - DEBUG - <Response [503]>
+06/08/2015 17:01:55 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/08/2015 17:01:55 - root - DEBUG - <Response [502]>
+06/08/2015 17:03:23 - root - DEBUG - trick2g - Error occurred getting stream information on trick2g
+06/08/2015 17:03:23 - root - DEBUG - <Response [502]>
+06/08/2015 17:03:25 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/08/2015 17:03:25 - root - DEBUG - <Response [503]>
+06/08/2015 17:03:37 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/08/2015 17:03:37 - root - DEBUG - <Response [502]>
+06/08/2015 17:05:51 - root - WARNING - Error on line: orter_!sorter_@sorter_.tmi.twitch.tv PRIVMSG #dansgaming :Im so startled danScare||||| message: |||||user: rter_
+06/08/2015 17:06:16 - root - WARNING - Error on line: tmi.twitch.tv PRIVMSG #reckful :that 1 drop will kill you||||| message: |||||user: mi.twitch.tv PRIVMSG #reckful :that 1 drop will kill you
+06/08/2015 17:10:26 - root - WARNING - Error on line: v PRIVMSG #reckful :People saying Reckful is still rank 5 after all this time... But you don't get this is just like life, even when you think you're improving, life throws you back to where you began. FeelsBadMan||||| message: |||||user:  PRIVMSG #reckful :People saying Reckful is still rank 5 after all this time... But you don't get this is just like life, even when you think you're improving, life throws you back to where you began. FeelsBadMan
+06/08/2015 17:12:04 - root - WARNING - Error on line: ecomattis.tmi.twitch.tv PRIVMSG #dansgaming :red is n||||| message: |||||user: comattis.tmi.twitch.tv PRIVMSG #dansgaming :red is n
+06/08/2015 17:16:22 - root - WARNING - Error on line: .tmi.twitch.tv PRIVMSG #dansgaming :danScare danScare danScare danScare danScare danScare danScare||||| message: |||||user: tmi.twitch.tv PRIVMSG #dansgaming :danScare danScare danScare danScare danScare danScare danScare
+06/08/2015 17:23:37 - root - WARNING - Error on line: general!tacticalgeneral@tacticalgeneral.tmi.twitch.tv PRIVMSG #dansgaming :"things in you"||||| message: |||||user: eneral
+06/08/2015 17:30:42 - root - WARNING - Error on line: iaplays!aureliaplays@aureliaplays.tmi.twitch.tv PRIVMSG #dansgaming :Lay off the drugs, holy crawp.||||| message: |||||user: aplays
+06/08/2015 17:37:45 - root - WARNING - Error on line: .twitch.tv PRIVMSG #reckful :Overlay ffs||||| message: |||||user: twitch.tv PRIVMSG #reckful :Overlay ffs
+06/08/2015 17:38:03 - root - WARNING - Error on line: zoiinks.tmi.twitch.tv PRIVMSG #dansgaming :danDerp danDerp danDerp||||| message: |||||user: oiinks.tmi.twitch.tv PRIVMSG #dansgaming :danDerp danDerp danDerp
+06/08/2015 17:55:12 - root - WARNING - Error on line: thehunter9000.tmi.twitch.tv PRIVMSG #dansgaming :"Time does not heal wound"||||| message: |||||user: hehunter9000.tmi.twitch.tv PRIVMSG #dansgaming :"Time does not heal wound"
+06/08/2015 19:00:50 - root - INFO - dansgaming thread started
+06/08/2015 19:00:50 - root - INFO - reckful thread started
+06/08/2015 19:00:50 - root - INFO - sodapoppin thread started
+06/08/2015 19:00:50 - root - INFO - lirik thread started
+06/08/2015 19:00:50 - root - INFO - trick2g thread started
+06/08/2015 19:00:51 - root - INFO - IRCBot dansgaming started up!
+06/08/2015 19:00:51 - root - INFO - IRCBot lirik started up!
+06/08/2015 19:00:51 - root - INFO - dansgaming BOT connected to IRC server
+06/08/2015 19:00:52 - root - INFO - IRCBot trick2g started up!
+06/08/2015 19:00:52 - root - INFO - lirik BOT connected to IRC server
+06/08/2015 19:00:52 - root - INFO - trick2g BOT connected to IRC server
+06/08/2015 19:00:52 - root - INFO - IRCBot reckful started up!
+06/08/2015 19:00:52 - root - INFO - reckful BOT connected to IRC server
+06/08/2015 19:00:52 - root - INFO - IRCBot sodapoppin started up!
+06/08/2015 19:00:52 - root - INFO - sodapoppin BOT connected to IRC server
+06/08/2015 19:01:14 - root - INFO - dansgaming thread started
+06/08/2015 19:01:14 - root - INFO - lirik thread started
+06/08/2015 19:01:14 - root - INFO - reckful thread started
+06/08/2015 19:01:14 - root - INFO - sodapoppin thread started
+06/08/2015 19:01:14 - root - INFO - trick2g thread started
+06/08/2015 19:01:15 - root - INFO - IRCBot sodapoppin started up!
+06/08/2015 19:01:15 - root - INFO - sodapoppin BOT connected to IRC server
+06/08/2015 19:01:15 - root - INFO - IRCBot trick2g started up!
+06/08/2015 19:01:16 - root - INFO - trick2g BOT connected to IRC server
+06/08/2015 19:01:16 - root - INFO - IRCBot lirik started up!
+06/08/2015 19:01:16 - root - INFO - IRCBot dansgaming started up!
+06/08/2015 19:01:16 - root - INFO - lirik BOT connected to IRC server
+06/08/2015 19:01:16 - root - INFO - IRCBot reckful started up!
+06/08/2015 19:01:16 - root - INFO - dansgaming BOT connected to IRC server
+06/08/2015 19:01:16 - root - INFO - reckful BOT connected to IRC server
+06/08/2015 19:01:25 - root - INFO - dansgaming thread started
+06/08/2015 19:01:25 - root - INFO - sodapoppin thread started
+06/08/2015 19:01:25 - root - INFO - trick2g thread started
+06/08/2015 19:01:25 - root - INFO - reckful thread started
+06/08/2015 19:01:25 - root - INFO - lirik thread started
+06/08/2015 19:01:26 - root - INFO - IRCBot dansgaming started up!
+06/08/2015 19:01:26 - root - INFO - IRCBot reckful started up!
+06/08/2015 19:01:26 - root - INFO - IRCBot sodapoppin started up!
+06/08/2015 19:01:26 - root - INFO - dansgaming BOT connected to IRC server
+06/08/2015 19:01:26 - root - INFO - reckful BOT connected to IRC server
+06/08/2015 19:01:26 - root - INFO - sodapoppin BOT connected to IRC server
+06/08/2015 19:01:27 - root - INFO - IRCBot trick2g started up!
+06/08/2015 19:01:27 - root - INFO - trick2g BOT connected to IRC server
+06/08/2015 19:01:27 - root - INFO - IRCBot lirik started up!
+06/08/2015 19:01:27 - root - INFO - lirik BOT connected to IRC server
+06/08/2015 19:01:42 - root - WARNING - Error on line: ectre!extraspectre@extraspectre.tmi.twitch.tv PRIVMSG #dansgaming :Is this a walking simulator?||||| message: |||||user: ctre
+06/08/2015 19:03:32 - root - INFO - trick2g thread started
+06/08/2015 19:03:32 - root - INFO - lirik thread started
+06/08/2015 19:03:32 - root - INFO - dansgaming thread started
+06/08/2015 19:03:32 - root - INFO - reckful thread started
+06/08/2015 19:03:32 - root - INFO - sodapoppin thread started
+06/08/2015 19:03:34 - root - INFO - IRCBot reckful started up!
+06/08/2015 19:03:34 - root - INFO - IRCBot sodapoppin started up!
+06/08/2015 19:03:34 - root - INFO - reckful BOT connected to IRC server
+06/08/2015 19:03:34 - root - INFO - IRCBot lirik started up!
+06/08/2015 19:03:34 - root - INFO - sodapoppin BOT connected to IRC server
+06/08/2015 19:03:34 - root - INFO - lirik BOT connected to IRC server
+06/08/2015 19:03:34 - root - INFO - IRCBot dansgaming started up!
+06/08/2015 19:03:34 - root - INFO - dansgaming BOT connected to IRC server
+06/08/2015 19:03:34 - root - INFO - IRCBot trick2g started up!
+06/08/2015 19:03:34 - root - INFO - trick2g BOT connected to IRC server
+06/08/2015 19:03:51 - root - INFO - trick2g thread started
+06/08/2015 19:03:51 - root - INFO - reckful thread started
+06/08/2015 19:03:51 - root - INFO - lirik thread started
+06/08/2015 19:03:51 - root - INFO - dansgaming thread started
+06/08/2015 19:03:51 - root - INFO - sodapoppin thread started
+06/08/2015 19:03:52 - root - INFO - IRCBot dansgaming started up!
+06/08/2015 19:03:52 - root - INFO - dansgaming BOT connected to IRC server
+06/08/2015 19:03:52 - root - INFO - IRCBot lirik started up!
+06/08/2015 19:03:52 - root - INFO - IRCBot trick2g started up!
+06/08/2015 19:03:52 - root - INFO - IRCBot sodapoppin started up!
+06/08/2015 19:03:52 - root - INFO - lirik BOT connected to IRC server
+06/08/2015 19:03:52 - root - INFO - trick2g BOT connected to IRC server
+06/08/2015 19:03:52 - root - INFO - sodapoppin BOT connected to IRC server
+06/08/2015 19:03:53 - root - INFO - IRCBot reckful started up!
+06/08/2015 19:03:53 - root - INFO - reckful BOT connected to IRC server
+06/08/2015 19:04:17 - root - INFO - reckful thread started
+06/08/2015 19:04:17 - root - INFO - dansgaming thread started
+06/08/2015 19:04:17 - root - INFO - trick2g thread started
+06/08/2015 19:04:17 - root - INFO - sodapoppin thread started
+06/08/2015 19:04:17 - root - INFO - lirik thread started
+06/08/2015 19:04:18 - root - INFO - IRCBot reckful started up!
+06/08/2015 19:04:18 - root - INFO - reckful BOT connected to IRC server
+06/08/2015 19:04:18 - root - INFO - IRCBot lirik started up!
+06/08/2015 19:04:18 - root - INFO - IRCBot dansgaming started up!
+06/08/2015 19:04:18 - root - INFO - IRCBot sodapoppin started up!
+06/08/2015 19:04:18 - root - INFO - lirik BOT connected to IRC server
+06/08/2015 19:04:18 - root - INFO - dansgaming BOT connected to IRC server
+06/08/2015 19:04:19 - root - INFO - sodapoppin BOT connected to IRC server
+06/08/2015 19:04:19 - root - INFO - IRCBot trick2g started up!
+06/08/2015 19:04:19 - root - INFO - trick2g BOT connected to IRC server
+06/08/2015 19:12:36 - root - INFO - dansgaming thread started
+06/08/2015 19:12:36 - root - INFO - trick2g thread started
+06/08/2015 19:12:36 - root - INFO - reckful thread started
+06/08/2015 19:12:36 - root - INFO - sodapoppin thread started
+06/08/2015 19:12:36 - root - INFO - lirik thread started
+06/08/2015 19:12:36 - root - DEBUG - dansgaming - Error occurred getting stream information on dansgaming
+06/08/2015 19:12:36 - root - DEBUG - <Response [200]>
+06/08/2015 19:12:36 - root - DEBUG - reckful - Error occurred getting stream information on reckful
+06/08/2015 19:12:36 - root - DEBUG - <Response [200]>
+06/08/2015 19:12:36 - root - DEBUG - trick2g - Error occurred getting stream information on trick2g
+06/08/2015 19:12:36 - root - DEBUG - <Response [200]>
+06/08/2015 19:12:36 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/08/2015 19:12:36 - root - DEBUG - <Response [200]>
+06/08/2015 19:12:36 - root - DEBUG - lirik - Error occurred getting stream information on lirik
+06/08/2015 19:12:36 - root - DEBUG - <Response [200]>
+06/08/2015 19:12:37 - root - DEBUG - dansgaming - Error occurred getting stream information on dansgaming
+06/08/2015 19:12:37 - root - DEBUG - <Response [200]>
+06/08/2015 19:12:37 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/08/2015 19:12:37 - root - DEBUG - <Response [200]>
+06/08/2015 19:12:37 - root - DEBUG - reckful - Error occurred getting stream information on reckful
+06/08/2015 19:12:37 - root - DEBUG - <Response [200]>
+06/08/2015 19:12:37 - root - INFO - IRCBot reckful started up!
+06/08/2015 19:12:37 - root - DEBUG - trick2g - Error occurred getting stream information on trick2g
+06/08/2015 19:12:37 - root - DEBUG - <Response [200]>
+06/08/2015 19:12:37 - root - DEBUG - lirik - Error occurred getting stream information on lirik
+06/08/2015 19:12:37 - root - DEBUG - <Response [200]>
+06/08/2015 19:12:37 - root - INFO - IRCBot dansgaming started up!
+06/08/2015 19:12:37 - root - INFO - reckful BOT connected to IRC server
+06/08/2015 19:12:37 - root - INFO - dansgaming BOT connected to IRC server
+06/08/2015 19:12:37 - root - INFO - IRCBot lirik started up!
+06/08/2015 19:12:38 - root - INFO - lirik BOT connected to IRC server
+06/08/2015 19:12:38 - root - INFO - IRCBot trick2g started up!
+06/08/2015 19:12:38 - root - INFO - IRCBot sodapoppin started up!
+06/08/2015 19:12:38 - root - INFO - trick2g BOT connected to IRC server
+06/08/2015 19:12:38 - root - INFO - sodapoppin BOT connected to IRC server
+06/08/2015 19:12:38 - root - DEBUG - dansgaming - Error occurred getting stream information on dansgaming
+06/08/2015 19:12:38 - root - DEBUG - <Response [200]>
+06/08/2015 19:12:38 - root - DEBUG - reckful - Error occurred getting stream information on reckful
+06/08/2015 19:12:38 - root - DEBUG - <Response [200]>
+06/08/2015 19:12:38 - root - DEBUG - lirik - Error occurred getting stream information on lirik
+06/08/2015 19:12:38 - root - DEBUG - <Response [200]>
+06/08/2015 19:12:38 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/08/2015 19:12:38 - root - DEBUG - <Response [200]>
+06/08/2015 19:12:38 - root - DEBUG - trick2g - Error occurred getting stream information on trick2g
+06/08/2015 19:12:38 - root - DEBUG - <Response [200]>
+06/08/2015 19:12:39 - root - DEBUG - dansgaming - Error occurred getting stream information on dansgaming
+06/08/2015 19:12:39 - root - DEBUG - <Response [200]>
+06/08/2015 19:12:39 - root - DEBUG - reckful - Error occurred getting stream information on reckful
+06/08/2015 19:12:39 - root - DEBUG - <Response [200]>
+06/08/2015 19:12:39 - root - DEBUG - lirik - Error occurred getting stream information on lirik
+06/08/2015 19:12:39 - root - DEBUG - <Response [200]>
+06/08/2015 19:12:39 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/08/2015 19:12:39 - root - DEBUG - <Response [200]>
+06/08/2015 19:12:51 - root - INFO - sodapoppin thread started
+06/08/2015 19:12:51 - root - INFO - reckful thread started
+06/08/2015 19:12:51 - root - INFO - lirik thread started
+06/08/2015 19:12:51 - root - INFO - trick2g thread started
+06/08/2015 19:12:51 - root - INFO - dansgaming thread started
+06/08/2015 19:12:53 - root - INFO - IRCBot reckful started up!
+06/08/2015 19:12:53 - root - INFO - reckful BOT connected to IRC server
+06/08/2015 19:12:53 - root - INFO - IRCBot sodapoppin started up!
+06/08/2015 19:12:53 - root - INFO - IRCBot trick2g started up!
+06/08/2015 19:12:53 - root - INFO - sodapoppin BOT connected to IRC server
+06/08/2015 19:12:53 - root - INFO - trick2g BOT connected to IRC server
+06/08/2015 19:12:53 - root - INFO - IRCBot lirik started up!
+06/08/2015 19:12:53 - root - INFO - lirik BOT connected to IRC server
+06/08/2015 19:12:53 - root - INFO - IRCBot dansgaming started up!
+06/08/2015 19:12:53 - root - INFO - dansgaming BOT connected to IRC server
+06/08/2015 19:16:35 - root - INFO - dansgaming thread started
+06/08/2015 19:16:35 - root - INFO - trick2g thread started
+06/08/2015 19:16:36 - root - INFO - sodapoppin thread started
+06/08/2015 19:16:36 - root - INFO - lirik thread started
+06/08/2015 19:16:37 - root - INFO - IRCBot dansgaming started up!
+06/08/2015 19:16:37 - root - INFO - dansgaming BOT connected to IRC server
+06/08/2015 19:16:37 - root - INFO - IRCBot lirik started up!
+06/08/2015 19:16:37 - root - INFO - lirik BOT connected to IRC server
+06/08/2015 19:16:37 - root - INFO - IRCBot sodapoppin started up!
+06/08/2015 19:16:37 - root - INFO - sodapoppin BOT connected to IRC server
+06/08/2015 19:16:37 - root - INFO - reckful thread started
+06/08/2015 19:16:38 - root - INFO - IRCBot trick2g started up!
+06/08/2015 19:16:38 - root - INFO - trick2g BOT connected to IRC server
+06/08/2015 19:16:39 - root - INFO - IRCBot reckful started up!
+06/08/2015 19:16:39 - root - INFO - reckful BOT connected to IRC server
+06/08/2015 19:16:58 - root - INFO - reckful thread started
+06/08/2015 19:16:58 - root - INFO - lirik thread started
+06/08/2015 19:16:58 - root - INFO - sodapoppin thread started
+06/08/2015 19:16:58 - root - INFO - dansgaming thread started
+06/08/2015 19:16:58 - root - INFO - trick2g thread started
+06/08/2015 19:16:59 - root - INFO - IRCBot reckful started up!
+06/08/2015 19:16:59 - root - INFO - reckful BOT connected to IRC server
+06/08/2015 19:16:59 - root - INFO - IRCBot sodapoppin started up!
+06/08/2015 19:17:00 - root - INFO - sodapoppin BOT connected to IRC server
+06/08/2015 19:17:00 - root - INFO - IRCBot trick2g started up!
+06/08/2015 19:17:00 - root - INFO - trick2g BOT connected to IRC server
+06/08/2015 19:17:00 - root - INFO - IRCBot lirik started up!
+06/08/2015 19:17:00 - root - INFO - IRCBot dansgaming started up!
+06/08/2015 19:17:00 - root - INFO - lirik BOT connected to IRC server
+06/08/2015 19:17:00 - root - INFO - dansgaming BOT connected to IRC server
+06/08/2015 19:19:58 - root - INFO - sodapoppin thread started
+06/08/2015 19:19:58 - root - INFO - dansgaming thread started
+06/08/2015 19:19:58 - root - INFO - reckful thread started
+06/08/2015 19:19:58 - root - INFO - lirik thread started
+06/08/2015 19:19:58 - root - INFO - trick2g thread started
+06/08/2015 19:19:59 - root - INFO - IRCBot sodapoppin started up!
+06/08/2015 19:19:59 - root - INFO - sodapoppin BOT connected to IRC server
+06/08/2015 19:19:59 - root - INFO - IRCBot reckful started up!
+06/08/2015 19:19:59 - root - INFO - reckful BOT connected to IRC server
+06/08/2015 19:19:59 - root - INFO - IRCBot lirik started up!
+06/08/2015 19:19:59 - root - INFO - lirik BOT connected to IRC server
+06/08/2015 19:20:00 - root - INFO - IRCBot trick2g started up!
+06/08/2015 19:20:00 - root - INFO - trick2g BOT connected to IRC server
+06/08/2015 19:20:01 - root - INFO - IRCBot dansgaming started up!
+06/08/2015 19:20:01 - root - INFO - dansgaming BOT connected to IRC server
+06/08/2015 19:20:51 - root - INFO - dansgaming thread started
+06/08/2015 19:20:51 - root - INFO - trick2g thread started
+06/08/2015 19:20:51 - root - INFO - sodapoppin thread started
+06/08/2015 19:20:51 - root - INFO - reckful thread started
+06/08/2015 19:20:51 - root - INFO - lirik thread started
+06/08/2015 19:20:52 - root - INFO - IRCBot dansgaming started up!
+06/08/2015 19:20:53 - root - INFO - dansgaming BOT connected to IRC server
+06/08/2015 19:20:53 - root - INFO - IRCBot lirik started up!
+06/08/2015 19:20:53 - root - INFO - IRCBot reckful started up!
+06/08/2015 19:20:53 - root - INFO - IRCBot sodapoppin started up!
+06/08/2015 19:20:53 - root - INFO - reckful BOT connected to IRC server
+06/08/2015 19:20:53 - root - INFO - lirik BOT connected to IRC server
+06/08/2015 19:20:53 - root - INFO - sodapoppin BOT connected to IRC server
+06/08/2015 19:20:53 - root - INFO - IRCBot trick2g started up!
+06/08/2015 19:20:53 - root - INFO - trick2g BOT connected to IRC server
+06/08/2015 19:21:37 - root - INFO - dansgaming thread started
+06/08/2015 19:21:37 - root - INFO - lirik thread started
+06/08/2015 19:21:37 - root - INFO - reckful thread started
+06/08/2015 19:21:37 - root - INFO - sodapoppin thread started
+06/08/2015 19:21:37 - root - INFO - trick2g thread started
+06/08/2015 19:21:39 - root - INFO - IRCBot dansgaming started up!
+06/08/2015 19:21:39 - root - INFO - IRCBot lirik started up!
+06/08/2015 19:21:39 - root - INFO - dansgaming BOT connected to IRC server
+06/08/2015 19:21:39 - root - INFO - lirik BOT connected to IRC server
+06/08/2015 19:21:39 - root - INFO - IRCBot sodapoppin started up!
+06/08/2015 19:21:39 - root - INFO - IRCBot reckful started up!
+06/08/2015 19:21:39 - root - INFO - sodapoppin BOT connected to IRC server
+06/08/2015 19:21:39 - root - INFO - reckful BOT connected to IRC server
+06/08/2015 19:21:39 - root - INFO - IRCBot trick2g started up!
+06/08/2015 19:21:39 - root - INFO - trick2g BOT connected to IRC server
+06/08/2015 19:27:04 - root - INFO - dansgaming thread started
+06/08/2015 19:27:04 - root - INFO - reckful thread started
+06/08/2015 19:27:04 - root - INFO - trick2g thread started
+06/08/2015 19:27:04 - root - INFO - sodapoppin thread started
+06/08/2015 19:27:04 - root - INFO - lirik thread started
+06/08/2015 19:27:06 - root - INFO - IRCBot reckful started up!
+06/08/2015 19:27:06 - root - INFO - IRCBot lirik started up!
+06/08/2015 19:27:06 - root - INFO - reckful BOT connected to IRC server
+06/08/2015 19:27:06 - root - INFO - lirik BOT connected to IRC server
+06/08/2015 19:27:06 - root - INFO - IRCBot sodapoppin started up!
+06/08/2015 19:27:06 - root - INFO - IRCBot trick2g started up!
+06/08/2015 19:27:06 - root - INFO - IRCBot dansgaming started up!
+06/08/2015 19:27:06 - root - INFO - sodapoppin BOT connected to IRC server
+06/08/2015 19:27:07 - root - INFO - trick2g BOT connected to IRC server
+06/08/2015 19:27:07 - root - INFO - dansgaming BOT connected to IRC server
+06/08/2015 19:27:32 - root - INFO - reckful thread started
+06/08/2015 19:27:32 - root - INFO - dansgaming thread started
+06/08/2015 19:27:32 - root - INFO - sodapoppin thread started
+06/08/2015 19:27:32 - root - INFO - lirik thread started
+06/08/2015 19:27:32 - root - INFO - trick2g thread started
+06/08/2015 19:27:34 - root - INFO - IRCBot reckful started up!
+06/08/2015 19:27:34 - root - INFO - reckful BOT connected to IRC server
+06/08/2015 19:27:34 - root - INFO - IRCBot dansgaming started up!
+06/08/2015 19:27:34 - root - INFO - IRCBot lirik started up!
+06/08/2015 19:27:34 - root - INFO - dansgaming BOT connected to IRC server
+06/08/2015 19:27:34 - root - INFO - IRCBot sodapoppin started up!
+06/08/2015 19:27:34 - root - INFO - lirik BOT connected to IRC server
+06/08/2015 19:27:34 - root - INFO - sodapoppin BOT connected to IRC server
+06/08/2015 19:27:34 - root - INFO - IRCBot trick2g started up!
+06/08/2015 19:27:34 - root - INFO - trick2g BOT connected to IRC server
+06/08/2015 19:31:29 - root - INFO - sodapoppin thread started
+06/08/2015 19:31:30 - root - INFO - reckful thread started
+06/08/2015 19:31:30 - root - INFO - trick2g thread started
+06/08/2015 19:31:30 - root - INFO - dansgaming thread started
+06/08/2015 19:42:24 - root - INFO - reckful thread started
+06/08/2015 19:42:25 - root - INFO - dansgaming thread started
+06/08/2015 19:42:25 - root - INFO - sodapoppin thread started
+06/08/2015 19:42:26 - root - DEBUG - sodapoppin - Error occurred getting stream information on sodapoppin
+06/08/2015 19:42:26 - root - DEBUG - <Response [502]>
+06/08/2015 19:42:27 - root - INFO - IRCBot dansgaming started up!
+06/08/2015 19:42:27 - root - INFO - dansgaming BOT connected to IRC server
+06/08/2015 19:42:28 - root - INFO - IRCBot reckful started up!
+06/08/2015 19:42:28 - root - INFO - reckful BOT connected to IRC server
+06/08/2015 19:42:29 - root - INFO - IRCBot sodapoppin started up!
+06/08/2015 19:42:29 - root - INFO - sodapoppin BOT connected to IRC server
+06/08/2015 19:42:44 - root - INFO - reckful thread started
+06/08/2015 19:42:45 - root - INFO - sodapoppin thread started
+06/08/2015 19:42:45 - root - INFO - dansgaming thread started
+06/08/2015 19:42:46 - root - INFO - IRCBot reckful started up!
+06/08/2015 19:42:46 - root - INFO - reckful BOT connected to IRC server
+06/08/2015 19:42:46 - root - INFO - IRCBot dansgaming started up!
+06/08/2015 19:42:46 - root - INFO - IRCBot sodapoppin started up!
+06/08/2015 19:42:46 - root - INFO - dansgaming BOT connected to IRC server
+06/08/2015 19:42:46 - root - INFO - sodapoppin BOT connected to IRC server
+06/08/2015 19:43:48 - root - INFO - reckful thread started
+06/08/2015 19:43:48 - root - INFO - sodapoppin thread started
+06/08/2015 19:43:48 - root - INFO - dansgaming thread started
+06/08/2015 19:43:49 - root - INFO - IRCBot reckful started up!
+06/08/2015 19:43:49 - root - INFO - reckful BOT connected to IRC server
+06/08/2015 19:43:49 - root - INFO - IRCBot sodapoppin started up!
+06/08/2015 19:43:49 - root - INFO - sodapoppin BOT connected to IRC server
+06/08/2015 19:43:50 - root - INFO - IRCBot dansgaming started up!
+06/08/2015 19:43:50 - root - INFO - dansgaming BOT connected to IRC server
+06/08/2015 19:50:51 - root - INFO - itmejp thread started
+06/08/2015 19:50:53 - root - INFO - IRCBot itmejp started up!
+06/08/2015 19:50:53 - root - INFO - itmejp BOT connected to IRC server
+06/08/2015 20:27:31 - root - WARNING - Error on line: witch.tv PRIVMSG #itmejp :flaxGoose||||| message: |||||user: itch.tv PRIVMSG #itmejp :flaxGoose
+06/08/2015 20:31:07 - root - INFO - reckful/D08_M06_Y2015_H23_m42_s24 viewer graph created!
+06/08/2015 20:31:08 - root - INFO - reckful/JD08_M06_Y2015_H23_m42_s24 emote graph created!
+06/08/2015 20:47:20 - root - WARNING - Error on line: i.twitch.tv PRIVMSG #dansgaming :dan I love you||||| message: |||||user: .twitch.tv PRIVMSG #dansgaming :dan I love you
+06/08/2015 20:56:20 - root - INFO - dansgaming/D08_M06_Y2015_H23_m42_s25 viewer graph created!
+06/08/2015 20:56:26 - root - INFO - dansgaming/JD08_M06_Y2015_H23_m42_s25 emote graph created!
+06/08/2015 21:49:52 - root - DEBUG - sodapoppin - request failure: https://api.twitch.tv/kraken/streams/sodapoppin
+06/08/2015 21:49:52 - root - DEBUG - itmejp - request failure: https://api.twitch.tv/kraken/streams/itmejp
+06/08/2015 21:49:56 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/lirik
+06/08/2015 21:49:56 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/trick2g
+06/08/2015 21:49:57 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/summit1g
+06/08/2015 21:49:57 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/kaceytron
+06/08/2015 21:49:58 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/nl_kripp
+06/08/2015 21:49:58 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/itmejp
+06/08/2015 21:50:01 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/sodapoppin
+06/08/2015 21:50:01 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/ryuzilla
+06/08/2015 21:50:03 - root - DEBUG - request failure: https://api.twitch.tv/kraken/streams/kinetick42
+06/08/2015 21:50:13 - root - DEBUG - sodapoppin - request failure: https://api.twitch.tv/kraken/streams/sodapoppin
+06/08/2015 21:52:11 - root - DEBUG - itmejp - request failure: https://api.twitch.tv/kraken/streams/itmejp
+06/08/2015 22:25:04 - root - WARNING - Error on line:  PRIVMSG #itmejp :Or just kill her||||| message: |||||user: PRIVMSG #itmejp :Or just kill her
+06/08/2015 22:51:04 - root - INFO - destiny thread started
+06/08/2015 23:30:55 - root - WARNING - Error on line: rick48@joshrick48.tmi.twitch.tv PRIVMSG #sodapoppin :Ddd||||| message: |||||user: ick48@joshrick48.tmi.twitch.tv PRIVMSG #sodapoppin :Ddd
+06/08/2015 23:47:51 - root - INFO - itmejp/D08_M06_Y2015_H23_m50_s51 viewer graph created!
+06/08/2015 23:47:54 - root - INFO - itmejp/JD08_M06_Y2015_H23_m50_s51 emote graph created!
+06/09/2015 00:01:58 - root - INFO - nl_kripp thread started
+06/09/2015 00:01:59 - root - INFO - IRCBot nl_kripp started up!
+06/09/2015 00:02:00 - root - INFO - nl_kripp BOT connected to IRC server
+06/09/2015 00:03:14 - root - WARNING - Error on line: tmi.twitch.tv PRIVMSG #nl_kripp :PAPA BibleThump||||| message: |||||user: mi.twitch.tv PRIVMSG #nl_kripp :PAPA BibleThump
+06/09/2015 00:04:14 - root - INFO - dansgaming thread started
+06/09/2015 00:04:15 - root - INFO - IRCBot dansgaming started up!
+06/09/2015 00:04:15 - root - INFO - dansgaming BOT connected to IRC server
+06/09/2015 00:08:12 - root - WARNING - Error on line: itch.tv PRIVMSG #nl_kripp :Kreygasm D Kreygasm R Kreygasm U Kreygasm M Kreygasm S Kreygasm ||||| message: |||||user: tch.tv PRIVMSG #nl_kripp :Kreygasm D Kreygasm R Kreygasm U Kreygasm M Kreygasm S Kreygasm 
+06/09/2015 00:11:14 - root - WARNING - Error on line: i.twitch.tv PRIVMSG #nl_kripp :NEW GAME MODE!!!!!||||| message: |||||user: .twitch.tv PRIVMSG #nl_kripp :NEW GAME MODE
+06/09/2015 00:12:24 - root - WARNING - Error on line: tv PRIVMSG #nl_kripp :PAINT WALL||||| message: |||||user: v PRIVMSG #nl_kripp :PAINT WALL
+06/09/2015 00:13:19 - root - WARNING - Error on line: v PRIVMSG #nl_kripp :EU EleGiggle||||| message: |||||user:  PRIVMSG #nl_kripp :EU EleGiggle
+06/09/2015 00:15:18 - root - WARNING - Error on line: rinternet@moarinternet.tmi.twitch.tv PRIVMSG #nl_kripp :Talking so much||||| message: |||||user: internet@moarinternet.tmi.twitch.tv PRIVMSG #nl_kripp :Talking so much
+06/09/2015 00:16:21 - root - WARNING - Error on line: led@ubinbamboozled.tmi.twitch.tv PRIVMSG #nl_kripp :CASUAL||||| message: |||||user: ed@ubinbamboozled.tmi.twitch.tv PRIVMSG #nl_kripp :CASUAL
+06/09/2015 00:16:27 - root - WARNING - Error on line: witch.tv PRIVMSG #sodapoppin :DREAM||||| message: |||||user: itch.tv PRIVMSG #sodapoppin :DREAM
+06/09/2015 00:16:28 - root - WARNING - Error on line: PRIVMSG #sodapoppin :crazty||||| message: |||||user: RIVMSG #sodapoppin :crazty
+06/09/2015 00:17:01 - root - WARNING - Error on line: lomgwtfbbq.tmi.twitch.tv PRIVMSG #sodapoppin :OMFG 10k dreamm||||| message: |||||user: omgwtfbbq.tmi.twitch.tv PRIVMSG #sodapoppin :OMFG 10k dreamm
+06/09/2015 00:17:04 - root - WARNING - Error on line: sterino!no_kappa_pasterino@no_kappa_pasterino.tmi.twitch.tv PRIVMSG #sodapoppin :COULD'VE HAD 100K FailFish 5||||| message: |||||user: terino
+06/09/2015 00:17:06 - root - WARNING - Error on line: heezywhiz1337!cheezywhiz1337@cheezywhiz1337.tmi.twitch.tv PRIVMSG #sodapoppin :WHAT||||| message: |||||user: eezywhiz1337
+06/09/2015 00:17:07 - root - WARNING - Error on line: akaveli@multikilmakaveli.tmi.twitch.tv PRIVMSG #sodapoppin :yo wtf||||| message: |||||user: kaveli@multikilmakaveli.tmi.twitch.tv PRIVMSG #sodapoppin :yo wtf
+06/09/2015 00:39:04 - root - INFO - sodapoppin/D08_M06_Y2015_H23_m42_s25 viewer graph created!
+06/09/2015 00:39:08 - root - INFO - sodapoppin/JD08_M06_Y2015_H23_m42_s25 emote graph created!
+06/09/2015 01:00:10 - root - WARNING - Error on line: ergamingx!gunnergamingx@gunnergamingx.tmi.twitch.tv PRIVMSG #dansgaming :dan10||||| message: |||||user: rgamingx
+06/09/2015 01:30:11 - root - DEBUG - destiny - request failure: https://api.twitch.tv/kraken/streams/destiny
+06/09/2015 01:34:49 - root - INFO - dansgaming/D09_M06_Y2015_H04_m04_s14 viewer graph created!
+06/09/2015 01:34:51 - root - INFO - dansgaming/JD09_M06_Y2015_H04_m04_s14 emote graph created!
+06/09/2015 01:42:15 - root - INFO - dansgaming thread started
+06/09/2015 01:42:16 - root - INFO - IRCBot dansgaming started up!
+06/09/2015 01:42:17 - root - INFO - dansgaming BOT connected to IRC server
+06/09/2015 02:33:57 - root - INFO - nl_kripp/D09_M06_Y2015_H04_m01_s58 viewer graph created!
+06/09/2015 02:33:59 - root - INFO - nl_kripp/JD09_M06_Y2015_H04_m01_s58 emote graph created!
+06/09/2015 02:50:43 - root - INFO - dansgaming/D09_M06_Y2015_H05_m42_s15 viewer graph created!
+06/09/2015 02:50:47 - root - INFO - dansgaming/JD09_M06_Y2015_H05_m42_s15 emote graph created!
+06/09/2015 03:29:50 - root - INFO - destiny/D09_M06_Y2015_H02_m51_s04 viewer graph created!
