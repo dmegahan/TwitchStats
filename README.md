@@ -1,6 +1,6 @@
 # TwitchStats
 
-** As of early 2016, this bot is no longer maintained. Some changes have occured with the Twitch API, and this bot does not reflect or implement those changes
+__As of early 2016, this bot is no longer maintained. Some changes have occured with the Twitch API, and this bot does not reflect or implement those changes__
 
 =======================
 
