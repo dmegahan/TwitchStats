@@ -64,3 +64,6 @@ target/
 #intellij
 .idea/
 .idea/*.xml
+
+#hidden configs
+./TwitchGraph/TwitchConfig.py
